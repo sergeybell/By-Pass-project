@@ -1,0 +1,122 @@
+{INCLUDE 'FULL_SEX_CLEAR';}
+{INCLUDE 'FULL_SEX_CLEAR_5_fam';}
+INCLUDE 'BYPASS_SEQ_WF';
+
+PROCEDURE OPTIMIZE_CHROM SEXTGx1 SEXTGx2 SEXTGy1 SEXTGy2 EBE;
+  VARIABLE MU 800; VARIABLE NBAR 800 3;
+  VARIABLE OBJ1 1; VARIABLE OBJ2 1; VARIABLE OBJ 1;
+                   VARIABLE SGx1 1; VARIABLE SGx2 1; VARIABLE SGy1 1; VARIABLE SGy2 1;
+                   VARIABLE EB1 1; VARIABLE EB2 1;
+                   VARIABLE E1 1;
+                   VARIABLE GAMMA 1;
+                   VARIABLE CHROM_X 1; VARIABLE CHROM_Y 1;
+                   VARIABLE CHROM_X_1 1; VARIABLE CHROM_Y_1 1;
+  VARIABLE quadKx 1; VARIABLE quadKy 1; VARIABLE quadKz 1; VARIABLE MU0 1;
+  VARIABLE MU_TP 800 3;
+  WRITE 6 'BEGIN';
+  SGx1 := SEXTGx1; SGx2 := SEXTGx2; SGy1 := SEXTGy1; SGy2 := SEXTGy2; EB1 := EBE;
+  WRITE 6 'SGx1, SGx2, SGy1, SGy2, EB1 = '&ST(SGx1)&' '&ST(SGx2)&' '&ST(SGy1)&' '&ST(SGy2)&' '&ST(EB1);
+  GAMMA := 1.12792344429;
+  FIT SGx1 SGx2 SGy1 SGy2;
+    LATTICE SGx1 SGx2 SGy1 SGy2 EB1 1;
+    TP MU_TP;
+    CHROM_X:= (MU_TP(1)|(0&0&0&0&1))*(1+1/GAMMA);
+    CHROM_Y:= (MU_TP(2)|(0&0&0&0&1))*(1+1/GAMMA);
+    CHROM_X_1:= MU_TP(1)|(0&0&0&0&2);
+    CHROM_Y_1:= MU_TP(1)|(0&0&0&0&2);
+
+    OBJ:= SQRT(SQR(CHROM_X) + SQR(CHROM_Y));
+    {OBJ:= SQRT(SQR(CHROM_X) + SQR(CHROM_Y)+ SQR(CHROM_X_1)/100 + SQR(CHROM_Y_1)/100);}
+
+    WRITE 6 'SGx1, SGx2, SGy1, SGy2, EB1 = '&ST(SGx1)&' '&ST(SGx2)&' '&ST(SGy1)&' '&ST(SGy2)&' '&ST(EB1);
+    WRITE 6 'CHROM_X, CHROM_Y, CHROM_X_1, CHROM_Y_1='&ST(CHROM_X)&' '&ST(CHROM_Y)&' '&ST(CHROM_X_1)&' '&ST(CHROM_Y_1);
+    WRITE 6 'OBJ ='&ST(OBJ);
+  ENDFIT 1E-5 2000 1 OBJ;
+
+    WRITE 6 '====================================';
+    WRITE 6 'SGx1, SGx2, SGy1, SGy2, EB1 = '&ST(SGx1)&' '&ST(SGx2)&' '&ST(SGy1)&' '&ST(SGy2)&' '&ST(EB1);
+    WRITE 6 'CHROM_X, CHROM_Y='&ST(CHROM_X)&' '&ST(CHROM_Y);
+    WRITE 6 'OBJ ='&ST(OBJ);
+    SEXTGx1 := SGx1; SEXTGx2 := SGx2; SEXTGy1 := SGy1; SEXTGy2 := SGy2;
+
+ENDPROCEDURE; {OPTIMIZE}
+
+
+PROCEDURE OPTIMIZE SEXTGx1 SEXTGy1 EBE;
+  VARIABLE MU 800; VARIABLE NBAR 800 3;
+  VARIABLE OBJ1 1; VARIABLE OBJ2 1; VARIABLE OBJ 1;
+                   VARIABLE SGx1 1; VARIABLE SGx2 1; VARIABLE SGy1 1; VARIABLE SGy2 1; VARIABLE EB1 1; VARIABLE EB2 1;
+                   VARIABLE E1 1;
+                   VARIABLE GAMMA 1;
+                   VARIABLE CHROM_X 1; VARIABLE CHROM_Y 1;
+  VARIABLE quadKx 1; VARIABLE quadKy 1; VARIABLE quadKz 1; VARIABLE MU0 1;
+  VARIABLE MU_TP 800 3;
+  WRITE 6 'BEGIN';
+  SGx1 := SEXTGx1; SGy1 := SEXTGy1; EB1 := EBE;
+  WRITE 6 'SGx1, SGy1, EB1 = '&ST(SGx1)&' '&ST(SGy1)&' '&ST(EB1);
+  GAMMA := 1.12792344429;
+  FIT SGx1 SGy1;
+    LATTICE SGx1 SGy1 EB1 1;
+    TSS MU NBAR 0;
+    MU0 := CONS(MU);
+    DAPEE MU 11 quadKx;
+    DAPEE MU 33 quadKy;
+    {DAPEE MU 66 quadKz;}
+    {OBJ := SQRT(SQR(quadKx) + SQR(quadKy)+SQR(quadKz));}
+    OBJ := SQRT(SQR(quadKx) + SQR(quadKy));
+    WRITE 6 'SGx1, SGy1, EB1 = '&ST(SGx1)&' '&ST(SGy1)&' '&ST(EB1);
+    WRITE 6 'quadKx, quadKy= '&ST(quadKx)&' '&ST(quadKy);
+    WRITE 6 'MU0 = '&ST(MU0);
+    WRITE 6 'OBJ ='&ST(OBJ);
+  ENDFIT 1E-9 2000 1 OBJ;
+
+    WRITE 6 '====================================';
+    WRITE 6 'SGx1, SGy1, EB1 = '&ST(SGx1)&' '&ST(SGy1)&' '&ST(EB1);
+    WRITE 6 'quadKx, quadKy= '&ST(quadKx)&' '&ST(quadKy);
+    WRITE 6 'MU0 = '&ST(MU0);
+    WRITE 6 'OBJ ='&ST(OBJ);
+    SEXTGx1 := SGx1; SEXTGy1 := SGy1;
+ENDPROCEDURE; {OPTIMIZE}
+
+PROCEDURE MAIN;
+  VARIABLE GAMMA 1;
+  {optimization}
+  VARIABLE SGx1 1; VARIABLE SGx2 1; VARIABLE SGy1 1; VARIABLE SGy2 1; VARIABLE EB1 1;
+  VARIABLE MU 800; VARIABLE NBAR 800 3;
+
+  GAMMA := 1.12792344429;
+  OV 3 3 0;
+  {DAEPS 1E-12;}
+  { SET lattice parameters }
+  SET_FOR_DEUTERONS GAMMA;
+
+  {WIEN FILTER}
+  EB1 := 99.04;
+  {EB1 := 99.14849674631157;}
+  {EB1 := 0.0;}
+
+  {beta chromaticity}
+  {#5 quad}
+  {SGx1 :=  5.0E-003;
+  SGy1 := -9.6E-003;}
+
+  {#3 quad}
+  {SGx1 :=  6.5E-003;
+  SGy1 := -11.5E-003;}
+
+  {natural chromaticity}
+  SGx1 :=  0.0;
+  SGy1  := 0.0;
+
+  WRITE 6 'SGx1, SGy1, EB1 = '&ST(SGx1)&' '&ST(SGy1)&' '&ST(EB1);
+  OPTIMIZE SGx1 SGy1 EB1;
+  {OPTIMIZE_CHROM SGx1 SGx2 SGy1 SGy2 EB1;}
+  WRITE 6 'USE SGx1, SGy1, EB1 = '&ST(SGx1)&' '&ST(SGy1)&' '&ST(EB1);
+  {USE SGx1, SGy1, EB1 = 0.1040199617883203E-002 0.1355600297070263E-003  99.04000000000001}
+
+  ENDPROCEDURE; {MAIN}
+
+PROCEDURE RUN;
+  MAIN;
+ENDPROCEDURE;
+RUN; END;

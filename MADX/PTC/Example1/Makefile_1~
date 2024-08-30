@@ -1,0 +1,10 @@
+# Run Example No.1 with "madxdev" 
+#     using the input "fv9_1.madx" and output "fv9_1.out" 
+madxdev < fv9_1.madx > fv9_1.out
+
+# Plot with GNUPLOT4.0
+gnuplot make_plots1.plt
+
+# clean temp files
+rm empty.ps
+

@@ -1,0 +1,3362 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?validation-md5-digest 5b13e3db7cc3d20a3c257794c3d3e62e?>
+<worksheet version="3.0.3" xmlns="http://schemas.mathsoft.com/worksheet30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ws="http://schemas.mathsoft.com/worksheet30" xmlns:ml="http://schemas.mathsoft.com/math30" xmlns:u="http://schemas.mathsoft.com/units10" xmlns:p="http://schemas.mathsoft.com/provenance10">
+	<pointReleaseData/>
+	<metadata>
+		<generator>Mathcad Professional 14.1</generator>
+		<userData>
+			<title/>
+			<description/>
+			<author>User Windows</author>
+			<company/>
+			<keywords/>
+			<revisedBy>User Windows</revisedBy>
+		</userData>
+		<identityInfo>
+			<revision>35</revision>
+			<documentID>A866758D-27E3-4EFD-89F5-44F11B08FB1F</documentID>
+			<versionID>C3637567-A133-47C8-8D63-465E64CB6845</versionID>
+			<parentVersionID>00000000-0000-0000-0000-000000000000</parentVersionID>
+			<branchID>00000000-0000-0000-0000-000000000000</branchID>
+		</identityInfo>
+	</metadata>
+	<settings>
+		<presentation>
+			<textRendering>
+				<textStyles>
+					<textStyle name="Обычный">
+						<blockAttr margin-left="0" margin-right="0" text-indent="0" text-align="left" list-style-type="none" tabs="inherit"/>
+						<inlineAttr font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+				</textStyles>
+			</textRendering>
+			<mathRendering equation-color="#000">
+				<operators multiplication="dot" derivative="derivative" literal-subscript="small" definition="colon-equal" global-definition="triple-equal" local-definition="left-arrow" equality="bold-equal" symbolic-evaluation="right-arrow"/>
+				<mathStyles>
+					<mathStyle name="Переменные" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Константы" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Пользовательский 1" font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Пользовательский 2" font-family="Courier New" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Пользовательский 3" font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Пользовательский 4" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Пользовательский 5" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Пользовательский 6" font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Пользовательский 7" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Шрифт математического текста" font-family="Times New Roman" font-charset="0" font-size="14" font-weight="normal" font-style="normal" underline="false"/>
+				</mathStyles>
+				<dimensionNames mass="масса" length="длина" time="время" current="сила тока" thermodynamic-temperature="температура" luminous-intensity="сила света" amount-of-substance="количество вещества" display="false"/>
+				<symbolics derivation-steps-style="vertical-insert" show-comments="false" evaluate-in-place="false"/>
+				<results numeric-only="true">
+					<general precision="3" show-trailing-zeros="false" radix="dec" complex-threshold="10" zero-threshold="15" imaginary-value="i" exponential-threshold="3"/>
+					<matrix display-style="auto" expand-nested-arrays="false"/>
+					<unit format-units="false" simplify-units="false" fractional-unit-exponent="false"/>
+				</results>
+			</mathRendering>
+			<pageModel show-page-frame="false" show-header-frame="false" show-footer-frame="false" header-footer-start-page="1" paper-code="1" orientation="portrait" print-single-page-width="false" page-width="612" page-height="792">
+				<margins left="72" right="72" top="72" bottom="72"/>
+				<header use-full-page-width="false"/>
+				<footer use-full-page-width="false"/>
+			</pageModel>
+			<colorModel background-color="#fff" default-highlight-color="#ffff80"/>
+			<language math="ru" UI="ru"/>
+		</presentation>
+		<calculation>
+			<builtInVariables array-origin="0" convergence-tolerance="0.001" constraint-tolerance="0.001" random-seed="1" prn-precision="4" prn-col-width="8"/>
+			<calculationBehavior automatic-recalculation="true" matrix-strict-singularity-check="false" optimize-expressions="false" exact-boolean="true" strings-use-origin="false" zero-over-zero="error">
+				<compatibility multiple-assignment="MC12" local-assignment="MC11"/>
+			</calculationBehavior>
+			<units>
+				<currentUnitSystem name="si" customized="false"/>
+			</units>
+		</calculation>
+		<editor view-annotations="false" view-regions="false">
+			<ruler is-visible="false" ruler-unit="in"/>
+			<plotTemplate>
+				<xy item-idref="1"/>
+			</plotTemplate>
+			<grid granularity-x="6" granularity-y="6"/>
+		</editor>
+		<fileFormat image-type="image/png" image-quality="75" save-numeric-results="true" exclude-large-results="true" save-text-images="false" screen-dpi="96"/>
+		<miscellaneous>
+			<handbook handbook-region-tag-ub="7799" can-delete-original-handbook-regions="true" can-delete-user-regions="true" can-print="true" can-copy="true" can-save="true" file-permission-mask="2065724517"/>
+		</miscellaneous>
+	</settings>
+	<regions>
+		<region region-id="541" left="24" top="53.25" width="90.75" height="15.75" align-x="24" align-y="66" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<text use-page-width="false" push-down="false" lock-width="true">
+				<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="0" text-align="inherit" list-style-type="none" tabs="inherit">
+					<f size="14">
+						<b>SEXTUPOLES</b>
+					</f>
+				</p>
+			</text>
+		</region>
+		<region region-id="7797" left="0" top="75" width="6008.25" align-x="0" align-y="75" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="" height="1094.25">
+			<area is-collapsed="true" name="" show-name="false" show-border="true" show-icon="true" show-timestamp="true" allow-expand="false" is-locked="false" timestamp="" top-lock-id="490" bottom-lock-id="7027">
+				<region region-id="7334" left="30" top="21" width="57" height="14.25" align-x="31.5" align-y="32.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="false">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<f size="12">
+								<b>2 famalies</b>
+							</f>
+						</p>
+					</text>
+				</region>
+				<region region-id="7290" left="30" top="59.25" width="42" height="12.75" align-x="48" align-y="68.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve">Bρ</ml:id>
+							<ml:real>3.26</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7291" left="78" top="59.25" width="22.5" height="12.75" align-x="87.75" align-y="68.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:mult/>
+							<ml:id xml:space="preserve">T</ml:id>
+							<ml:id xml:space="preserve">m</ml:id>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7292" left="30" top="77.25" width="43.5" height="15" align-x="54" align-y="86.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+							<ml:real>0.3</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7293" left="78" top="77.25" width="7.5" height="12.75" align-x="81" align-y="86.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:id xml:space="preserve" xmlns:ml="http://schemas.mathsoft.com/math30">m</ml:id>
+					</math>
+				</region>
+				<region region-id="7294" left="30" top="95.25" width="51.75" height="12.75" align-x="57.75" align-y="104.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve">Aper</ml:id>
+							<ml:real>0.05</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7295" left="84" top="95.25" width="7.5" height="12.75" align-x="87" align-y="104.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:id xml:space="preserve" xmlns:ml="http://schemas.mathsoft.com/math30">m</ml:id>
+					</math>
+				</region>
+				<region region-id="7296" left="30" top="113.25" width="93.75" height="15" align-x="63.75" align-y="122.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="mad1">SF</ml:id>
+							<ml:real font="0">0.9474591805</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7297" left="132" top="107.25" width="19.5" height="18.75" align-x="141" align-y="122.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:pow/>
+							<ml:id xml:space="preserve">m</ml:id>
+							<ml:real>-3</ml:real>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7298" left="186" top="113.25" width="142.5" height="15" align-x="228.75" align-y="122.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="mad1">MSF</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:id xml:space="preserve" subscript="mad1">SF</ml:id>
+									<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>0.28423775414999997</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7299" left="426" top="112.5" width="42" height="12" align-x="446.25" align-y="122.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="true">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Multupole</p>
+					</text>
+				</region>
+				<region region-id="7300" left="30" top="131.25" width="96" height="15" align-x="65.25" align-y="140.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="mad1">SD</ml:id>
+							<ml:real font="0">-1.915403965</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7301" left="132" top="125.25" width="19.5" height="18.75" align-x="141" align-y="140.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:pow/>
+							<ml:id xml:space="preserve">m</ml:id>
+							<ml:real>-3</ml:real>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7302" left="186" top="131.25" width="150.75" height="15" align-x="230.25" align-y="140.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="mad1">MSD</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:id xml:space="preserve" subscript="mad1">SD</ml:id>
+									<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>-0.5746211895</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7303" left="342" top="122.25" width="75.75" height="32.25" align-x="378.75" align-y="140.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:div/>
+								<ml:id xml:space="preserve" subscript="mad1">SD</ml:id>
+								<ml:id xml:space="preserve" subscript="mad1">SF</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-2.0216216217243148</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7304" left="438" top="143.25" width="92.25" height="15" align-x="496.5" align-y="152.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:id xml:space="preserve" subscript="mad1">SF</ml:id>
+								<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.28423775414999997</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7305" left="540" top="137.25" width="19.5" height="18.75" align-x="549" align-y="152.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:pow/>
+							<ml:id xml:space="preserve">m</ml:id>
+							<ml:real>-2</ml:real>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7306" left="30" top="149.25" width="195" height="21" align-x="64.5" align-y="164.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="cosy1">SF</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:apply>
+										<ml:mult/>
+										<ml:id xml:space="preserve" subscript="mad1">SF</ml:id>
+										<ml:id xml:space="preserve">Bρ</ml:id>
+									</ml:apply>
+									<ml:apply>
+										<ml:pow/>
+										<ml:id xml:space="preserve">Aper</ml:id>
+										<ml:real>2</ml:real>
+									</ml:apply>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>0.0077217923210750007</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7307" left="228" top="155.25" width="6.75" height="12.75" align-x="230.25" align-y="164.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:id xml:space="preserve" xmlns:ml="http://schemas.mathsoft.com/math30">T</ml:id>
+					</math>
+				</region>
+				<region region-id="7308" left="438" top="161.25" width="99" height="15" align-x="498" align-y="170.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:id xml:space="preserve" subscript="mad1">SD</ml:id>
+								<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.5746211895</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7309" left="540" top="155.25" width="19.5" height="18.75" align-x="549" align-y="170.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:pow/>
+							<ml:id xml:space="preserve">m</ml:id>
+							<ml:real>-2</ml:real>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7310" left="306" top="167.25" width="86.25" height="15" align-x="358.5" align-y="176.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:id xml:space="preserve" subscript="mad1">SF</ml:id>
+								<ml:id xml:space="preserve">Bρ</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>3.08871692843</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7311" left="396" top="160.5" width="15" height="33.75" align-x="400.5" align-y="176.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:div/>
+							<ml:id xml:space="preserve">T</ml:id>
+							<ml:apply>
+								<ml:pow/>
+								<ml:id xml:space="preserve">m</ml:id>
+								<ml:real>2</ml:real>
+							</ml:apply>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7312" left="30" top="215.25" width="55.5" height="21" align-x="56.25" align-y="230.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="mult">L</ml:id>
+							<ml:apply>
+								<ml:pow/>
+								<ml:real>10</ml:real>
+								<ml:real>-6</ml:real>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7313" left="90" top="221.25" width="7.5" height="12.75" align-x="93" align-y="230.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:id xml:space="preserve" xmlns:ml="http://schemas.mathsoft.com/math30">m</ml:id>
+					</math>
+				</region>
+				<region region-id="7314" left="30" top="245.25" width="80.25" height="15" align-x="63.75" align-y="254.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="mad2">SF</ml:id>
+							<ml:real font="0">0.0475358</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7315" left="120" top="239.25" width="19.5" height="18.75" align-x="129" align-y="254.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:pow/>
+							<ml:id xml:space="preserve">m</ml:id>
+							<ml:real>-2</ml:real>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7316" left="30" top="263.25" width="87" height="15" align-x="65.25" align-y="272.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="mad2">SD</ml:id>
+							<ml:real font="0">-0.0124713</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7317" left="120" top="257.25" width="19.5" height="18.75" align-x="129" align-y="272.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:pow/>
+							<ml:id xml:space="preserve">m</ml:id>
+							<ml:real>-2</ml:real>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7318" left="174" top="254.25" width="75.75" height="32.25" align-x="210.75" align-y="272.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:div/>
+								<ml:id xml:space="preserve" subscript="mad2">SD</ml:id>
+								<ml:id xml:space="preserve" subscript="mad2">SF</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.26235595067296646</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7319" left="426" top="280.5" width="15" height="33.75" align-x="430.5" align-y="296.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:div/>
+							<ml:id xml:space="preserve">T</ml:id>
+							<ml:apply>
+								<ml:pow/>
+								<ml:id xml:space="preserve">m</ml:id>
+								<ml:real>2</ml:real>
+							</ml:apply>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7320" left="306" top="284.25" width="109.5" height="32.25" align-x="361.5" align-y="302.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:div/>
+									<ml:id xml:space="preserve" subscript="mad2">SF</ml:id>
+									<ml:id xml:space="preserve" subscript="mult">L</ml:id>
+								</ml:apply>
+								<ml:id xml:space="preserve">Bρ</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>154966.708</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7321" left="30" top="302.25" width="174.75" height="32.25" align-x="64.5" align-y="320.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="cosy2">SF</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:apply>
+										<ml:mult/>
+										<ml:apply>
+											<ml:div/>
+											<ml:id xml:space="preserve" subscript="mad2">SF</ml:id>
+											<ml:id xml:space="preserve" subscript="mult">L</ml:id>
+										</ml:apply>
+										<ml:id xml:space="preserve">Bρ</ml:id>
+									</ml:apply>
+									<ml:apply>
+										<ml:pow/>
+										<ml:id xml:space="preserve">Aper</ml:id>
+										<ml:real>2</ml:real>
+									</ml:apply>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>387.4167700000001</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7322" left="204" top="311.25" width="6.75" height="12.75" align-x="206.25" align-y="320.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:id xml:space="preserve" xmlns:ml="http://schemas.mathsoft.com/math30">T</ml:id>
+					</math>
+				</region>
+				<region region-id="7323" left="426" top="322.5" width="15" height="33.75" align-x="430.5" align-y="338.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:div/>
+							<ml:id xml:space="preserve">T</ml:id>
+							<ml:apply>
+								<ml:pow/>
+								<ml:id xml:space="preserve">m</ml:id>
+								<ml:real>2</ml:real>
+							</ml:apply>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7324" left="306" top="326.25" width="120.75" height="32.25" align-x="363" align-y="344.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:div/>
+									<ml:id xml:space="preserve" subscript="mad2">SD</ml:id>
+									<ml:id xml:space="preserve" subscript="mult">L</ml:id>
+								</ml:apply>
+								<ml:id xml:space="preserve">Bρ</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-40656.437999999995</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7325" left="30" top="344.25" width="183" height="32.25" align-x="66" align-y="362.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="cosy2">SD</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:apply>
+										<ml:mult/>
+										<ml:apply>
+											<ml:div/>
+											<ml:id xml:space="preserve" subscript="mad2">SD</ml:id>
+											<ml:id xml:space="preserve" subscript="mult">L</ml:id>
+										</ml:apply>
+										<ml:id xml:space="preserve">Bρ</ml:id>
+									</ml:apply>
+									<ml:apply>
+										<ml:pow/>
+										<ml:id xml:space="preserve">Aper</ml:id>
+										<ml:real>2</ml:real>
+									</ml:apply>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>-101.641095</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7326" left="210" top="353.25" width="6.75" height="12.75" align-x="212.25" align-y="362.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:id xml:space="preserve" xmlns:ml="http://schemas.mathsoft.com/math30">T</ml:id>
+					</math>
+				</region>
+				<region region-id="7327" left="306" top="374.25" width="89.25" height="32.25" align-x="361.5" align-y="392.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:div/>
+									<ml:id xml:space="preserve" subscript="mad2">SF</ml:id>
+									<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+								</ml:apply>
+								<ml:id xml:space="preserve">Bρ</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.5165556933333334</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7328" left="30" top="398.25" width="69" height="32.25" align-x="65.25" align-y="416.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:div/>
+								<ml:id xml:space="preserve" subscript="mad2">SF</ml:id>
+								<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.15845266666666669</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7329" left="102" top="401.25" width="19.5" height="18.75" align-x="111" align-y="416.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:pow/>
+							<ml:id xml:space="preserve">m</ml:id>
+							<ml:real>-3</ml:real>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7330" left="306" top="410.25" width="96" height="32.25" align-x="363" align-y="428.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:div/>
+									<ml:id xml:space="preserve" subscript="mad2">SD</ml:id>
+									<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+								</ml:apply>
+								<ml:id xml:space="preserve">Bρ</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.13552145999999998</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7331" left="30" top="440.25" width="75.75" height="32.25" align-x="66.75" align-y="458.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:div/>
+								<ml:id xml:space="preserve" subscript="mad2">SD</ml:id>
+								<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.041571</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7332" left="108" top="443.25" width="19.5" height="18.75" align-x="117" align-y="458.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:apply xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:pow/>
+							<ml:id xml:space="preserve">m</ml:id>
+							<ml:real>-3</ml:real>
+						</ml:apply>
+					</math>
+				</region>
+				<region region-id="7338" left="30" top="489" width="57" height="14.25" align-x="31.5" align-y="500.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="false">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<f size="12">
+								<b>3 famalies</b>
+							</f>
+						</p>
+					</text>
+				</region>
+				<region region-id="7703" left="372" top="502.5" width="286.5" height="12" align-x="392.25" align-y="512.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="true">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Convertor of SEXTUPOLES between MADX and COSY</p>
+					</text>
+				</region>
+				<region region-id="7340" left="30" top="514.5" width="83.25" height="12" align-x="41.25" align-y="524.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="false">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">COSY optimization</p>
+					</text>
+				</region>
+				<region region-id="7342" left="30" top="532.5" width="106.5" height="12" align-x="38.25" align-y="542.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="false">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<i>spin chromaticity correct</i>
+						</p>
+					</text>
+				</region>
+				<region region-id="7692" left="378" top="526.5" width="192" height="27.75" align-x="456.75" align-y="542.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:function>
+								<ml:id xml:space="preserve" subscript="cosy">SEX</ml:id>
+								<ml:boundVars>
+									<ml:id xml:space="preserve" subscript="madx">SEX</ml:id>
+								</ml:boundVars>
+							</ml:function>
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:mult/>
+									<ml:apply>
+										<ml:mult/>
+										<ml:id xml:space="preserve" subscript="madx">SEX</ml:id>
+										<ml:id xml:space="preserve">Bρ</ml:id>
+									</ml:apply>
+									<ml:apply>
+										<ml:pow/>
+										<ml:id xml:space="preserve">Aper</ml:id>
+										<ml:real>2</ml:real>
+									</ml:apply>
+								</ml:apply>
+								<ml:apply>
+									<ml:div/>
+									<ml:real>1</ml:real>
+									<ml:real>2</ml:real>
+								</ml:apply>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7689" left="576" top="524.25" width="174.75" height="45" align-x="666.75" align-y="542.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:function>
+								<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+								<ml:boundVars>
+									<ml:id xml:space="preserve" subscript="cosy">SEXT</ml:id>
+								</ml:boundVars>
+							</ml:function>
+							<ml:apply>
+								<ml:div/>
+								<ml:id xml:space="preserve" subscript="cosy">SEXT</ml:id>
+								<ml:parens>
+									<ml:apply>
+										<ml:mult/>
+										<ml:apply>
+											<ml:mult/>
+											<ml:id xml:space="preserve">Bρ</ml:id>
+											<ml:apply>
+												<ml:pow/>
+												<ml:id xml:space="preserve">Aper</ml:id>
+												<ml:real>2</ml:real>
+											</ml:apply>
+										</ml:apply>
+										<ml:apply>
+											<ml:div/>
+											<ml:real>1</ml:real>
+											<ml:real>2</ml:real>
+										</ml:apply>
+									</ml:apply>
+								</ml:parens>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7630" left="24" top="556.5" width="170.25" height="36" align-x="24" align-y="566.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="true">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<sp count="2"/>{SGx1 :=<sp count="2"/>-.3034170015006776E-003;</p>
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<sp count="2"/>SGx2 :=<sp count="2"/>0.2979057586599797E-002;</p>
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<sp count="2"/>SGy<sp count="2"/>:=<sp count="2"/>-.3559473355311929E-003;}</p>
+					</text>
+				</region>
+				<region region-id="7704" left="768" top="575.25" width="125.25" height="21" align-x="827.25" align-y="590.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="cosy">SEX</ml:id>
+								<ml:real>1.25</ml:real>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.00509375</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7631" left="30" top="605.25" width="151.5" height="15" align-x="72" align-y="614.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x1_spin">SG</ml:id>
+							<ml:real font="0">-.3034170015006776E-003</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7632" left="192" top="599.25" width="111.75" height="21" align-x="232.5" align-y="614.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x1_spin">SG</ml:id>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.00030341700150067762</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7730" left="312" top="605.25" width="126.75" height="15" align-x="399.75" align-y="614.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+								<ml:id xml:space="preserve" subscript="x1_spin">SG</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.074458159877466887</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7705" left="768" top="599.25" width="129.75" height="21" align-x="831.75" align-y="614.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="cosy">SEX</ml:id>
+								<ml:real>0.623</ml:real>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.0025387250000000004</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7633" left="30" top="623.25" width="150.75" height="15" align-x="72" align-y="632.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x2_spin">SG</ml:id>
+							<ml:real font="0">0.2979057586599797E-002</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7634" left="192" top="617.25" width="106.5" height="21" align-x="232.5" align-y="632.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x2_spin">SG</ml:id>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.0029790575865997972</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7731" left="312" top="623.25" width="121.5" height="15" align-x="399.75" align-y="632.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+								<ml:id xml:space="preserve" subscript="x2_spin">SG</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.73105707646620777</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7706" left="768" top="623.25" width="140.25" height="21" align-x="837" align-y="638.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="cosy">SEX</ml:id>
+								<ml:real>-1.916</ml:real>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.0078077000000000008</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7635" left="30" top="641.25" width="147.75" height="15" align-x="68.25" align-y="650.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="y_spin">SG</ml:id>
+							<ml:real font="0">-.3559473355311929E-003</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7636" left="192" top="635.25" width="108" height="21" align-x="228.75" align-y="650.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="y_spin">SG</ml:id>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.0003559473355311929</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7732" left="312" top="641.25" width="123" height="15" align-x="396" align-y="650.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+								<ml:id xml:space="preserve" subscript="y_spin">SG</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.087349039394157751</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7637" left="24" top="676.5" width="132.75" height="12" align-x="40.5" align-y="686.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="true">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<i>betatron chromaticities correct</i>
+						</p>
+					</text>
+				</region>
+				<region region-id="7638" left="30" top="700.5" width="169.5" height="36" align-x="30" align-y="710.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="true">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">{SGx1 :=<sp count="2"/>0.7023361485251551E-002;</p>
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<sp count="2"/>SGx2 :=<sp count="2"/>0.6825664185133520E-003;</p>
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<sp count="2"/>SGy<sp count="2"/>:=<sp count="2"/>-.7834917320023617E-002;}</p>
+					</text>
+				</region>
+				<region region-id="7796" left="750" top="695.25" width="147" height="21" align-x="863.25" align-y="710.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+									<ml:apply>
+										<ml:mult/>
+										<ml:real>5</ml:real>
+										<ml:apply>
+											<ml:pow/>
+											<ml:real>10</ml:real>
+											<ml:real>-3</ml:real>
+										</ml:apply>
+									</ml:apply>
+								</ml:apply>
+								<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.36809815950920238</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7788" left="750" top="719.25" width="164.25" height="21" align-x="875.25" align-y="734.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+									<ml:apply>
+										<ml:mult/>
+										<ml:real>-9.6</ml:real>
+										<ml:apply>
+											<ml:pow/>
+											<ml:real>10</ml:real>
+											<ml:real>-3</ml:real>
+										</ml:apply>
+									</ml:apply>
+								</ml:apply>
+								<ml:id xml:space="preserve" subscript="sext">L</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-0.70674846625766863</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7639" left="30" top="743.25" width="150.75" height="15" align-x="72" align-y="752.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x1_beta">SG</ml:id>
+							<ml:real font="0">0.3975288447497761E-002</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7640" left="198" top="737.25" width="106.5" height="21" align-x="238.5" align-y="752.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x1_beta">SG</ml:id>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.0039752884474977606</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7714" left="312" top="743.25" width="121.5" height="15" align-x="399.75" align-y="752.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+								<ml:id xml:space="preserve" subscript="x1_beta">SG</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.97553090736141357</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7641" left="30" top="761.25" width="150.75" height="15" align-x="72" align-y="770.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x2_beta">SG</ml:id>
+							<ml:real font="0">0.3885686150937240E-002</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7642" left="198" top="755.25" width="106.5" height="21" align-x="238.5" align-y="770.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x2_beta">SG</ml:id>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.00388568615093724</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7711" left="312" top="761.25" width="121.5" height="15" align-x="399.75" align-y="770.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+								<ml:id xml:space="preserve" subscript="x2_beta">SG</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.95354261372692994</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7643" left="30" top="779.25" width="147.75" height="15" align-x="68.25" align-y="788.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="y_beta">SG</ml:id>
+							<ml:real font="0">-.7860046789335846E-002</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7644" left="198" top="773.25" width="106.5" height="21" align-x="238.5" align-y="788.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x1_beta">SG</ml:id>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>0.0039752884474977606</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="7712" left="312" top="779.25" width="123" height="15" align-x="396" align-y="788.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve" subscript="madx">SEXT</ml:id>
+								<ml:id xml:space="preserve" subscript="y_beta">SG</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>-1.9288458378738269</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+			</area>
+			<rendering item-idref="2"/>
+		</region>
+		<region region-id="7028" left="18" top="99.75" width="72" height="15.75" align-x="27.75" align-y="112.5" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<text use-page-width="false" push-down="false" lock-width="false">
+				<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+					<f size="14">
+						<b>SPIN TUNE</b>
+					</f>
+				</p>
+			</text>
+		</region>
+		<region region-id="7798" left="0" top="123" width="6008.25" align-x="0" align-y="123" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="" height="656.25">
+			<area is-collapsed="true" name="" show-name="false" show-border="true" show-icon="true" show-timestamp="true" allow-expand="false" is-locked="false" timestamp="" top-lock-id="330" bottom-lock-id="6092">
+				<region region-id="1492" left="486" top="11.25" width="119.25" height="48.75" align-x="511.5" align-y="20.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<component hide-arguments="false" clsid-buddy="01350083-1122-11DB-9380-000D56C6051A" item-idref="3" disable-calc="false">
+						<inputs/>
+						<outputs>
+							<ml:id xml:space="preserve" xmlns:ml="http://schemas.mathsoft.com/math30">NU1</ml:id>
+						</outputs>
+					</component>
+				</region>
+				<region region-id="316" left="30" top="17.25" width="114.75" height="48.75" align-x="51" align-y="26.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<component hide-arguments="false" clsid-buddy="01350083-1122-11DB-9380-000D56C6051A" item-idref="4" disable-calc="false">
+						<inputs/>
+						<outputs>
+							<ml:id xml:space="preserve" xmlns:ml="http://schemas.mathsoft.com/math30">NU</ml:id>
+						</outputs>
+					</component>
+				</region>
+				<region region-id="1493" left="630" top="41.25" width="74.25" height="12.75" align-x="681.75" align-y="50.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">rows</ml:id>
+								<ml:id xml:space="preserve">NU1</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>84</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="1494" left="756" top="41.25" width="66" height="12.75" align-x="804" align-y="50.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">cols</ml:id>
+								<ml:id xml:space="preserve">NU1</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>9</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="317" left="174" top="47.25" width="69.75" height="12.75" align-x="221.25" align-y="56.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">rows</ml:id>
+								<ml:id xml:space="preserve">NU</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>85</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="318" left="300" top="47.25" width="61.5" height="12.75" align-x="343.5" align-y="56.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">cols</ml:id>
+								<ml:id xml:space="preserve">NU</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>9</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="319" left="30" top="95.25" width="87.75" height="12.75" align-x="39" align-y="104.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve">i</ml:id>
+							<ml:range>
+								<ml:real>0</ml:real>
+								<ml:apply>
+									<ml:minus/>
+									<ml:apply>
+										<ml:id xml:space="preserve">rows</ml:id>
+										<ml:id xml:space="preserve">NU</ml:id>
+									</ml:apply>
+									<ml:real>1</ml:real>
+								</ml:apply>
+							</ml:range>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="320" left="30" top="119.25" width="60" height="18" align-x="56.25" align-y="128.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">num</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>0</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="321" left="96" top="119.25" width="50.25" height="18" align-x="112.5" align-y="128.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define warning="WarnRedefinedBIUnit" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">A</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>1</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="322" left="162" top="119.25" width="57" height="18" align-x="185.25" align-y="128.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">ord</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>2</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="5787" left="390" top="137.25" width="51" height="18.75" align-x="407.25" align-y="146.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="6">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>8</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="323" left="90" top="143.25" width="51" height="18.75" align-x="107.25" align-y="152.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="1">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>3</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="324" left="150" top="143.25" width="51" height="18.75" align-x="167.25" align-y="152.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="2">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>4</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="325" left="210" top="143.25" width="51" height="18.75" align-x="227.25" align-y="152.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="3">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>5</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="326" left="270" top="143.25" width="51" height="18.75" align-x="287.25" align-y="152.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="4">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>6</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="327" left="330" top="143.25" width="51" height="18.75" align-x="347.25" align-y="152.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="5">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>7</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6295" left="474" top="143.25" width="92.25" height="12.75" align-x="483" align-y="152.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve">i</ml:id>
+							<ml:range>
+								<ml:real>0</ml:real>
+								<ml:apply>
+									<ml:minus/>
+									<ml:apply>
+										<ml:id xml:space="preserve">rows</ml:id>
+										<ml:id xml:space="preserve">NU1</ml:id>
+									</ml:apply>
+									<ml:real>1</ml:real>
+								</ml:apply>
+							</ml:range>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6296" left="474" top="161.25" width="64.5" height="18" align-x="500.25" align-y="170.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">num</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>0</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6297" left="552" top="161.25" width="53.25" height="18" align-x="567" align-y="170.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">B</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>1</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6298" left="618" top="161.25" width="65.25" height="18" align-x="645" align-y="170.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">ord1</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>2</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6439" left="18" top="172.5" width="46.5" height="12" align-x="26.25" align-y="182.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="true">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<b>spin-tune:</b>
+						</p>
+					</text>
+				</region>
+				<region region-id="6440" left="72" top="167.25" width="106.5" height="24" align-x="87.75" align-y="182.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="s">ν</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:indexer/>
+									<ml:id xml:space="preserve">A</ml:id>
+									<ml:real>0</ml:real>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>0.0001764781289121962</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6299" left="552" top="185.25" width="57" height="18.75" align-x="570.75" align-y="194.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="1">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>3</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6300" left="612" top="185.25" width="57" height="18.75" align-x="630.75" align-y="194.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="2">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>4</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6301" left="672" top="185.25" width="57" height="18.75" align-x="690.75" align-y="194.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="3">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>5</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6302" left="732" top="185.25" width="57" height="18.75" align-x="750.75" align-y="194.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="4">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>6</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6303" left="792" top="185.25" width="57" height="18.75" align-x="810.75" align-y="194.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="5">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>7</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6304" left="852" top="185.25" width="57" height="18.75" align-x="870.75" align-y="194.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="6">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve">NU1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>8</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6415" left="474" top="214.5" width="46.5" height="12" align-x="482.25" align-y="224.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<text use-page-width="false" push-down="false" lock-width="true">
+						<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
+							<b>spin-tune:</b>
+						</p>
+					</text>
+				</region>
+				<region region-id="6416" left="528" top="209.25" width="105" height="24" align-x="543.75" align-y="224.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define warning="WarnRedefinedUDScalar" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="s">ν</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:indexer/>
+									<ml:id xml:space="preserve">B</ml:id>
+									<ml:real>0</ml:real>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>0.0001764781288484437</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6076" left="30" top="225.75" width="363.75" height="43.5" align-x="131.25" align-y="248.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:function>
+								<ml:id xml:space="preserve">ν</ml:id>
+								<ml:boundVars>
+									<ml:id xml:space="preserve" subscript="1">α</ml:id>
+									<ml:id xml:space="preserve" subscript="2">α</ml:id>
+									<ml:id xml:space="preserve" subscript="3">α</ml:id>
+									<ml:id xml:space="preserve" subscript="4">α</ml:id>
+									<ml:id xml:space="preserve" subscript="5">α</ml:id>
+									<ml:id xml:space="preserve" subscript="6">α</ml:id>
+								</ml:boundVars>
+							</ml:function>
+							<ml:apply>
+								<ml:summation/>
+								<ml:lambda>
+									<ml:boundVars>
+										<ml:id xml:space="preserve">i</ml:id>
+									</ml:boundVars>
+									<ml:parens>
+										<ml:parens>
+											<ml:apply>
+												<ml:mult/>
+												<ml:apply>
+													<ml:mult/>
+													<ml:apply>
+														<ml:mult/>
+														<ml:apply>
+															<ml:mult/>
+															<ml:apply>
+																<ml:mult/>
+																<ml:apply>
+																	<ml:mult/>
+																	<ml:apply>
+																		<ml:indexer/>
+																		<ml:id xml:space="preserve">A</ml:id>
+																		<ml:id xml:space="preserve">i</ml:id>
+																	</ml:apply>
+																	<ml:apply>
+																		<ml:pow/>
+																		<ml:id xml:space="preserve" subscript="1">α</ml:id>
+																		<ml:apply>
+																			<ml:indexer/>
+																			<ml:id xml:space="preserve" subscript="1">a</ml:id>
+																			<ml:id xml:space="preserve">i</ml:id>
+																		</ml:apply>
+																	</ml:apply>
+																</ml:apply>
+																<ml:apply>
+																	<ml:pow/>
+																	<ml:id xml:space="preserve" subscript="2">α</ml:id>
+																	<ml:apply>
+																		<ml:indexer/>
+																		<ml:id xml:space="preserve" subscript="2">a</ml:id>
+																		<ml:id xml:space="preserve">i</ml:id>
+																	</ml:apply>
+																</ml:apply>
+															</ml:apply>
+															<ml:apply>
+																<ml:pow/>
+																<ml:id xml:space="preserve" subscript="3">α</ml:id>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="3">a</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+															</ml:apply>
+														</ml:apply>
+														<ml:apply>
+															<ml:pow/>
+															<ml:id xml:space="preserve" subscript="4">α</ml:id>
+															<ml:apply>
+																<ml:indexer/>
+																<ml:id xml:space="preserve" subscript="4">a</ml:id>
+																<ml:id xml:space="preserve">i</ml:id>
+															</ml:apply>
+														</ml:apply>
+													</ml:apply>
+													<ml:apply>
+														<ml:pow/>
+														<ml:id xml:space="preserve" subscript="5">α</ml:id>
+														<ml:apply>
+															<ml:indexer/>
+															<ml:id xml:space="preserve" subscript="5">a</ml:id>
+															<ml:id xml:space="preserve">i</ml:id>
+														</ml:apply>
+													</ml:apply>
+												</ml:apply>
+												<ml:apply>
+													<ml:pow/>
+													<ml:id xml:space="preserve" subscript="6">α</ml:id>
+													<ml:apply>
+														<ml:indexer/>
+														<ml:id xml:space="preserve" subscript="6">a</ml:id>
+														<ml:id xml:space="preserve">i</ml:id>
+													</ml:apply>
+												</ml:apply>
+											</ml:apply>
+										</ml:parens>
+									</ml:parens>
+								</ml:lambda>
+								<ml:bounds>
+									<ml:real>1</ml:real>
+									<ml:apply>
+										<ml:minus/>
+										<ml:apply>
+											<ml:id xml:space="preserve">rows</ml:id>
+											<ml:id xml:space="preserve">NU</ml:id>
+										</ml:apply>
+										<ml:real>1</ml:real>
+									</ml:apply>
+								</ml:bounds>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6077" left="30" top="279.75" width="375" height="43.5" align-x="135" align-y="302.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:function>
+								<ml:id xml:space="preserve" subscript="1">ν</ml:id>
+								<ml:boundVars>
+									<ml:id xml:space="preserve" subscript="1">α</ml:id>
+									<ml:id xml:space="preserve" subscript="2">α</ml:id>
+									<ml:id xml:space="preserve" subscript="3">α</ml:id>
+									<ml:id xml:space="preserve" subscript="4">α</ml:id>
+									<ml:id xml:space="preserve" subscript="5">α</ml:id>
+									<ml:id xml:space="preserve" subscript="6">α</ml:id>
+								</ml:boundVars>
+							</ml:function>
+							<ml:apply>
+								<ml:summation/>
+								<ml:lambda>
+									<ml:boundVars>
+										<ml:id xml:space="preserve">i</ml:id>
+									</ml:boundVars>
+									<ml:parens>
+										<ml:parens>
+											<ml:apply>
+												<ml:mult/>
+												<ml:apply>
+													<ml:mult/>
+													<ml:apply>
+														<ml:mult/>
+														<ml:apply>
+															<ml:mult/>
+															<ml:apply>
+																<ml:mult/>
+																<ml:apply>
+																	<ml:mult/>
+																	<ml:apply>
+																		<ml:indexer/>
+																		<ml:id xml:space="preserve">B</ml:id>
+																		<ml:id xml:space="preserve">i</ml:id>
+																	</ml:apply>
+																	<ml:apply>
+																		<ml:pow/>
+																		<ml:id xml:space="preserve" subscript="1">α</ml:id>
+																		<ml:apply>
+																			<ml:indexer/>
+																			<ml:id xml:space="preserve" subscript="1">b</ml:id>
+																			<ml:id xml:space="preserve">i</ml:id>
+																		</ml:apply>
+																	</ml:apply>
+																</ml:apply>
+																<ml:apply>
+																	<ml:pow/>
+																	<ml:id xml:space="preserve" subscript="2">α</ml:id>
+																	<ml:apply>
+																		<ml:indexer/>
+																		<ml:id xml:space="preserve" subscript="2">b</ml:id>
+																		<ml:id xml:space="preserve">i</ml:id>
+																	</ml:apply>
+																</ml:apply>
+															</ml:apply>
+															<ml:apply>
+																<ml:pow/>
+																<ml:id xml:space="preserve" subscript="3">α</ml:id>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="3">b</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+															</ml:apply>
+														</ml:apply>
+														<ml:apply>
+															<ml:pow/>
+															<ml:id xml:space="preserve" subscript="4">α</ml:id>
+															<ml:apply>
+																<ml:indexer/>
+																<ml:id xml:space="preserve" subscript="4">b</ml:id>
+																<ml:id xml:space="preserve">i</ml:id>
+															</ml:apply>
+														</ml:apply>
+													</ml:apply>
+													<ml:apply>
+														<ml:pow/>
+														<ml:id xml:space="preserve" subscript="5">α</ml:id>
+														<ml:apply>
+															<ml:indexer/>
+															<ml:id xml:space="preserve" subscript="5">b</ml:id>
+															<ml:id xml:space="preserve">i</ml:id>
+														</ml:apply>
+													</ml:apply>
+												</ml:apply>
+												<ml:apply>
+													<ml:pow/>
+													<ml:id xml:space="preserve" subscript="6">α</ml:id>
+													<ml:apply>
+														<ml:indexer/>
+														<ml:id xml:space="preserve" subscript="6">b</ml:id>
+														<ml:id xml:space="preserve">i</ml:id>
+													</ml:apply>
+												</ml:apply>
+											</ml:apply>
+										</ml:parens>
+									</ml:parens>
+								</ml:lambda>
+								<ml:bounds>
+									<ml:real>1</ml:real>
+									<ml:apply>
+										<ml:minus/>
+										<ml:apply>
+											<ml:id xml:space="preserve">rows</ml:id>
+											<ml:id xml:space="preserve">NU1</ml:id>
+										</ml:apply>
+										<ml:real>1</ml:real>
+									</ml:apply>
+								</ml:bounds>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="6078" left="18" top="338.25" width="251.25" height="138.75" align-x="18" align-y="338.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<plot disable-calc="false" item-idref="5"/>
+				</region>
+				<region region-id="6079" left="258" top="338.25" width="254.25" height="138.75" align-x="258" align-y="338.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<plot disable-calc="false" item-idref="6"/>
+				</region>
+				<region region-id="6080" left="504" top="338.25" width="256.5" height="138.75" align-x="504" align-y="338.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<plot disable-calc="false" item-idref="7"/>
+				</region>
+				<region region-id="6081" left="6" top="494.25" width="258" height="138.75" align-x="6" align-y="494.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<plot disable-calc="false" item-idref="8"/>
+				</region>
+				<region region-id="6082" left="270" top="494.25" width="255" height="138.75" align-x="270" align-y="494.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<plot disable-calc="false" item-idref="9"/>
+				</region>
+				<region region-id="6083" left="516" top="494.25" width="252" height="138.75" align-x="516" align-y="494.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<plot disable-calc="false" item-idref="10"/>
+				</region>
+			</area>
+			<rendering item-idref="11"/>
+		</region>
+		<region region-id="7030" left="18" top="146.25" width="36.75" height="15.75" align-x="18" align-y="159" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<text use-page-width="false" push-down="false" lock-width="true">
+				<p style="Обычный" margin-left="inherit" margin-right="inherit" text-indent="0" text-align="inherit" list-style-type="none" tabs="inherit">
+					<f size="14">
+						<b>TUNE</b>
+					</f>
+				</p>
+			</text>
+		</region>
+		<region region-id="7799" left="0" top="165" width="6008.25" align-x="0" align-y="165" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="" height="908.25">
+			<area is-collapsed="true" name="" show-name="false" show-border="true" show-icon="true" show-timestamp="true" allow-expand="false" is-locked="false" timestamp="" top-lock-id="599" bottom-lock-id="4361">
+				<region region-id="547" left="30" top="17.25" width="129" height="48.75" align-x="65.25" align-y="26.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<component hide-arguments="false" clsid-buddy="01350083-1122-11DB-9380-000D56C6051A" item-idref="12" disable-calc="false">
+						<inputs/>
+						<outputs>
+							<ml:id xml:space="preserve" subscript="x" xmlns:ml="http://schemas.mathsoft.com/math30">TUNE</ml:id>
+						</outputs>
+					</component>
+				</region>
+				<region region-id="3971" left="480" top="23.25" width="133.5" height="48.75" align-x="519.75" align-y="32.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<component hide-arguments="false" clsid-buddy="01350083-1122-11DB-9380-000D56C6051A" item-idref="13" disable-calc="false">
+						<inputs/>
+						<outputs>
+							<ml:id xml:space="preserve" subscript="x" xmlns:ml="http://schemas.mathsoft.com/math30">TUNE1</ml:id>
+						</outputs>
+					</component>
+				</region>
+				<region region-id="548" left="174" top="47.25" width="79.5" height="15" align-x="235.5" align-y="56.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">rows</ml:id>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>4</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="549" left="300" top="47.25" width="75.75" height="15" align-x="357.75" align-y="56.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">cols</ml:id>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>8</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="3972" left="624" top="53.25" width="84" height="15" align-x="690" align-y="62.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">rows</ml:id>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>4</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="3973" left="750" top="53.25" width="80.25" height="15" align-x="812.25" align-y="62.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">cols</ml:id>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>8</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="4109" left="30" top="65.25" width="129" height="48.75" align-x="65.25" align-y="74.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<component hide-arguments="false" clsid-buddy="01350083-1122-11DB-9380-000D56C6051A" item-idref="14" disable-calc="false">
+						<inputs/>
+						<outputs>
+							<ml:id xml:space="preserve" subscript="y" xmlns:ml="http://schemas.mathsoft.com/math30">TUNE</ml:id>
+						</outputs>
+					</component>
+				</region>
+				<region region-id="3997" left="480" top="71.25" width="133.5" height="48.75" align-x="519.75" align-y="80.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<component hide-arguments="false" clsid-buddy="01350083-1122-11DB-9380-000D56C6051A" item-idref="15" disable-calc="false">
+						<inputs/>
+						<outputs>
+							<ml:id xml:space="preserve" subscript="y" xmlns:ml="http://schemas.mathsoft.com/math30">TUNE1</ml:id>
+						</outputs>
+					</component>
+				</region>
+				<region region-id="4110" left="174" top="95.25" width="79.5" height="15" align-x="235.5" align-y="104.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">rows</ml:id>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>4</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="4111" left="300" top="95.25" width="75.75" height="15" align-x="357.75" align-y="104.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">cols</ml:id>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>8</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="3998" left="624" top="101.25" width="84" height="15" align-x="690" align-y="110.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">rows</ml:id>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>4</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="3999" left="750" top="101.25" width="80.25" height="15" align-x="812.25" align-y="110.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:id xml:space="preserve">cols</ml:id>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+							</ml:apply>
+							<result xmlns="http://schemas.mathsoft.com/math30">
+								<ml:real>8</ml:real>
+							</result>
+						</ml:eval>
+					</math>
+				</region>
+				<region region-id="4320" left="24" top="125.25" width="102" height="15" align-x="33" align-y="134.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve">i</ml:id>
+							<ml:range>
+								<ml:real>0</ml:real>
+								<ml:apply>
+									<ml:minus/>
+									<ml:apply>
+										<ml:id xml:space="preserve">rows</ml:id>
+										<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+									</ml:apply>
+									<ml:real>1</ml:real>
+								</ml:apply>
+							</ml:range>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4017" left="480" top="131.25" width="106.5" height="15" align-x="489" align-y="140.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve">i</ml:id>
+							<ml:range>
+								<ml:real>0</ml:real>
+								<ml:apply>
+									<ml:minus/>
+									<ml:apply>
+										<ml:id xml:space="preserve">rows</ml:id>
+										<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+									</ml:apply>
+									<ml:real>1</ml:real>
+								</ml:apply>
+							</ml:range>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4321" left="36" top="149.25" width="76.5" height="18.75" align-x="66" align-y="158.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">num</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>0</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4322" left="126" top="149.25" width="66.75" height="18.75" align-x="146.25" align-y="158.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">A</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>1</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4323" left="204" top="149.25" width="72.75" height="18.75" align-x="230.25" align-y="158.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">ord</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>2</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4018" left="480" top="149.25" width="85.5" height="18.75" align-x="514.5" align-y="158.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">num1</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>0</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4019" left="570" top="149.25" width="69.75" height="18.75" align-x="588.75" align-y="158.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">B</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>1</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4020" left="654" top="149.25" width="81.75" height="18.75" align-x="684.75" align-y="158.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">ord1</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>2</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4021" left="570" top="167.25" width="73.5" height="18.75" align-x="592.5" align-y="176.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x1">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>3</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4022" left="654" top="167.25" width="73.5" height="18.75" align-x="676.5" align-y="176.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x2">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>4</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4038" left="738" top="167.25" width="73.5" height="18.75" align-x="760.5" align-y="176.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x3">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>5</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4324" left="126" top="179.25" width="67.5" height="18.75" align-x="147" align-y="188.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x1">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>3</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4325" left="204" top="179.25" width="67.5" height="18.75" align-x="225" align-y="188.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x2">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>4</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4326" left="282" top="179.25" width="67.5" height="18.75" align-x="303" align-y="188.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x3">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>5</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4024" left="570" top="185.25" width="73.5" height="18.75" align-x="592.5" align-y="194.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x4">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>6</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4025" left="654" top="185.25" width="73.5" height="18.75" align-x="676.5" align-y="194.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x5">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>7</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4327" left="126" top="197.25" width="67.5" height="18.75" align-x="147" align-y="206.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x4">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>6</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4328" left="204" top="197.25" width="67.5" height="18.75" align-x="225" align-y="206.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x5">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>7</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4329" left="36" top="221.25" width="76.5" height="18.75" align-x="66" align-y="230.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">num</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>0</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4330" left="126" top="221.25" width="66.75" height="18.75" align-x="146.25" align-y="230.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">A</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>1</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4331" left="204" top="221.25" width="72.75" height="18.75" align-x="230.25" align-y="230.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">ord</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>2</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4026" left="480" top="221.25" width="85.5" height="18.75" align-x="514.5" align-y="230.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">num1</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>0</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4027" left="570" top="221.25" width="69.75" height="18.75" align-x="588.75" align-y="230.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">B</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>1</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4028" left="654" top="221.25" width="81.75" height="18.75" align-x="684.75" align-y="230.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">ord1</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>2</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4029" left="570" top="239.25" width="73.5" height="18.75" align-x="592.5" align-y="248.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y1">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>3</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4030" left="654" top="239.25" width="73.5" height="18.75" align-x="676.5" align-y="248.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y2">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>4</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4039" left="738" top="239.25" width="73.5" height="18.75" align-x="760.5" align-y="248.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y3">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>5</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4332" left="126" top="251.25" width="67.5" height="18.75" align-x="147" align-y="260.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y1">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>3</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4333" left="204" top="251.25" width="67.5" height="18.75" align-x="225" align-y="260.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y2">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>4</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4334" left="282" top="251.25" width="67.5" height="18.75" align-x="303" align-y="260.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y3">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>5</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4032" left="570" top="257.25" width="73.5" height="18.75" align-x="592.5" align-y="266.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y4">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>6</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4033" left="654" top="257.25" width="73.5" height="18.75" align-x="676.5" align-y="266.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y5">b</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE1</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>7</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4335" left="126" top="269.25" width="67.5" height="18.75" align-x="147" align-y="278.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y4">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>6</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4336" left="204" top="269.25" width="67.5" height="18.75" align-x="225" align-y="278.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y5">a</ml:id>
+								<ml:id xml:space="preserve">i</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:indexer/>
+								<ml:id xml:space="preserve" subscript="y">TUNE</ml:id>
+								<ml:sequence>
+									<ml:id xml:space="preserve">i</ml:id>
+									<ml:real>7</ml:real>
+								</ml:sequence>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4557" left="36" top="329.25" width="59.25" height="12.75" align-x="48.75" align-y="338.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve">γ</ml:id>
+							<ml:real font="0">1.1279235</ml:real>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4547" left="36" top="355.5" width="362.25" height="45.75" align-x="126.75" align-y="380.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:function>
+								<ml:id xml:space="preserve" subscript="x">ν</ml:id>
+								<ml:boundVars>
+									<ml:id xml:space="preserve" subscript="1">α</ml:id>
+									<ml:id xml:space="preserve" subscript="2">α</ml:id>
+									<ml:id xml:space="preserve" subscript="3">α</ml:id>
+									<ml:id xml:space="preserve" subscript="4">α</ml:id>
+									<ml:id xml:space="preserve" subscript="5">α</ml:id>
+								</ml:boundVars>
+							</ml:function>
+							<ml:apply>
+								<ml:summation/>
+								<ml:lambda>
+									<ml:boundVars>
+										<ml:id xml:space="preserve">i</ml:id>
+									</ml:boundVars>
+									<ml:parens>
+										<ml:parens>
+											<ml:apply>
+												<ml:mult/>
+												<ml:apply>
+													<ml:mult/>
+													<ml:apply>
+														<ml:mult/>
+														<ml:apply>
+															<ml:mult/>
+															<ml:apply>
+																<ml:mult/>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="x">A</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+																<ml:apply>
+																	<ml:pow/>
+																	<ml:id xml:space="preserve" subscript="1">α</ml:id>
+																	<ml:apply>
+																		<ml:indexer/>
+																		<ml:id xml:space="preserve" subscript="x1">a</ml:id>
+																		<ml:id xml:space="preserve">i</ml:id>
+																	</ml:apply>
+																</ml:apply>
+															</ml:apply>
+															<ml:apply>
+																<ml:pow/>
+																<ml:id xml:space="preserve" subscript="2">α</ml:id>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="x2">a</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+															</ml:apply>
+														</ml:apply>
+														<ml:apply>
+															<ml:pow/>
+															<ml:id xml:space="preserve" subscript="3">α</ml:id>
+															<ml:apply>
+																<ml:indexer/>
+																<ml:id xml:space="preserve" subscript="x3">a</ml:id>
+																<ml:id xml:space="preserve">i</ml:id>
+															</ml:apply>
+														</ml:apply>
+													</ml:apply>
+													<ml:apply>
+														<ml:pow/>
+														<ml:id xml:space="preserve" subscript="4">α</ml:id>
+														<ml:apply>
+															<ml:indexer/>
+															<ml:id xml:space="preserve" subscript="x4">a</ml:id>
+															<ml:id xml:space="preserve">i</ml:id>
+														</ml:apply>
+													</ml:apply>
+												</ml:apply>
+												<ml:apply>
+													<ml:pow/>
+													<ml:id xml:space="preserve" subscript="5">α</ml:id>
+													<ml:apply>
+														<ml:indexer/>
+														<ml:id xml:space="preserve" subscript="x5">a</ml:id>
+														<ml:id xml:space="preserve">i</ml:id>
+													</ml:apply>
+												</ml:apply>
+											</ml:apply>
+										</ml:parens>
+									</ml:parens>
+								</ml:lambda>
+								<ml:bounds>
+									<ml:real>1</ml:real>
+									<ml:apply>
+										<ml:minus/>
+										<ml:apply>
+											<ml:id xml:space="preserve">rows</ml:id>
+											<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+										</ml:apply>
+										<ml:real>1</ml:real>
+									</ml:apply>
+								</ml:bounds>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4568" left="480" top="355.5" width="372.75" height="45.75" align-x="574.5" align-y="380.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:function>
+								<ml:id xml:space="preserve" subscript="x1">ν</ml:id>
+								<ml:boundVars>
+									<ml:id xml:space="preserve" subscript="1">α</ml:id>
+									<ml:id xml:space="preserve" subscript="2">α</ml:id>
+									<ml:id xml:space="preserve" subscript="3">α</ml:id>
+									<ml:id xml:space="preserve" subscript="4">α</ml:id>
+									<ml:id xml:space="preserve" subscript="5">α</ml:id>
+								</ml:boundVars>
+							</ml:function>
+							<ml:apply>
+								<ml:summation/>
+								<ml:lambda>
+									<ml:boundVars>
+										<ml:id xml:space="preserve">i</ml:id>
+									</ml:boundVars>
+									<ml:parens>
+										<ml:parens>
+											<ml:apply>
+												<ml:mult/>
+												<ml:apply>
+													<ml:mult/>
+													<ml:apply>
+														<ml:mult/>
+														<ml:apply>
+															<ml:mult/>
+															<ml:apply>
+																<ml:mult/>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="x">B</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+																<ml:apply>
+																	<ml:pow/>
+																	<ml:id xml:space="preserve" subscript="1">α</ml:id>
+																	<ml:apply>
+																		<ml:indexer/>
+																		<ml:id xml:space="preserve" subscript="x1">b</ml:id>
+																		<ml:id xml:space="preserve">i</ml:id>
+																	</ml:apply>
+																</ml:apply>
+															</ml:apply>
+															<ml:apply>
+																<ml:pow/>
+																<ml:id xml:space="preserve" subscript="2">α</ml:id>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="x2">b</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+															</ml:apply>
+														</ml:apply>
+														<ml:apply>
+															<ml:pow/>
+															<ml:id xml:space="preserve" subscript="3">α</ml:id>
+															<ml:apply>
+																<ml:indexer/>
+																<ml:id xml:space="preserve" subscript="x3">b</ml:id>
+																<ml:id xml:space="preserve">i</ml:id>
+															</ml:apply>
+														</ml:apply>
+													</ml:apply>
+													<ml:apply>
+														<ml:pow/>
+														<ml:id xml:space="preserve" subscript="4">α</ml:id>
+														<ml:apply>
+															<ml:indexer/>
+															<ml:id xml:space="preserve" subscript="x4">b</ml:id>
+															<ml:id xml:space="preserve">i</ml:id>
+														</ml:apply>
+													</ml:apply>
+												</ml:apply>
+												<ml:apply>
+													<ml:pow/>
+													<ml:id xml:space="preserve" subscript="5">α</ml:id>
+													<ml:apply>
+														<ml:indexer/>
+														<ml:id xml:space="preserve" subscript="x5">b</ml:id>
+														<ml:id xml:space="preserve">i</ml:id>
+													</ml:apply>
+												</ml:apply>
+											</ml:apply>
+										</ml:parens>
+									</ml:parens>
+								</ml:lambda>
+								<ml:bounds>
+									<ml:real>1</ml:real>
+									<ml:apply>
+										<ml:minus/>
+										<ml:apply>
+											<ml:id xml:space="preserve">rows</ml:id>
+											<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+										</ml:apply>
+										<ml:real>1</ml:real>
+									</ml:apply>
+								</ml:bounds>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4550" left="474" top="409.5" width="372.75" height="45.75" align-x="568.5" align-y="434.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:function>
+								<ml:id xml:space="preserve" subscript="y1">ν</ml:id>
+								<ml:boundVars>
+									<ml:id xml:space="preserve" subscript="1">α</ml:id>
+									<ml:id xml:space="preserve" subscript="2">α</ml:id>
+									<ml:id xml:space="preserve" subscript="3">α</ml:id>
+									<ml:id xml:space="preserve" subscript="4">α</ml:id>
+									<ml:id xml:space="preserve" subscript="5">α</ml:id>
+								</ml:boundVars>
+							</ml:function>
+							<ml:apply>
+								<ml:summation/>
+								<ml:lambda>
+									<ml:boundVars>
+										<ml:id xml:space="preserve">i</ml:id>
+									</ml:boundVars>
+									<ml:parens>
+										<ml:parens>
+											<ml:apply>
+												<ml:mult/>
+												<ml:apply>
+													<ml:mult/>
+													<ml:apply>
+														<ml:mult/>
+														<ml:apply>
+															<ml:mult/>
+															<ml:apply>
+																<ml:mult/>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="y">B</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+																<ml:apply>
+																	<ml:pow/>
+																	<ml:id xml:space="preserve" subscript="1">α</ml:id>
+																	<ml:apply>
+																		<ml:indexer/>
+																		<ml:id xml:space="preserve" subscript="y1">b</ml:id>
+																		<ml:id xml:space="preserve">i</ml:id>
+																	</ml:apply>
+																</ml:apply>
+															</ml:apply>
+															<ml:apply>
+																<ml:pow/>
+																<ml:id xml:space="preserve" subscript="2">α</ml:id>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="y2">b</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+															</ml:apply>
+														</ml:apply>
+														<ml:apply>
+															<ml:pow/>
+															<ml:id xml:space="preserve" subscript="3">α</ml:id>
+															<ml:apply>
+																<ml:indexer/>
+																<ml:id xml:space="preserve" subscript="y3">b</ml:id>
+																<ml:id xml:space="preserve">i</ml:id>
+															</ml:apply>
+														</ml:apply>
+													</ml:apply>
+													<ml:apply>
+														<ml:pow/>
+														<ml:id xml:space="preserve" subscript="4">α</ml:id>
+														<ml:apply>
+															<ml:indexer/>
+															<ml:id xml:space="preserve" subscript="y4">b</ml:id>
+															<ml:id xml:space="preserve">i</ml:id>
+														</ml:apply>
+													</ml:apply>
+												</ml:apply>
+												<ml:apply>
+													<ml:pow/>
+													<ml:id xml:space="preserve" subscript="5">α</ml:id>
+													<ml:apply>
+														<ml:indexer/>
+														<ml:id xml:space="preserve" subscript="y5">b</ml:id>
+														<ml:id xml:space="preserve">i</ml:id>
+													</ml:apply>
+												</ml:apply>
+											</ml:apply>
+										</ml:parens>
+									</ml:parens>
+								</ml:lambda>
+								<ml:bounds>
+									<ml:real>1</ml:real>
+									<ml:apply>
+										<ml:minus/>
+										<ml:apply>
+											<ml:id xml:space="preserve">rows</ml:id>
+											<ml:id xml:space="preserve" subscript="x">TUNE1</ml:id>
+										</ml:apply>
+										<ml:real>1</ml:real>
+									</ml:apply>
+								</ml:bounds>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4559" left="30" top="415.5" width="362.25" height="45.75" align-x="120.75" align-y="440.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:function>
+								<ml:id xml:space="preserve" subscript="y">ν</ml:id>
+								<ml:boundVars>
+									<ml:id xml:space="preserve" subscript="1">α</ml:id>
+									<ml:id xml:space="preserve" subscript="2">α</ml:id>
+									<ml:id xml:space="preserve" subscript="3">α</ml:id>
+									<ml:id xml:space="preserve" subscript="4">α</ml:id>
+									<ml:id xml:space="preserve" subscript="5">α</ml:id>
+								</ml:boundVars>
+							</ml:function>
+							<ml:apply>
+								<ml:summation/>
+								<ml:lambda>
+									<ml:boundVars>
+										<ml:id xml:space="preserve">i</ml:id>
+									</ml:boundVars>
+									<ml:parens>
+										<ml:parens>
+											<ml:apply>
+												<ml:mult/>
+												<ml:apply>
+													<ml:mult/>
+													<ml:apply>
+														<ml:mult/>
+														<ml:apply>
+															<ml:mult/>
+															<ml:apply>
+																<ml:mult/>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="y">A</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+																<ml:apply>
+																	<ml:pow/>
+																	<ml:id xml:space="preserve" subscript="1">α</ml:id>
+																	<ml:apply>
+																		<ml:indexer/>
+																		<ml:id xml:space="preserve" subscript="y1">a</ml:id>
+																		<ml:id xml:space="preserve">i</ml:id>
+																	</ml:apply>
+																</ml:apply>
+															</ml:apply>
+															<ml:apply>
+																<ml:pow/>
+																<ml:id xml:space="preserve" subscript="2">α</ml:id>
+																<ml:apply>
+																	<ml:indexer/>
+																	<ml:id xml:space="preserve" subscript="y2">a</ml:id>
+																	<ml:id xml:space="preserve">i</ml:id>
+																</ml:apply>
+															</ml:apply>
+														</ml:apply>
+														<ml:apply>
+															<ml:pow/>
+															<ml:id xml:space="preserve" subscript="3">α</ml:id>
+															<ml:apply>
+																<ml:indexer/>
+																<ml:id xml:space="preserve" subscript="y3">a</ml:id>
+																<ml:id xml:space="preserve">i</ml:id>
+															</ml:apply>
+														</ml:apply>
+													</ml:apply>
+													<ml:apply>
+														<ml:pow/>
+														<ml:id xml:space="preserve" subscript="4">α</ml:id>
+														<ml:apply>
+															<ml:indexer/>
+															<ml:id xml:space="preserve" subscript="y4">a</ml:id>
+															<ml:id xml:space="preserve">i</ml:id>
+														</ml:apply>
+													</ml:apply>
+												</ml:apply>
+												<ml:apply>
+													<ml:pow/>
+													<ml:id xml:space="preserve" subscript="5">α</ml:id>
+													<ml:apply>
+														<ml:indexer/>
+														<ml:id xml:space="preserve" subscript="y5">a</ml:id>
+														<ml:id xml:space="preserve">i</ml:id>
+													</ml:apply>
+												</ml:apply>
+											</ml:apply>
+										</ml:parens>
+									</ml:parens>
+								</ml:lambda>
+								<ml:bounds>
+									<ml:real>1</ml:real>
+									<ml:apply>
+										<ml:minus/>
+										<ml:apply>
+											<ml:id xml:space="preserve">rows</ml:id>
+											<ml:id xml:space="preserve" subscript="x">TUNE</ml:id>
+										</ml:apply>
+										<ml:real>1</ml:real>
+									</ml:apply>
+								</ml:bounds>
+							</ml:apply>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4551" left="36" top="472.5" width="183.75" height="27.75" align-x="81" align-y="488.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x">CHROM</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:apply>
+										<ml:indexer/>
+										<ml:id xml:space="preserve" subscript="x">A</ml:id>
+										<ml:real>1</ml:real>
+									</ml:apply>
+									<ml:parens>
+										<ml:apply>
+											<ml:plus/>
+											<ml:real>1</ml:real>
+											<ml:apply>
+												<ml:div/>
+												<ml:real>1</ml:real>
+												<ml:id xml:space="preserve">γ</ml:id>
+											</ml:apply>
+										</ml:apply>
+									</ml:parens>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>1.8718862169195072E-05</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4552" left="492" top="478.5" width="145.5" height="27.75" align-x="541.5" align-y="494.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="x">CHROM1</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:apply>
+										<ml:indexer/>
+										<ml:id xml:space="preserve" subscript="x">B</ml:id>
+										<ml:real>1</ml:real>
+									</ml:apply>
+									<ml:parens>
+										<ml:apply>
+											<ml:plus/>
+											<ml:real>1</ml:real>
+											<ml:apply>
+												<ml:div/>
+												<ml:real>1</ml:real>
+												<ml:id xml:space="preserve">γ</ml:id>
+											</ml:apply>
+										</ml:apply>
+									</ml:parens>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>3.7002737799431054</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4553" left="36" top="502.5" width="189" height="27.75" align-x="81" align-y="518.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="y">CHROM</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:apply>
+										<ml:indexer/>
+										<ml:id xml:space="preserve" subscript="y">A</ml:id>
+										<ml:real>1</ml:real>
+									</ml:apply>
+									<ml:parens>
+										<ml:apply>
+											<ml:plus/>
+											<ml:real>1</ml:real>
+											<ml:apply>
+												<ml:div/>
+												<ml:real>1</ml:real>
+												<ml:id xml:space="preserve">γ</ml:id>
+											</ml:apply>
+										</ml:apply>
+									</ml:parens>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>-1.945530703317725E-05</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="4554" left="492" top="508.5" width="164.25" height="27.75" align-x="541.5" align-y="524.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<math optimize="false" disable-calc="false">
+						<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+							<ml:id xml:space="preserve" subscript="y">CHROM1</ml:id>
+							<ml:eval placeholderMultiplicationStyle="default">
+								<ml:apply>
+									<ml:mult/>
+									<ml:apply>
+										<ml:indexer/>
+										<ml:id xml:space="preserve" subscript="y">B</ml:id>
+										<ml:real>1</ml:real>
+									</ml:apply>
+									<ml:parens>
+										<ml:apply>
+											<ml:plus/>
+											<ml:real>1</ml:real>
+											<ml:apply>
+												<ml:div/>
+												<ml:real>1</ml:real>
+												<ml:id xml:space="preserve">γ</ml:id>
+											</ml:apply>
+										</ml:apply>
+									</ml:parens>
+								</ml:apply>
+								<result xmlns="http://schemas.mathsoft.com/math30">
+									<ml:real>-15.695480538612891</ml:real>
+								</result>
+							</ml:eval>
+						</ml:define>
+					</math>
+				</region>
+				<region region-id="7753" left="18" top="584.25" width="247.5" height="138.75" align-x="18" align-y="584.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<plot disable-calc="false" item-idref="16"/>
+				</region>
+				<region region-id="7754" left="270" top="584.25" width="247.5" height="138.75" align-x="270" align-y="584.25" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+					<plot disable-calc="false" item-idref="17"/>
+				</region>
+			</area>
+			<rendering item-idref="18"/>
+		</region>
+	</regions>
+	<binaryContent>
+		<item item-id="1" content-encoding="gzip">H4sIAAAAAAAA/4yQwW7CMAyG7aZbS9etu3AhSOUZeIIdENph2iT2ACiUAkVUTF2ROPLm3W8n
+u+w0R3b+Ot/vRsmJiJGfyEy1QS228/W+c1+H9e7cta5PSGKMHGl74XqnLZog07b62Bzrqvet
+ld8omqGYMF+8hWr5yty1+V7q6FjZKfKNA+tjwCKe/r/7OzzpO1fV84XRIxvAkp+JLQ+imG0E
+U8kRWwNryYZtPEgnBkMDxB2Y2wuO7oURV6IMRCqMwCOZI/YMjNofwKg9B6P2R/0XxJMyEIUw
+AvvrFu+Xtu6ayp38g6R67VfklhosE14uC6/5J3IpPwAAAP//AwARvY6sxgEAAA==</item>
+		<item item-id="2">iVBORw0KGgoAAAANSUhEUgAAH0sAAAAMCAYAAAAXHXAzAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH1SURBVHhe7d1BCsNADARBPX1/vk4O
+AoFnwfExVEGD0CemPvbTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFo9HUE3lg4A
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMxtIBAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAACAV25j6adRdGPpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwBTH0tMw
+urF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYDqOpac/AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAQKs0ij5rfa+1JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
+JEmSJEmSJEmSJEmSJEmSJP1pv6g5iP7VI+npDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAANAqjaKnYXRj6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAUx9ITY+kAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAdBtLPzGWDgAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAEzG0gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAX9r4AjWeEBz4Z
+ahkAAAAASUVORK5CYII=</item>
+		<item item-id="3" content-encoding="gzip">H4sIAAAAAAAA/+xWPW8TQRB9d/6ITezY50AMDkWUJp1FjlAQRQjHMgIJcORAEBIiwvYpGMW+
+2L5I0FmioecHIFqEkGgoETS0UFAg0cAPoKCkwMfb3fPlSAQiCQ3EY83t7ey+ebOzt+tJANCo
+y9RD8l3nM+x0LGsSQkxqrFkrV+9YNUdaUKEuEHQ2ZD56DfTC5s2vbCJmckOOR73+iKmngHqU
+/kKXcRWz9KQQ0bgpHcQEqSCMF1eWS+0LjtXUpIuEcBM0JKmjcmrMalestYbdisiBOYGu2zVl
+C0vbaX8h0e7tjUX7ror7InWEhoq/kkvUB5zHMDETApbYPmFfLR14T440A9ChJ2SaMj5TwXE6
+jeqmY6n45qG8bElyfvqn/tggPSmVnrG0Sk8qkB5DpSeVUekxRHrGTeG4Z0isNvB2WC4vwbQV
+7WbVFolSA2mxSJq3LCKsBe7tCyKO871NPUl1XTGbU8vrVnG9YbUciSHFuM8kn8S+e2t8evw8
+9xnb5AxC6LtxRAM2LRhnGjJQ0e+7glGJO5R/Sr5T+wEdysGSCmz+HEyhhBbbDu5tvwp+KxOI
++Gde3AX3cUqbNj4aD3tIrryJ5IJzT6x9eTrz7YPG+xivPFuR7ILXks/urriFZKBrwfX8Ke7l
+rpl+LXvh/5uyH36xZ+IeH579gykRFmBCn40CJVV4sSxg+SZ18IXA+0oEQvPasDfGv425PPK4
+wbNcZrl5nW9XeI9s8kxPYZH3yRJu8WR3ae/SXmNbp8WRiPMsOsss11ZxDedoEfXS6g573kOQ
+a6B6gRXsXjAF1mOz+zxx/5kcUZWo2nENEzvL+6xX3h9V9WtWfCTHFCqrULnAyGRwhP0fAAAA
+//8DAD3DMmOMDAAA</item>
+		<item item-id="4" content-encoding="gzip">H4sIAAAAAAAA/+xWT2sTQRR/u8luE5s02VQbTS9SBb0Y6GoPliKmMYJQTUmwKBTbJhk00mSb
+ZAW9BfwIfgDxLqLfQC9e9SjoQT+AB48ezPp7M5t1DSi29aLNb/nNn/fmzZt5uzP7EkSkgVXw
+kGzrKKNuV4hZYthgrFUv1+6KuislVAGXYHQxYj9+RdSP2re+oDLs5I7Um35/wtZTRA2TKKJf
+o+uYR40347Y0j7FLdhcvrlVLnSuuaGlyggRPEhYkwUk5NCY6FXG76bQNqTjH1g2nrmRRKTsf
+bMPs3dlZdu6rVa+AExBUgn1cBU+DWRDrohvgJfCEUss9WqBOekIGKRN4Krhut1m75wq1vkUw
+RWEkF+d+6k8Ng5NSwZlKq+CkguBYKjipjAqOxcGZtnnaviUtteFch+XmEgha0WnVHA6TUqR5
+ixD/kPCilvBeV1GfBDvgWdDzeDSGlrdFcbsp2q60gYvpwJMsYfv2jfXxyYvcJxrBBYrQwIuT
+GZJp4XWmSS6U+wOPPSp4Y/xT+AYOQhzjYKFCDh6XjlOJ2qi79GD0KvgtZsgIzjzfBQ9pQZuz
+3luP+pRce23kwmM3P3x+eurrOy2C9ktfVoR39itk2duVb0aGdC28nz+1e75rT7/GXvz/TezH
+P78zvsfHZ/9gwkD6xXw2SVRSaRfSAiRvksMvhPyvhC00v476Ovw2zuQpT+s4y2WkmjfRWka5
+SgX0quj1cKvUUTdoC2d8nS4jI1rBs4EMbwF9zpA2RqR5fzRmH1IvIF/di42q58kLWvP7PHH/
+GY6oTFS9cY1mRlP7rJ/aH1XZa5Y/kWPKJqtsciHNbFiD/ncAAAD//wMAg3Zg8oYMAAA=</item>
+		<item item-id="5" content-encoding="gzip">H4sIAAAAAAAA/4xUS1MTQRDu2U2yySYhEHlvJBB8IoRkCZhEkUl4KqhV+AOokKwQSwyGxeLg
+IcUP8ObZiz/B8oZVFjfL8i/Fnu5lQU7OVqe7v/n6sT2TjQGAQHmFYpKt42/Yeb/t7DVb74Kg
+VgEl0mjVGQsQVlK0g/rL3TdO3SUEtilew9/Q0f5htXXC8BaKgcC2T3yOMoxyjpX3UD5ql75a
+P4a4KQ00nYykX7ziuu3m7rHrMLWMkoCrK1DO/OMHKUHAbTuORYCNEj8kM2SP/AToBA37C2oZ
+CrM2IqzDJutI1A79AqiaMVvDYm4UI0VwHrKwgKOZw3R28DfmifbwfhxAF1oectib/XkTd+LQ
+S1vfUDQhiqq46KOsp2aSOLIPbjAnSenzmL4AeSwB0M/5+wY4f/9l/kHO3w9DHDvobRWoAgzT
+C3QiI7aaUlXNeJTM02EagGWb57gfTtnJP9iCdZOyNFKqyzMdxuxPOKhOCtLMGxsnLdMTrMcz
+rCcmWWducfykisfTv81NkSuwW7jDQMYH7jIw4QP3GBj3gfsMpH0AYIq67VgPuNoUHq9+pmdx
+WDDNHU/BDHc8neXOZmZZZ3OsZ/OsczbnyHsdz3G1vF+twEDOB+YZmPWBBQayPvCQgZkrHQMU
++SSMEl+pYpl16RGRP5QvyI/J/+77sMiBpSd8hIsILfERLlJiKdkrsldhekhWuYCsyGXPqsoV
+vj9ymW5YDm9YDh98WbnK9wh35Bq3L1evk5C2ztkx1Qa3I9cV/JRbIAfdZ5Thq6x4QwW5SV+F
+RMPe2WvXDvd3XrfaBzXXIPqA+rgQvFJzazytUW9qGt4D+iAJj5ggW3lm7aR5tEZ5+IOElxa2
+hMfl1cUHROr/0Yvkhtuu1R17Red/iUdMi14QlugqSwgLX6mbFpqwdAxNC11Yga5CAsiBLhpB
+5HQkboUUR0UZxEEjrDiKHFF5VLiJHAqPIofCY8ih8DjVQqOHOGgkFEeRud3Ei+MDp92s197y
+QMLU9gZKA5r46N7kTG+a11bsqvMXAAD//wMAWQ9drxEGAAA=</item>
+		<item item-id="6" content-encoding="gzip">H4sIAAAAAAAA/4xUS1MTQRDu2c1zkxCIvDeSEHwihGQBSaLoJDwV1Cq8eKNCskIsMRgWC6s8
+pPgB3jx78ebV8kZZFjfL8i/Fnu7NgpycrUl3f/N1zze9k40CgMD5HKdBvo6/Ifvtlr3baL7x
+gxpzOMP1Zo0xH2FFRduvPdt5ZdccQmCL8jX8DRzuHVSaxwxv4gwisOURn+B8gbue4fyK/A/a
+eazGjyEWpYGmk5PwNi87Tquxc+TYTC3hjMPF4Stl/on9VMDntGzbJMDCGTsgN2CN/ARo+4PW
+Z7QyEGIbDLMNGWzDESvwC6BiRC0NN3MimCn8echiLQsWsJzl/411Ij28HgPQhZaHHGqzPm3g
+Sgx6aekbTk2Igtpc9FHVEyNBHNkHV5iT8MoXsPwsUvu5ft8A1+8/rz/I9fthiHMH3aV52gGG
+6QDt8IilulQZRnCU3JNhaoBpGWe4HkpaiT8owbxKVepJpfJUhzHrIzaqnYQU88bSZGVqnG06
+w3Z8gm3mGgucoFOivOusyovhBgFfMgp4j/FNJox7hFsMpD3gNgMpDwCYJLVt8w6rncTXq5/q
+WcgDTLHiSZhmxVNZVjY9wzabYzuTZ5uzWHG+W36Wt/NimGPFua7ieSbMeIS7DGQ9YIGB6QuK
+AQr8JoJFvlKFEtviPSK/K3XJ9yn+7sWwyInFB/wKFxF6yK9wkQpLyVGBozLTA7LCG8iyXHK9
+ilzmw8olumE5vGE5fPCscoXvEa7IVZYvVy6TkLbG1bHUOsuRawp+xBIowPAxt0yWuz2TG/RV
+iNet7d1W9WBv+2WztV91gkQfUB8XgperTpW7Nep2TcN7QB8k4RLj5KvIqB43DlepDn+Q8NLC
+pnC5PDr4gEj+P9otHnRa1ZptLev8L3GJKdELwhQd5Qlh4pE6KaEJU8fUlNCF6esoxIcc6KDj
+R05b4lJAcVRWkDjohBRHkcOqjko3kEPpEeRQehQ5lB6jvdDpIQ46ccVRZJYbf3q0b7catepr
+bkiIZK/jrEMDH93tnOF289KIXgz+AgAA//8DAHTYvBERBgAA</item>
+		<item item-id="7" content-encoding="gzip">H4sIAAAAAAAA/4xUS1MTQRDu2c1zkxCIvBcJBJ8IIVnCI1F0Ep4KahX+ACokK8QSE8NicfCQ
+4gd486wHf4LljSotbpblz/Eae7o3G+TkbE26+5uve77pnWwUAATOFzgN8nX8Ddlvd+2DWv2N
+H9TI4QxX6xXGfITlFe2o8nz/lV1xCIFdytfwN3B82CjVTxnewRlEYNcjPsX5GXkXuPMf3O+9
+1o3V+D7EojTQdHIS3uZFx2nW9k8cm6kFnHG4PHyF1D+xnwr4nKZtmwRYOGMNcgPWyA+Alj9o
+fUIrAyG2wTDbkME2HLECPwFKRtTScDMngpnCvwBpbMwizGM5y/8L60R6eD0GoAstCxnUZn3c
+xpUY9NLSV5yaEEtqc9FHVc+MBHFkH1xjToLK57D8ApZfRGo/1+8b4Pr93fqDXL8fhjh30F3K
+0Q4wTAdohUcs1aXSMIKj5J4NUwNMy7jA9dCYlfiNEszrVKU6plSe6zBufcBGtcYgybzxCbIy
+Ocl2IsV2copt6gYLnKJTorybFH/BWNcaoO7DLdaZ6jDgNgOTHnCHgQkPuMtA0gMApklvy7zH
+eqfxBevnehqyADOseRpmWfNMmrXNzrFNZ9jOZdlmLNac7ZSfZ83ZruYcC8h4AhYYmPOARQbS
+HrDEwOwlzQDL/DaCeb5WywW2+ftEflfokB9Q/M2LYYUT8w/5Na4g9Ihf4woVlpKjZY6KTA/I
+Em8gi3LV9UpyjY8rV+mWZfCWZfDB08p1vku4IjdYvly/SkLaJlfHUlssR24q+DFLoADDJ9xF
+Wey2UW7TtyFetfYOmuXG4d7LevOo7AQpYUB9YgheKztl7teo2zcN7wJ9loRLjJOvIqN8Wjve
+oDr8WcKrCzvC5fJo4wNi7P/RTvGg0yxXbGtN5/+KS0yKXhCmaCtPCBOP1E4KTZg6piaFLkxf
+WyE+5EAbHT9yWhKXAoqjsoLEQSekOIocVnVUuoEcSo8gh9KjyKH0GO2FTg9x0IkrjiKz3Piz
+kyO7WauUX3NDQiR7C2cVavjobucMt5tXRvRy8BcAAP//AwCOK4ZQFwYAAA==</item>
+		<item item-id="8" content-encoding="gzip">H4sIAAAAAAAA/4xUS1MTQRDu2c1zkxCIvDcaCD4RQrI8E0Un4amgVuEPwCVZIZaYGBYLbyl+
+gBfLsxd/guWNA+XNsvxLsad72SAnZ2vS3d983fNN72TjACBwvsRpkK/jb8R5v+Ps1xvvgqDG
+HM5orVFlLEBYUdEOqy/23jhVlxDYoXwNf0NHB81K44ThbZxhBHZ84jOVi/Mzcl/h7tt6N1bj
+fIhFaaDp5KT8zcuu26rvHbuOIGYJZxIuj0Ap+08cpAIBt+U4JgEWzkST3JA1cg7QDoatr2hl
+KMI2HGUbMdhGY1boF0DFiFsabubGMFME5yGHtfIwi+Ws4G+sE+vh9QSALrQCrkHS+rKFKwno
+paXvODUhFtTmoo+qnhop4sg+uMacFJWfxfJFWFTloZ/r9w1w/f5u/UGu3w9DnDvoLc3RDjBM
+B2hHRyzVpcowgqPkng5TA0zL+InrkbSV+oMSzOtUpZZWKs90uGF9wka105Bh3o0xsjIzznYs
+y3Z8gm32JgucoFOivFusyo/hNgNZH7hDwLdx1K014SMid5ky5lPuMZDxAYBJ0ts277PeSXzB
++pmegwLAFGuehGnWPJVjbdMzbHN5tjMFtnmLNRcuys/ydn4McwzkfWCeNc90NS8wJedTFhmY
+vqQZYInfRrjI12qpxLb4gMgfShfkhxT/8GNY5sTiI36Nywg95te4TIWl5GiJozLTQ7LCG8iy
+XPG8ilzl48oVumV5vGV5fPC0co3vEq7IdZYv166SkLbB1bHUJsuRGwp+whIowPAp90iWu02S
+W/RtSNas3f2W3TzYfd1oHdpumBIG1CeG4FXbtblfo17fNLwL9FkSHjFJvooM+6R+tE51+LOE
+Vxe2hcfl0cEHRPr/0YviYbdlVx1rVef/ikfMiF4QpugoTwgTj9TJCE2YOqZmhC7MQEchAeRA
+B50gctoSl0KKo7LCxEEnojiKHFV1VLqBHEqPIYfS48ih9ATthU4PcdBJKo4is9zk8+NDp1Wv
+2m+5IRGSvYmzBnV8dK9zhtfNKyN+OfgLAAD//wMA6N+aBRcGAAA=</item>
+		<item item-id="9" content-encoding="gzip">H4sIAAAAAAAA/4xUS1MTQRDuySbZZJMQiLw3khB8IoRkBSFRdBKeCmoV/gBqSVaIJQbDYnFM
+8QO8WJ69+BMsT3JQb5blX4o93ZsleHKmJt39zdeP6ZlsHAAErhe4DNI1/I04b3ec/UbzTQjU
+mMcVrTdrjAUJKynaYe353iun5hICO+QfwN/w8cFRtXnK8DYuHYEdn/gU1wFm/YDcb7i2tQtb
+jR8jXFQAAhopKT95xXVbjb0T1xHELONKQu8IlnOX7BAFCLotxzEJsHAljkgNW2PfAdoh3fqE
+UoYjLPUoy4jBMhqzwr8AqkbcCmAyN4aeIlSEPBSxNYsYzgr9xjixPt5PAGgiUIQC1mZ93MKd
+BPTT1pekt7Wg0osBintmpIglB+AKs1J+gnmcqtODnGFgiDMMXmQY5gyDMMK+w5cywCgdoR0d
+s1SfqqMIjpN6NkotMC3jJ+5H0lbqD5ZgXqUo9TQ2X5xrMGG9x1a105Bh3kSWpMxMsszmWE5O
+scxd4wKnlL/A8q5zVb4NNxjI+cBNBiZ94BYBn7MKUA/mNhMyPgFgmqptm3e42mm8YO1cU/cB
+M1zxNMxyxTN5rmx2jmW+wHKuyLJgccXFbvi7nM63YZ6Bgg8sMDDnA/e44ny34kUmzPZUDLDE
+N6GX+FEtlVmW7hP5XblLfkD2V9+GZXYsPeQrXEboEV/hMgWWkq0ltipMD8sqJ5AVueJpVbnK
+h5Ur9MIK+MIKOPGsco3fEe7IdT6OXENSLwdZGxwcI21yNXJDwY+5AjLQfOIFqHQbIrfos5Cs
+W7v7LfvoYPdls3VouzrRh9TXheBV27W5WeNe0wL4CuiLJDxiknRlGfZp43id4vAXCd8sbAuP
+y6ODE0T6/9FucN1t2TXHWtX4T+IRM6IfhCk6ShPCxCN1MiIgTA1dM0ITZrCjkCByoINKCDlt
+iVthxVFeOnFQiSiOIkdVHOVuIIfcY8gh9zhyyD1BuVDpIw4qScVRZC43+ezk0Gk1avZrbkiE
+yt7EVYcGTs3rnOF1858R7zX+AgAA//8DAIfLwQUSBgAA</item>
+		<item item-id="10" content-encoding="gzip">H4sIAAAAAAAA/4xUS1MTQRDu2c1zkxCIvDcSCD4RQrJBIFF0Ep4KahX+AGpJVoglBsNicUzx
+A7xYnr34AzxY3jhY3CzLvxR7ujdL9ORsTbr7m697vumdbBwABM6XOA3ydfyNOO92nYNG820Q
+1FjAGa03a4wFCCsp2lHtxf5rp+YSAruUr+Fv6OTwuNo8Y3gHZxiBXZ/4DOdX5H1UXCy3o/fE
+OC5HWJQGmk5Oyt+84rqtxv6p6whilnEmoXcEytm/4iAVCLgtxzEJsHAmjskNWWM/ANrBsPUZ
+rQxF2IajbCMG22jMCv0EqBpxS8PN3BhmiuAS5LAxRdWchBX8hXVifbyeANCFVoA8arM+beNK
+Avpp6RtOTQjVOxADVPXcSBFHDsA15qSofAHLF2ERCkgd5PoDQ1x/8Kr+MNcfhBHOHfaWirQD
+jNIB2tExS3WpOorgOLnno9QA0zIucT2StlK/UYJ5narU00rlhQ4T1gdsVDsNGeZNTJKVmSm2
+k1m2U9NsszdY4DSdEuXdZFV+DLcYyPrAbQamfOAOA5M+cJeALxkF1En1DKltm/dY7Qy+Xv1C
+z6lWzbLiGZhjxbM5VjY3zzaXZztfYJu3WHGhu12Rt/djWGAg7wP3GZj3gUUGcj6wxIrnrhQD
+LPObCJf4Si2X2ZYeEPd9uZv8kOLvfgwrnFh6xK9wBaHH/ApXqLCUHC1zVGF6SFZ5A1mRq55X
+lWt8WLlKNyyPNyyPD55VrvM9whW5werlOpJ6Ocja5OJYaYvVyE0FP2EFFGD41CtQ6Z5fbtNH
+IVm39g5a9vHh3qtm68h2w0QfUt8Wgtds1+ZmjXtN0/AW0PdIeMQk+Soy7LPGyQbV4e8R3lnY
+ER6XRwcfEOn/R7vFw27LrjnWms5/Eo+YEf0gTNFRnhAmHqmTEZowdUzNCF2YgY5CAsiBDjpB
+5LQlLoUUR2WFiYNORHEUOarqqHQDOZQeQw6lx5FD6QnaC50+4qCTVBxFZrnJ56dHTqtRs99w
+QyIkewtnHRr46F7nDK+b/4x4b/AHAAD//wMACraNexAGAAA=</item>
+		<item item-id="11">iVBORw0KGgoAAAANSUhEUgAAH0sAAAAMCAYAAAAXHXAzAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH9SURBVHhe7d1JCgMxDEVBHd03d7oX
+AiVRQ08rUwUPD5f4sZlnAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEhxdgTdWDoA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABQGUsHAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAbvkbSz8aRTeWDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFTtWHo3
+jG4sHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKgOx9K7fwAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAIAU3Sh6Le33MYYkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIkSZIk
+SZIkSZIkSZIkSZIkSZIkSZKkhbsi6iD6LkfSu38AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAACAFN0oejeMbiwdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAqNqx9I6xdAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKD6WkCP8TOc/vANAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAArCty4PztEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFjZ
+nB/wXmaupY9bKAAAAABJRU5ErkJggg==</item>
+		<item item-id="12" content-encoding="gzip">H4sIAAAAAAAA/+xWQWsTQRR+u0k2iU262VQbTS/SCvUU6GoPliKmIYLQGklqVSiWZrNopMk2
+yQr1IAT8Cf4A8S6CN4968aoHD4IX/QkePHgw8XszmzitVGz1Is1bvpl57817b+btzuxLEJEG
+VIBjYqyjDftt150iJhuINZxS9Z7r+EJCZWARRpdC9pPXRN2wffsLuoid3BZ6I+Cjtm4S1Qyi
+qLFK1+kqFSlHO/An7Yy4LdzEODSHjRfWKsXWFd9taMJRgp2pgiQwJqbG3FbZvVP3mhGhOM/W
+Nc+RsrCQXRhux+jc3V7yduTql4EoBOXhflaAs0AGeA/cBG4AM1JNM/BhYQE66QmRrPQwUt73
+2/Xqfd+V61sATFIpuTC9ix8fJMmUSRpPySSZvyTJkkky0zJJFidpwmb3XUt40AY+j4tNJpC8
+gteoepwuqUjxViH+KeHFLeI9O+jPAC3gHNDv82xMLW25ha262/SFDUJMDCOJFrbv3lqfnr7I
+fqY9dJFC1OvHyVBkmrrOFImFMt/rc0RJ/RH9V/Qd6CkY0dGiMnl4fDqNm6qJvk0P9l4Fv6VJ
+igzPPN8Fj2hem7Y+Wo+7lFx7E8mqc7sPvz6b/fZBC2H8KpAVEJ3juqLtHCg2U5p0Td3Pn9q9
+PHCk/ekw8f8l/U18fmd8j4/O/tGkCMowxvMxoqIsv1AWoIgTGHwhFHwlbKEFfTjQ4bcxl0OV
+s46zXELpeQujJbTXKA+uAq6DW8VBX6NNnPF1uozKaBnPBiq9efAr4DdoFRZz6Hdrc4EVogyg
+51HHHsZGHY9IoROyEpVvXKPJ/Ur9TFDqn5RVbIY/lVPSNiNts4pmStWA/wEAAP//AwDDW74t
+ngwAAA==</item>
+		<item item-id="13" content-encoding="gzip">H4sIAAAAAAAA/+xWT2sTQRR/u/lvk2421UbTg9KLByXQ1SKWIk2XiEJrJKkFoVhNsmikyTbJ
+CvUW6EfwA4h3ETz4AQri1R4FL/oRvAgezPp7M5s4llZs9SLNb/nN7Lw3b97Mm53ZlyQiDayA
+J8S7jjLsdRxnihgWGG/WStXHTs0TEiqD8zBaCFnPd4h6YeveF1QRK7Up9NGgHbN0g6gexQCx
+FbpDt6hIM5SnLQikZTRhiYHi7JwdJ+zVSrF903OamhgqycOpghQ4JrrGnXbZedhwWxGhuMzW
+dbcmZWEhuzpcULT7aHPR3ZLzXwJjEJSHK1oGe+h3lhccIrqP+g3aF6SatrEOExPQSU+KcGWG
+ngqe12lUn3iOnN8caJCK1Nz0L+3xQZgMGabxtAyTsU+YTBkmIyPDZHKYJix20DPFGNpg1JNi
+mUmEz3abVZcDJhVpXizEPyU8vXns9Q4sLuK9DV4CfZ97o2tpw7E3Gk7LEzZwMTH0JErY7r43
+P714nftMe3CNQtT3ExRVZJo6zzSJiXK777NHCX+E/wrfwb7CEY4XyuTi8egc7qoW6g493XsV
+/BaTFBmeeb4LtmlWmzY/ms96lFp9F8mpfXcXvr48/+2DFlIuPBve2a8jyu6hfDMypGvqev7U
+7u2hPR2Mo/j/l/gb/7wNfI/znozO//FDBIkY89UYUVEmYEgLkMYJDr4QCr4SttCCOhzo8Nu4
+kkeWs4azXEL6eRdviyhvUwGtClpd3Co11HV6gDO+RteRGy3hWUeuN4vSphuQLkO6Tiuwm0G9
+X598MAI8DqgXkNcexWYEBadkJip3XKPJg9P9bJDun5Z5bJY/ljPSOiutc4pmStWg/QMAAP//
+AwB8ztU8pAwAAA==</item>
+		<item item-id="14" content-encoding="gzip">H4sIAAAAAAAA/+xWQW8SQRR+u7ALtFBYqkXpxfSiJ5Ku9mDTGCnBxKQVA7XGpLEKTBRT2AJr
+ojcSf4IXb+rdmHjzqBevevBg4kV/gifjQdbvzeziVtNEqhdTvs03M++9efNmHrvDSxKRBtbA
+KTnW0UbdnhDzxLDBeLtRqd8RDVdqqAquwOl8xH78mmgQta9/QWfYqV1pN305ZutpoqZJFDM3
+6ApdojIV6D7WU35mwpbLxDk0h02UNmvl7kVXtDW5UJIXCytS4LScGhfdqrjVcjqGNJxh76bT
+ULqo1J0dHcfs395dde6p3a+BMSiqo/Osg6fAq+B78JE/bigzpTJEFjagk56UycqOIhVdt9eq
+33WF2t8ymKYwUssLe+SZIElplaSZjEpS+rckWSpJ6axKksVJmrV5+YElV9CCNY/IQyaRvJLT
+rjucLmXI8FGh/qnhza1MqaM1wS54GvQ8no2plR1R2mmJjit9EGJ2FEm28H331vr09EX+M/2C
+cxShoZcgM6TTwvvMkNwoy0OPIyp4E/xX+A4OQ5zgcKFKDh6XTuCm6qDv8W01BubIGH3zfBc8
+oCVtwfpoPRxQavONkQ/PvfHk67OT3z5oEYxf+boSonNcIdv+WLEZWdK18Hn+1O/l2JH2x0Hi
+/0v8TXz+zfgen3z7hxMGyjDm82misiq/UBagiJMM3hDy3xL20Pw+6tvwt7FYQJWzhW+5gtLz
+GkaraC9TEVINUh+3SgN9k27iG9+iC6iM1vBso9JbgrwOeZs24GGj32st+F6IElAvYt5BfILR
+Ip4JQjiqKlH1i2s0t1+pn/NL/WOqis3xq3Jc+eaUbz5kmQ9bIP8AAAD//wMAsfZGlJ4M
+AAA=</item>
+		<item item-id="15" content-encoding="gzip">H4sIAAAAAAAA/+xWQWsTQRR+u0k2iU2abKqNphfpxVvA1SKWIqZLRKE1ktSCUAwmWTSaZJtk
+Bb0F/AmeRb2L6MEfUBCvehS86E/wpgcTvzezWUdpoalepPmWb2bnzXvzZt7szL4EEWlgBTwi
+3nWUYa/nOAvEsMBYu16q3XXqnpBQGVyB0cWQ9XSHaBC2bn5FFbGS26Lf8NtRS08RNQwMEN2g
+63SVinSa8vQQAmlpxC0xUIyds+O4vVkpdq94TlsTQyV4OFWQBGeEaszplp3bTbcTER1n2brh
+1qUsLGTngwUZ/Tvbq+4DOf81MApBOVjROjiAXpUXHCJ6hvoN2vdkNz3BOkxMQCc9IcKVCTwV
+PK/XrN33HDm/ZTBFKpLLi7+1Z8dhSskwzaZlmFK7hMmUYUplZJhMDtOcxQ4GphhDG496VCwz
+gfDZbrvmcsBkR5oXC/EvCU9vBXu9A4sW3rvgGXA0Ym2ollqO3Wo6HU/YwMVc4EmUsP3w3vz8
+/HXuC/2BCxSi4ShOhiLT1HmmSUyU28MRe5QYTfFf4Qc4VDjF4UKZXDwencRd1UHd49tqAsxT
+JDjzfBc8oiVt0fxkPh5QcvNdJKfqvqp/e3Hq+0ctpFx4NryzX0eU/Yl8MzKka+p69mv3dmJP
+e+Mg/v8l/sY/bwPf47wn0/N/+BBBIsZ8OUNUlAkY0gKkcYLjL4T8r4QtNL8O+334bZzLI8vZ
+wlkuIf28gbdVlNeogFYFrT5ulTrqBt3CGd+iS8iN1vBUkestobTpMqTrkFZpA3YW6t108v4I
+8DimXoD2QWymUHBMZqJyxzWa3zvdz/rp/nGZx2b5YzkhrbPSOqf0LKg9aP8EAAD//wMAldNW
+7aQMAAA=</item>
+		<item item-id="16" content-encoding="gzip">H4sIAAAAAAAA/4xUTVMTQRDt2U2yySYhEAGBjQTwC/mIYQUUFFg+1RK1Cn8AtSQrxBKDYbE4
+pvwB3jx78SdY3jxYevLgL7Iq9vRLFuTkpCY9/eZ199ue2c0QkeL5gqcta5P/k8HbnWC/Vn8T
+Jz1meaaq9QqwmGALmnZYeb73KqiEgtCOxBv8nzg+OFqrnwLe5mkxsBMRn/Ic4JnmWntc/ad5
+5uvxeBiiDDJMWeSj4qth2KjtnYSBEuYizxydH7HFsX/8uCSIhY0gcARweWaPZJlwB78TNeOW
++4mtl0jCWinYpA2bSruJX2ztjGtwsTDNypTiPFk3/ofj013As0SmMmaozJrcj094J0vdsvUl
+JyGzUrVHsjXtvHC8HroETr6TlnqRt6cPeXvP8vYjby9dRkz/ubw0IHKbqUFX92RNd3RIlu8H
+ZN9x7R+8nyy4+d9c2LkiOaoFbo/5zSwRn9ew+4Fb0yxQEdzhEbFecRR2ZAx29CqkjUl9FnYN
+eiKfrgMYjYAbAEYi4KYAn4sa2BSB4yKs6dyCsHE+vRiEzRBNQNo4TULaxBSkTE7DTpVgp29D
+WqlTqIzCkU8zAKYjwAUwFQF3IG3yTBq/BOiuNYdLMTsPO3dXuO/mO8H3xP8a+bSAwLlFHIt+
+ce7jWBYk8QM4OMQlkBPLyL60ArvseXiqFb61Kl6mEt+Gsm6Lt4orsULeGh7DW73IYdY68i57
+G1DhrWt0E6XFYXcLj73UeWzvobzNuaq7u9/wjw52X9Ybh35oCbtPfxQE3vBDHz0aavfK4FOW
+D4lqE3Oy1p7tn9aOtyQPPiR8/WhbtbkYLf6RKvw/2kluhQ2/Ergb+I44bWJRdZNyVEuvlHL4
+kVpFZSjH5NCiMpUTa2kkxhxq8SLOnKbHWwnN0VGWcHiR1BxNTuk8OtxmjoSnmSPhGeZIeFZq
+8aJLOLzIaY4mQ27u2clh0KhV/NdoSFJkP+JZpRr/zHbn7HY3L4zMeecvAAAA//8DAJ/hRdbJ
+BQAA</item>
+		<item item-id="17" content-encoding="gzip">H4sIAAAAAAAA/4xUy1ITURDtO5NkkkliIAICEwngC3nEMAIKCgxPLZ9V+AHUkIwQSwyGwcJd
+yg9w59qNX2BZ7lxYunLhF1kV+/ZJBmTlTd307XNPd5/pO3MzRKR4PuNpy9rk/2TweivYrdVf
+xUmPGZ6par0CLCbYvKbtV57uvAgqoSC0JfEG/ycO9w5W68eAH/G0GNiKiI957nHVNNf6zPyf
+5omvx4MhiDLIMGWRj4qvhGGjtnMUBkqYCzxzdHrEFkb/8eOSIBY2gsARwOWZPZBlwh34TtSM
+W+5Htl4iCWulYJM2bCrtJn6xtTOuwcXCNCtTivNk3fgfjk+fA54lMpUxTWXW5H54yDtZ6pKt
+LzkJmZGq3ZKtaeeF43XTeXDynbTUg7zdvcjbc5K3D3l76AJi+k7lpX6R20wNuLonq/0MDcry
+Xb/sO679g/eTBTf/mws7FyVHtcDtMb+ZJXpLNOS+59Y0C1QEd2hYrFccgR0ehR25BGmjUp+F
+XYaeyKcrAEYi4CqA4Qi4JsCnogY2ROCYCGs61yFsjE8vBmHTROOQNkYTkDY+CSkTU7CTJdip
+G5BW6hQqo3Dk0zSAqQhwAUxGwE1ImziRxh8BumvN4qWYmYOdvSXcN3Od4Nvif418mkfg7AKO
+RX84d3As85L4Lhwc4iLIiSVkX1yGXfI8PNUyv7UqXqYSvw1l3RZvBa/EMnmreAxv5SyHWWvI
+u+StQ4W3ptENlBaH3U089mLnsb178jXnqu72bsM/2Nt+Xm/s+6El7F59KQi87oc+ejTY7pXB
+pywXiWoTc7LWnu0f1w43JQ8ukoK+IlSbi9HiH6nC/6Od5FbY8CuBu457xGkTi6qLlKNaeqWU
+w4/UKipDOSaHFpWpnFhLIzHmUIsXceY0Pd5KaI6OsoTDi6TmaHJK59HhNnMkPM0cCc8wR8Kz
+UosX54TDi5zmaDLk5p4c7QeNWsV/iYYkRfZ9nlWq8c9sd85ud/PMyJx2/gIAAP//AwAbYu9K
+yQUAAA==</item>
+		<item item-id="18">iVBORw0KGgoAAAANSUhEUgAAH0sAAAAMCAYAAAAXHXAzAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH1SURBVHhe7d1BCsNADARBPX1/vk4O
+AoFnwfExVEGD0CemPvbTAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFo9HUE3lg4A
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABMxtIBAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAACAV25j6adRdGPpAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwBTH0tMw
+urF0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYDqOpac/AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAQKs0ij5rfa+1JEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmSJEmS
+JEmSJEmSJEmSJEmSJEmSJP1pv6g5iP7VI+npDwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAANAqjaKnYXRj6QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAUx9ITY+kAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAdBtLPzGWDgAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAEzG0gEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAX9r4AjWeEBz4Z
+ahkAAAAASUVORK5CYII=</item>
+	</binaryContent>
+</worksheet>

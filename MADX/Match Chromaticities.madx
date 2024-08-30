@@ -1,0 +1,36 @@
+CHDIR, DIR = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances";
+!call file = "Full Regular Straight 2 8 FODO 120 MeV_u.seq";
+!call file = "Wien filters_3.seq";
+!call file = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full Regular Straight 2 8 FODO 120 MeV_u SEXT and OCT.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full PyBass_multipole.seq";
+!call file = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass Symmetrical 5 QUAD 3.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass REAL.seq";
+CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass REAL NEW.seq";
+
+beam, MASS=1.863,CHARGE=1, ENERGY=1.867,
+      EX= 3.96e-005, EY=  3.1e-005, SIGE=0.00156;
+
+USE, SEQUENCE = MACHINE;
+CHDIR, DIR = "/Users/Bell 1/GIT_REPOS/By Pass project/MADX";
+
+MATCH, SEQUENCE = MACHINE;
+!CONSTRAINT,  RANGE=#e, DMUX:= 0.0, DMUY:=0.0;
+GLOBAL, SEQUENCE=MACHINE, DQ1 = 0.0, DQ2 = 0.0;
+
+vary,name=s1, step=1.0e-9;
+vary,name=s2, step=1.0e-9;
+!vary,name=s3, step=1.0e-9;
+!vary,name=s4, step=1.0e-9;
+!vary,name=s3, step=1.0e-5;
+
+!vary,name=SF1->K2,  step=1.0e-5;
+!vary,name=SD->K2,  step=1.0e-5;
+!vary,name=SF2->K2,  step=1.0e-5;
+
+!JACOBIAN,calls=1000,tolerance=1.e-21;
+SIMPLEX,calls=1000,tolerance=1.e-21;
+!MIGRAD,calls=1000,tolerance=1.e-21;
+!LMDIF,calls=1000,tolerance=1.e-24;
+endmatch,knobfile='knobs.tfs';
+
+stop;

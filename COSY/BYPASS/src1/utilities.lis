@@ -1,0 +1,533 @@
+ --- BIN FILE READ: cosy
+   9646 INCLUDE 'cosy';
+   9647   PROCEDURE DIRSET_AUTO VAL;
+   9648     VARIABLE DIRSETFLAG 1;
+   9649     DIRSETFLAG := VAL;
+   9650     ENDPROCEDURE;
+   9651   PROCEDURE DIRSET VAR PATH;
+   9652     VARIABLE ANS 1;
+   9653     VARIABLE DIRSETFLAG 1;
+   9654     VAR := PATH;
+   9655     OS 'mkdir -p '&PATH;
+   9656     WRITE 6 'WRITING TO: '&PATH;
+   9657     IF DIRSETFLAG=0;
+   9658       WRITE 6 '********** DIRECTORY GOOD? [Y/N]';
+   9659       READ 5 ANS;
+   9660       IF (ANS#'Y')*(ANS#'y');
+   9661         WRITE 6 'QUITTING ... ';
+   9662         QUIT 1;
+   9663         ENDIF;
+   9664       WRITE 6 '***** REMOVE EXISTING FILES? [Y/N]';
+   9665       READ 5 ANS;
+   9666       IF (ANS='Y')+(ANS='y');
+   9667         OS 'rm -vf '&PATH&'*';
+   9668         ENDIF;
+   9669       ENDIF;
+   9670     ENDPROCEDURE;
+   9671   FUNCTION FILENAME WHERE NAME MARKER;
+   9672     VARIABLE SEP 1;
+   9673     SEP := ':';
+   9674     IF MARKER='';
+   9675       SEP:='';
+   9676       ENDIF;
+   9677     FILENAME := WHERE&NAME&SEP&MARKER&'.dat';
+   9678     ENDFUNCTION;
+   9679   FUNCTION MRK I;
+   9680     MRK := LTRIM(SF(I, '(I10)')); %SF:  230
+   9681     ENDFUNCTION;
+   9682   FUNCTION FORM VEC;
+   9683     VARIABLE FMT 10;
+   9684     VARIABLE I 1;
+   9685     FMT := '(E15.7)';
+   9686     FORM:='';
+   9687     LOOP I 1 LENGTH(VEC);
+   9688       FORM := FORM&SF(VEC|I, FMT); %SF:  230
+   9689       ENDLOOP;
+   9690     ENDFUNCTION;
+   9691   PROCEDURE WRITETBL OU ARR NARR MARKER;
+   9692     VARIABLE NVEC 1;
+   9693     VARIABLE I 1;
+   9694     VARIABLE J 1;
+   9695     VARIABLE ROW 101;
+   9696     NVEC := LENGTH(ARR(1));
+   9697     LOOP I 1 NVEC;
+   9698       ROW := ARR(1)|I;
+   9699       LOOP J 2 NARR;
+   9700         ROW := ROW&(ARR(J)|I);
+   9701         ENDLOOP;
+   9702       WRITE OU MARKER&' '&MRK(I-1)&' '&FORM(ROW); %MRK: 9679 %FORM: 96
+                  82
+   9703       ENDLOOP;
+   9704     ENDPROCEDURE;
+   9705   FUNCTION ZEROS NUM;
+   9706     VARIABLE I 1;
+   9707     VARIABLE RES NUM;
+   9708     RES := 0;
+   9709     LOOP I 2 NUM;
+   9710       RES := RES&0;
+   9711       ENDLOOP;
+   9712     ZEROS:=RES;
+   9713     ENDFUNCTION;
+   9714   FUNCTION ONES NUM;
+   9715     VARIABLE I 1;
+   9716     VARIABLE RES NUM;
+   9717     RES := 1;
+   9718     LOOP I 2 NUM;
+   9719       RES := RES&1;
+   9720       ENDLOOP;
+   9721     ONES:=RES;
+   9722     ENDFUNCTION;
+   9723   PROCEDURE EYE MAT M;
+   9724     VARIABLE I 1;
+   9725     VARIABLE J 1;
+   9726     LOOP I 1 M;
+   9727       LOOP J 1 M;
+   9728         MAT(I,J) := 0*DD(1);
+   9729         ENDLOOP;
+   9730       MAT(I,I) := 1 + 0*DD(1);
+   9731       ENDLOOP;
+   9732     ENDPROCEDURE;
+   9733   FUNCTION LINSPACE LOW HIGH NUM;
+   9734     VARIABLE I 1;
+   9735     VARIABLE DELTA 1;
+   9736     VARIABLE RES NUM;
+   9737     RES := LOW;
+   9738     IF NUM>1;
+   9739       DELTA := (HIGH-LOW)/(NUM-1);
+   9740       LOOP I 2 NUM;
+   9741         RES := RES&(LOW + DELTA*(I-1));
+   9742         ENDLOOP;
+   9743       ENDIF;
+   9744     LINSPACE := RES;
+   9745     ENDFUNCTION;
+   9746   FUNCTION RAD2DEG ANGLE;
+   9747     RAD2DEG := ANGLE/DEGRAD;
+   9748     ENDFUNCTION;
+   9749   FUNCTION DEG2RAD ANGLE;
+   9750     DEG2RAD := ANGLE*DEGRAD;
+   9751     ENDFUNCTION;
+   9752   FUNCTION VEGAUSS MEAN SIGMA NUM PATH;
+   9753     VARIABLE VAL 1;
+   9754     OS 'analysis/gauss.py '&ST(MEAN)&' '&ST(SIGMA)&SF(NUM,'(I10)')&' '
+                  &PATH&'.in'; %SF:  230
+   9755     OPENF 100500 PATH&'.in' 'OLD';
+   9756     READ 100500 VAL;
+   9757     WHILE ST(VAL)#'';
+   9758       VEGAUSS:=VEGAUSS&VAL;
+   9759       READ 100500 VAL;
+   9760       ENDWHILE;
+   9761     CLOSEF 100500;
+   9762     VEGAUSS := VEGAUSS|(2&LENGTH(VEGAUSS));
+   9763     ENDFUNCTION;
+   9764   FUNCTION COV X Y;
+   9765     VARIABLE N 1;
+   9766     VARIABLE MUX 1;
+   9767     VARIABLE MUY 1;
+   9768     IF LENGTH(X)=LENGTH(Y);
+   9769       N := LENGTH(X);
+   9770       ELSEIF TRUE;
+   9771       WRITE 6 'DIFFERENT VECTOR LENGTHS!!!';
+   9772       ENDIF;
+   9773     MUX := RE(X);
+   9774     MUY := RE(Y);
+   9775     COV := RE((X-MUX)*(Y-MUY));
+   9776     ENDFUNCTION;
+   9777   FUNCTION EMITTANCE X1 X2;
+   9778     VARIABLE COVS 1 2 2;
+   9779     VARIABLE I 1;
+   9780     VARIABLE J 1;
+   9781     VARIABLE DET 1;
+   9782     COVS(1,1) := COV(X1,X2); %COV: 9764
+   9783     COVS(1,2) := COV(X1,X2); %COV: 9764
+   9784     COVS(2,1) := COVS(1,2);
+   9785     COVS(2,2) := COV(X2,X2); %COV: 9764
+   9786     DET := COVS(1,1)*COVS(2,2) - COVS(2,1)*COVS(1,2);
+   9787     EMITTANCE := SQRT(DET);
+   9788     ENDFUNCTION;
+   9789   PROCEDURE GET_TUNE_ENSEMBLE MUARR;
+   9790     VARIABLE K 1;
+   9791     VARIABLE MU 5000;
+   9792     VARIABLE NBAR 5000 3;
+   9793     TSS MU NBAR 0; %TSS: 4234
+   9794     MUARR(1) := MU;
+   9795     LOOP K 1 3;
+   9796       MUARR(K+1) := NBAR(K);
+   9797       ENDLOOP;
+   9798     POLVAL 1 MUARR 4 RAY TWOND MUARR 4;
+   9799     ENDPROCEDURE;
+   9800   FUNCTION REVFREQ LCIR;
+   9801     REVFREQ := CONS(V0)/LCIR;
+   9802     ENDFUNCTION;
+   9803   FUNCTION STD VEC;
+   9804     VARIABLE MEAN 1;
+   9805     VARIABLE N 1;
+   9806     MEAN := RE(VEC);
+   9807     N := LENGTH(VEC) - 1;
+   9808     STD := SQRT(ABS(SQR(VEC-MEAN))/N);
+   9809     ENDFUNCTION;
+   9810   FUNCTION BETA GAMMA;
+   9811     BETA := SQRT(GAMMA*GAMMA - 1)/GAMMA;
+   9812     ENDFUNCTION;
+   9813   PROCEDURE GET_BOUNDS X Y XMIN XMAX YMIN YMAX DX DY;
+   9814     VARIABLE N 1;
+   9815     N := LENGTH(X);
+   9816     XMIN := VMIN(X);
+   9817     XMAX := VMAX(X);
+   9818     YMIN := VMIN(Y);
+   9819     YMAX := VMAX(Y);
+   9820     DX := (XMAX-XMIN)/(NRAY-2);
+   9821     DY := (YMAX-YMIN)/(NRAY-2);
+   9822     ENDPROCEDURE;
+   9823   PROCEDURE FRAME_SETUP X Y PLOT TITLE;
+   9824     VARIABLE FMT 10;
+   9825     VARIABLE XMIN 1;
+   9826     VARIABLE XMAX 1;
+   9827     VARIABLE YMIN 1;
+   9828     VARIABLE YMAX 1;
+   9829     VARIABLE DX 1;
+   9830     VARIABLE DY 1;
+   9831     FMT := '(E9.3)';
+   9832     GET_BOUNDS X Y XMIN XMAX YMIN YMAX DX DY; %GET_BOUNDS: 9813
+   9833     FG PLOT XMIN XMAX YMIN YMAX DX DY TITLE 0; %FG: 2639
+   9834     GRMOVE (XMIN-1.2*DX) YMIN 0 PLOT;
+   9835     GRCHAR SF(XMIN, FMT) PLOT; %SF:  230
+   9836     GRMOVE XMIN (YMIN-DY*.5)  0 PLOT;
+   9837     GRCHAR SF(YMIN, FMT) PLOT; %SF:  230
+   9838     GRMOVE (XMAX-DX) YMIN 0 PLOT;
+   9839     GRCHAR SF(XMAX, FMT) PLOT; %SF:  230
+   9840     GRMOVE XMAX YMAX  0 PLOT;
+   9841     GRCHAR SF(YMAX, FMT) PLOT; %SF:  230
+   9842     ENDPROCEDURE;
+   9843   PROCEDURE DRAW_LAYER XVEC YVEC PLOT;
+   9844     VARIABLE N 1;
+   9845     VARIABLE X 1 1000;
+   9846     VARIABLE Y 1 1000;
+   9847     VARIABLE I 1;
+   9848     N := LENGTH(XVEC);
+   9849     LOOP I 1 N;
+   9850       X(I) := XVEC|I;
+   9851       Y(I) := YVEC|I;
+   9852       GRDOT X(I) Y(I) 0 PLOT;
+   9853       ENDLOOP;
+   9854     ENDPROCEDURE;
+   9855   PROCEDURE AM1 M S;
+   9856     VARIABLE I 1 ;
+   9857     VARIABLE J 1;
+   9858     UMS; %UMS: 1414
+   9859     LOOP I 1 TWOND ;
+   9860       MSC(I) := M(I) ;
+   9861       ENDLOOP ;
+   9862     LOOP I 1 3;
+   9863       LOOP J 1 3;
+   9864         SSCR(I,J) := S(I,J);
+   9865         ENDLOOP;
+   9866       ENDLOOP;
+   9867     LOCSET 0 0 0 0 0 0 ; %LOCSET: 1059
+   9868     UPDATE 1 1 ; %UPDATE: 1206
+   9869     ENDPROCEDURE;
+   9870   PROCEDURE MATPROD N M O;
+   9871     VARIABLE I 1;
+   9872     VARIABLE J 1;
+   9873     LOOP I 1 3;
+   9874       LOOP J 1 3;
+   9875         O(I,J) := N(I,1)*M(1,J) + N(I,2)*M(2,J) + N(I,3)*M(3,J);
+   9876         ENDLOOP;
+   9877       ENDLOOP;
+   9878     ENDPROCEDURE;
+   9879   PROCEDURE S3NM N M;
+   9880     VARIABLE I 1;
+   9881     VARIABLE J 1;
+   9882     LOOP I 1 3;
+   9883       LOOP J 1 3;
+   9884         M(I,J) := N(I,J);
+   9885         ENDLOOP;
+   9886       ENDLOOP;
+   9887     ENDPROCEDURE;
+   9888   FUNCTION VEREV VEC;
+   9889     VARIABLE N 1;
+   9890     VARIABLE NMID 1;
+   9891     VARIABLE I 1;
+   9892     VARIABLE DUM 1;
+   9893     VARIABLE RES LENGTH(VEC);
+   9894     N := LENGTH(VEC);
+   9895     RES := VEC;
+   9896     IF MOD(N, 2)=0; %MOD:  177
+   9897       NMID := N/2;
+   9898       ELSEIF LO(1);
+   9899       NMID := INT(N/2);
+   9900       ENDIF;
+   9901     LOOP I 1 NMID;
+   9902       VELGET RES (N-I+1) DUM;
+   9903       VELSET RES (N-I+1) RES|I;
+   9904       VELSET RES I DUM;
+   9905       ENDLOOP;
+   9906     VEREV := RES;
+   9907     ENDFUNCTION;
+   9908   PROCEDURE MATINV M1 M2;
+   9909     VARIABLE MDET 4000;
+   9910     MDET:=0;
+   9911     MDET:=MDET+M1(1,1)*(M1(2,2)*M1(3,3)-M1(2,3)*M1(3,2));
+   9912     MDET:=MDET-M1(2,1)*(M1(1,2)*M1(3,3)-M1(1,3)*M1(3,2));
+   9913     MDET:=MDET+M1(3,1)*(M1(1,2)*M1(2,3)-M1(1,3)*M1(2,2));
+   9914     M2(1,1):=(M1(2,2)*M1(3,3)-M1(2,3)*M1(3,2))/MDET;
+   9915     M2(2,2):=(M1(1,1)*M1(3,3)-M1(1,3)*M1(3,1))/MDET;
+   9916     M2(3,3):=(M1(1,1)*M1(2,2)-M1(1,2)*M1(2,1))/MDET;
+   9917     M2(1,3):=(M1(1,2)*M1(2,3)-M1(1,3)*M1(2,2))/MDET;
+   9918     M2(3,1):=(M1(2,1)*M1(3,2)-M1(2,2)*M1(3,1))/MDET;
+   9919     M2(1,2):=-(M1(1,2)*M1(3,3)-M1(1,3)*M1(3,2))/MDET;
+   9920     M2(2,1):=-(M1(2,1)*M1(3,3)-M1(2,3)*M1(3,1))/MDET;
+   9921     M2(2,3):=-(M1(1,1)*M1(2,3)-M1(1,3)*M1(2,1))/MDET;
+   9922     M2(3,2):=-(M1(1,1)*M1(3,2)-M1(1,2)*M1(3,1))/MDET;
+   9923     ENDPROCEDURE;
+   9924   PROCEDURE SMR NAP LAP ;
+   9925     VARIABLE COD 1 NV ;
+   9926     VARIABLE NUM 1 ;
+   9927     VARIABLE I 1 ;
+   9928     VARIABLE J 1 ;
+   9929     VARIABLE MM NM1 3 3 ;
+   9930     VARIABLE T1 NM1 1 ;
+   9931     VARIABLE T2 NM1 1 ;
+   9932     VARIABLE FLG 1 ;
+   9933     NUM := MIN(TWOND,4) ; %MIN:  174
+   9934     MATINV NAP MM ; %MATINV: 9908
+   9935     MM(1,3) := -MM(1,3) ;
+   9936     MM(2,3) := -MM(2,3) ;
+   9937     MM(3,1) := -MM(3,1) ;
+   9938     MM(3,2) := -MM(3,2) ;
+   9939     LOOP I 2 NUM 2 ;
+   9940       COD(I-1) := DD(I-1) ;
+   9941       COD(I) := -DD(I) ;
+   9942       ENDLOOP ;
+   9943     LOOP I NUM+1 NV ;
+   9944       COD(I) := DD(I) ;
+   9945       ENDLOOP ;
+   9946     IF ND>2 ;
+   9947       COD(5) := -DD(5) ;
+   9948       ENDIF ;
+   9949     LOOP I 1 3 ;
+   9950       LOOP J 1 3 ;
+   9951         T1(1) := MM(I,J) ;
+   9952         POLVAL 1 T1 1 COD NV T2 1 ;
+   9953         LAP(I,J) := T2(1) ;
+   9954         ENDLOOP ;
+   9955       ENDLOOP ;
+   9956     ENDPROCEDURE ;
+   9957   PROCEDURE TRACK PNTNUM STEP FILEDIR MARK TY;
+   9958     VARIABLE TURN 1;
+   9959     VARIABLE PNT 1;
+   9960     VARIABLE PCT 1;
+   9961     VARIABLE SYMPE 1;
+   9962     VARIABLE SNRME 1;
+   9963     WRITE 6 'RUNNING COSYINF-CORE/UTILITIES.FOX: TRACK';
+   9964     OPENF 100500 FILENAME(FILEDIR, 'PRAY', 'TR'&MARK) 'REPLACE'; %FILE
+                  NAME: 9671
+   9965     PRAY 100500; %PRAY: 2244
+   9966     CLOSEF 100500;
+   9967     WRITE 6 SI(0)&' %'; %SI:  233
+   9968     OPENF 100501 FILENAME(FILEDIR, 'TRPSPI', 'TR'&MARK) 'REPLACE'; %FI
+                  LENAME: 9671
+   9969     WRITE 100501 '# TRACKING OUTPUT';
+   9970     WRITE 100501 'TURN PID S_X S_Y S_Z';
+   9971     WRITETBL 100501 SPI 3 SF(0, '(I15)'); %WRITETBL: 9691 %SF:  230
+   9972     OPENF 100502 FILENAME(FILEDIR, 'TRPRAY', 'TR'&MARK) 'REPLACE'; %FI
+                  LENAME: 9671
+   9973     WRITE 100502 '# TRACKING OUTPUT';
+   9974     WRITE 100502 'TURN PID X A Y B T D';
+   9975     WRITETBL 100502 RAY 6 SF(0, '(I15)'); %WRITETBL: 9691 %SF:  230
+   9976     TRR 1; %TRR: 5267
+   9977     OPENF 101239 'tmp/ERROR:TRACK.txt' 'REPLACE';
+   9978     WRITE 101239 '# NUM SYMPE SNRME';
+   9979     LOOP PNT 1 PNTNUM;
+   9980       TURN := STEP*PNT;
+   9981       TR STEP -STEP -1 -3 1.1 1.1 TY 0 -12; %TR: 4695
+   9982       WRITETBL 100501 SPI 3 SF(TURN, '(I15)'); %WRITETBL: 9691 %SF:  2
+                  30
+   9983       WRITETBL 100502 RAY 6 SF(TURN, '(I15)'); %WRITETBL: 9691 %SF:  2
+                  30
+   9984       PCT := 100*PNT/PNTNUM;
+   9985       IF MOD(PCT, 10)=0; %MOD:  177
+   9986         WRITE 6 SI(PCT)&' %'; %SI:  233
+   9987         ENDIF;
+   9988       TRSC SYMPE; %TRSC: 5297
+   9989       TRNC SNRME; %TRNC: 5300
+   9990       WRITE 6 '   TR SYMPLECTIFICATION ERROR' SYMPE;
+   9991       WRITE 6 '   TR SPIN NORMALIZATON ERROR' SNRME;
+   9992       WRITE 101239 SF(TURN, '(I10)')&SF(SYMPE, '(E15.7)')&SF(SNRME, '(
+                  E15.7)'); %SF:  230 %SF:  230 %SF:  230
+   9993       IF (SYMPE > 1E-3);
+   9994         WRITE 6 'SYMPLECTIFICATION ERROR TOO LARGE; ABORTING...';
+   9995         QUIT TURN;
+   9996         ELSEIF (SNRME > 1E-3);
+   9997         WRITE 6 'SPIN NORMALIZATION ERROR TOO LARGE; ABORTING...';
+   9998         QUIT TURN;
+   9999         ENDIF;
+  10000       ENDLOOP;
+  10001     CLOSEF 101239;
+  10002     CLOSEF 100500;
+  10003     CLOSEF 100501;
+  10004     CLOSEF 100502;
+  10005     ENDPROCEDURE;
+  10006   PROCEDURE SMAPS POS MAPARR SPNRARR;
+  10007     VARIABLE I 1;
+  10008     VARIABLE J 1;
+  10009     LOOP I 1 TWOND;
+  10010       MAPARR(I, POS) := MAP(I);
+  10011       ENDLOOP;
+  10012     LOOP I 1 3;
+  10013       LOOP J 1 3;
+  10014         SPNRARR(I,J,POS) := SPNR(I,J);
+  10015         ENDLOOP;
+  10016       ENDLOOP;
+  10017     ENDPROCEDURE;
+  10018   PROCEDURE LMAPS POS MAPARR SPNRARR;
+  10019     VARIABLE I 1;
+  10020     VARIABLE J 1;
+  10021     UM; %UM: 1433
+  10022     LOOP I 1 TWOND;
+  10023       MSC(I) := MAPARR(I, POS);
+  10024       ENDLOOP;
+  10025     LOOP I 1 3;
+  10026       LOOP J 1 3;
+  10027         SSCR(I,J) := SPNRARR(I,J,POS) + 0*DD(1);
+  10028         ENDLOOP;
+  10029       ENDLOOP;
+  10030     LOCSET 0 0 0 0 0 0; %LOCSET: 1059
+  10031     UPDATE 1 1; %UPDATE: 1206
+  10032     ENDPROCEDURE;
+  10033   PROCEDURE TREL MAPARR SPNRARR IEL LEL NTRN PRAYOU PSPIOU;
+  10034     VARIABLE TRN 1;
+  10035     VARIABLE EL 1;
+  10036     VARIABLE NR 1;
+  10037     VARIABLE NS 1;
+  10038     VARIABLE DUM 1;
+  10039     VARIABLE I 1;
+  10040     VARIABLE SYMPE 1;
+  10041     VARIABLE SNRME 1;
+  10042     VARIABLE MAPSE 1;
+  10043     VARIABLE RAYH 1000 8;
+  10044     VARIABLE SPIH 1000 3;
+  10045     PROCEDURE WTRPRAY IT ELN;
+  10046       VARIABLE STR 500;
+  10047       VARIABLE J 1;
+  10048       VARIABLE I 1;
+  10049       IF PRAYOU#0;
+  10050         IF IT=0 ;
+  10051           NR := LENGTH(RAY(1));
+  10052           IF NR=1;
+  10053             NR:=0;
+  10054             ENDIF;
+  10055           WRITE PRAYOU '# number of rays:'&SF(NR,'(I8)') ; %SF:  230
+  10056           IF NR>0 ;
+  10057             STR := '# iteration   EID   ray    X              A' ;
+  10058             IF TWOND>2 ;
+  10059               STR := STR&'              Y              B' ;
+  10060               ENDIF ;
+  10061             IF TWOND>4 ;
+  10062               STR := STR&'              T              D' ;
+  10063               ENDIF ;
+  10064             IF TWOND>6 ;
+  10065               STR := STR&'              G              Z' ;
+  10066               ENDIF ;
+  10067             WRITE PRAYOU STR ;
+  10068             ENDIF ;
+  10069           ELSEIF TRUE ;
+  10070           WRITE PRAYOU '' ;
+  10071           ENDIF ;
+  10072         LOOP J 1 NR ;
+  10073           STR := SF(IT,'(I10)')&SF(ELN,'(I6)')&' '&SF(J-1,'(I6)') ; %S
+                  F:  230 %SF:  230 %SF:  230
+  10074           LOOP I 1 TWOND ;
+  10075             STR := STR&SF((RAY(I)|J),'(E15.7)') ; %SF:  230
+  10076             ENDLOOP ;
+  10077           WRITE PRAYOU STR ;
+  10078           ENDLOOP ;
+  10079         ENDIF;
+  10080       ENDPROCEDURE;
+  10081     PROCEDURE WTRPSPI IT ELN;
+  10082       VARIABLE STR 500;
+  10083       VARIABLE I 1;
+  10084       VARIABLE J 1;
+  10085       IF PSPIOU#0;
+  10086         IF IT=0 ;
+  10087           NS := LENGTH(SPI(1)) ;
+  10088           IF NS=1 ;
+  10089             NS := 0 ;
+  10090             ENDIF ;
+  10091           WRITE PSPIOU '# number of spin vectors:'&SF(NS,'(I8)') ; %SF
+                  :  230
+  10092           IF NS>0 ;
+  10093             WRITE PSPIOU ('# iteration   EID vector   S_X'&           
+                               '            S_Y            S_Z') ;
+  10094             ENDIF ;
+  10095           ELSEIF TRUE ;
+  10096           WRITE PSPIOU '' ;
+  10097           ENDIF ;
+  10098         LOOP J 1 NS ;
+  10099           STR := SF(IT,'(I10)')&SF(ELN, '(I6)')&' '&SF(J-1,'(I6)') ; %
+                  SF:  230 %SF:  230 %SF:  230
+  10100           LOOP I 1 3 ;
+  10101             STR := STR&SF((SPI(I)|J),'(E15.7)') ; %SF:  230
+  10102             ENDLOOP ;
+  10103           WRITE PSPIOU STR ;
+  10104           ENDLOOP ;
+  10105         ENDIF;
+  10106       ENDPROCEDURE;
+  10107     TRR 1; %TRR: 5267
+  10108     LTRPRAY := 0;
+  10109     LTRPSPI := 0;
+  10110     WTRPRAY 0 0; %WTRPRAY:10045
+  10111     WTRPSPI 0 0; %WTRPSPI:10081
+  10112     SRAY RAYH; %SRAY: 2387
+  10113     SSPI SPIH; %SSPI: 2569
+  10114     OPENF 101239 'tmp/ERROR:TREL.txt' 'REPLACE';
+  10115     WRITE 101239 '# TRN EL SYMPE SNRME MAPSE';
+  10116     LOOP TRN 1 NTRN;
+  10117       LOOP EL IEL LEL;
+  10118         WRITE 6 'ELEMENT NUMBER '&ST(EL);
+  10119         UM; %UM: 1433
+  10120         CR; %CR:  892
+  10121         LMAPS EL MAPARR SPNRARR; %LMAPS:10018
+  10122         LRAY RAYH; %LRAY: 2393
+  10123         LSPI SPIH; %LSPI: 2575
+  10124         TRSC SYMPE; %TRSC: 5297
+  10125         TRNC SNRME; %TRNC: 5300
+  10126         MAPSE := SE(MAP); %SE: 2962
+  10127         TR 1 -1 -1 -3 1.2 1.2 0 0 -12; %TR: 4695
+  10128         WTRPRAY TRN EL; %WTRPRAY:10045
+  10129         WTRPSPI TRN EL; %WTRPSPI:10081
+  10130         SRAY RAYH; %SRAY: 2387
+  10131         SSPI SPIH; %SSPI: 2569
+  10132         WRITE 101239 SF(TRN, '(I10)')&SF(EL, '(I10)')&SF(SYMPE, '(E15.
+                  7)')&SF(SNRME, '(E15.7)')&SF(MAPSE, '(E15.7)'); %SF:  230 %S
+                  F:  230 %SF:  230 %SF:  230 %SF:  230
+  10133         ENDLOOP;
+  10134       ENDLOOP;
+  10135     CLOSEF 101239;
+  10136     ENDPROCEDURE;
+  10137   PROCEDURE COLWRITE OU VEC;
+  10138     VARIABLE N 1;
+  10139     VARIABLE I 1;
+  10140     N := LENGTH(VEC);
+  10141     LOOP I 1 N;
+  10142       WRITE OU VEC|I;
+  10143       ENDLOOP;
+  10144     ENDPROCEDURE;
+  10145   PROCEDURE INSERT POS MAPARR SPNRARR NFILLED;
+  10146     VARIABLE I 1;
+  10147     VARIABLE J 1;
+  10148     VARIABLE K 1;
+  10149     LOOP I NFILLED POS -1;
+  10150       WRITE 6 I;
+  10151       LOOP J 1 TWOND;
+  10152         MAPARR(J, I+1) := MAPARR(J, I);
+  10153         ENDLOOP;
+  10154       LOOP J 1 3;
+  10155         LOOP K 1 3;
+  10156           SPNRARR(J, K, I+1) := SPNRARR(J, K, I);
+  10157           ENDLOOP;
+  10158         ENDLOOP;
+  10159       ENDLOOP;
+  10160     SMAPS POS MAPARR SPNRARR; %SMAPS:10006
+  10161     ENDPROCEDURE;
+ --- BIN FILE WRITTEN: utilities
+  10162   SAVE 'utilities';

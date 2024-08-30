@@ -1,0 +1,600 @@
+# OptiMX: Collider, working point 9.44/9.44
+# Date 11/03/2020 13:59:49
+#
+# Beam direction 1 (clockwise or for beam in blue ring)/-1 (counter-clockwise or for beam in red ring)
+$BV_FLAG=1;  =>           1
+
+# Kinetic energy, MeV/u
+$W=120.;  =>         120
+$K1E=0;  =>           0
+$K3E=0;  =>           0
+$K45E=1;  =>           1
+
+# Flags switch on(1)/off(0). In case of $BV_FLAG=-1 all the switches should be equal zero.
+$ON_RF=0;  =>           0
+$ON_COUPLING=1;  =>           1
+$ON_CHROMATICITY=1;  =>           1
+$ON_DA=1;  =>           1
+
+# Vacuum permeability
+$MU0=$pi*4.e-7;  =>1.25663706e-06
+
+# Charge and mass
+$Z=1.;  =>           1
+$A=2.;  =>           2
+
+# Unified atomic mass unit, MeM/u
+$NMASS=931.494061;  =>  931.494061
+
+# Lorentz factors
+$GAMMA=($NMASS+$W)/$NMASS;  =>   1.1288253
+$BETA=sqrt(1.-1./$GAMMA^2);  => 0.463920811
+
+# Beam particle momentum, MeV/u
+$P0=$NMASS*$BETA*$GAMMA;  =>  487.809978
+
+# Magnetic rigidity, kGs*cm
+$BRHO=$A/$Z*$P0/$c*1.e+11;  =>  3254.31788
+#------------Spin and EDM simulation-----------------
+# light speed in [м/с]
+$clight=299792458;  =>   299792458
+$cSGS=$clight*100;  =>2.99792458e+10
+$pi=3.14159265359;  =>  3.14159265
+
+#----------------------------------
+# deutron mass in  [kG]
+$Mdeu=2*1.6726e-27;  =>  3.3452e-27
+#----------------------------------
+#el  charge in [C]
+
+$Qp=1.6022e-19;  =>  1.6022e-19
+$Q=1*$Qp;  =>  1.6022e-19
+#---------------------------------
+#anomalous magnetic moment od Deuteron
+$G=-0.143;  =>      -0.143
+
+#======A R C================================================
+# FIb_arc-angle rotation of momentum in magnetic field B_arc
+$FIb_arc=$pi;  =>  3.14159265
+
+# FIs_arc-spin rotation in arc
+$FIs_arc=$FIb_arc*$GAMMA*$G;  =>-0.507122225
+
+#======D E F L E C T O R of S T R A I G H T Section=====
+#----------Deflectors---1 “л = 10 к√аусс ---------------
+
+# Coefficient mc^2/e
+$Mce=$Mdeu*$clight*$clight/$Q;  =>1.87649221e+09
+
+#Effective length of deflector L*Ess in [V/m*m]
+$Leff=$G/($G+1)*$Mce*$pi*$BETA*$BETA*$GAMMA*$GAMMA*$GAMMA;  =>  -304522767
+
+# Electric gield in deflector Ess in [V/m]
+$Ess=-1.0e7;  =>-10000000
+$Esgs=$Ess/100;  =>     -100000
+
+#Total length in [m] of electric field in deflector at E=10 MV/m
+$Lss=$Leff/$Ess;  =>  30.4522767
+
+#Magnetic field in deflector in [T]
+$Bss=-$Ess/$clight/$BETA;  =>0.0719010846
+$Bsgs=$Esgs/$cSGS/$BETA;  =>-7.19010846e-06
+
+# FIb_ss-momentum rotation in magnetic field of deflector 
+$FIb_ss=$Q*$Bss*$Lss/($Mdeu*$clight*$BETA*$GAMMA);  => 0.667972458
+
+# FIe_ss-momentum rotation in electric field of deflector
+$FIe_ss=-$FIb_ss;  =>-0.667972458
+
+# FIbs_ss-spin rotation in magnetic field of deflector
+$FIbs_ss=($GAMMA*$G+1.)*$FIb_ss;  => 0.560146996
+
+# FIes_ss-spin rotation in electric field of deflector
+$FIes_ss=-($GAMMA*$G+$GAMMA/($GAMMA+1.))*$BETA*$BETA*$FIe_ss;  =>0.0530247713
+
+# FIeb_spin-Total rotation of spin in E+B fields
+$FIeb_spin=$FIbs_ss-$FIes_ss;  => 0.507122225
+$FIs_arc=-$FIeb_spin;  =>-0.507122225
+
+# Length of one plate of deflector system
+$n_plate=6.;  =>           6
+$L_plate=$Lss/$n_plate;  =>  5.07537945
+
+
+
+#======O P T I C S  E L E M E N T==============
+$MCQ0=0.;  =>           0
+
+$MCS0=0.;  =>           0
+
+$MCS1=-0.82;  =>       -0.82
+$MCS2=0.44;  =>        0.44
+
+$MCO1=-3;  =>          -3
+$MCO2=-6;  =>          -6
+$MCO3=4;  =>           4
+
+$MCO0=0.;  =>           0
+
+# Beam emittances, cm
+$EmitX=39.6*10^(-4);  =>     0.00396
+$EmitY=31.0*10^(-4);  =>      0.0031
+$SigmaS=60.;  =>          60
+$dp_p=0.00156;  =>     0.00156
+
+# Length of the corrector, cm
+$CORR_L=30.;  =>          30
+
+# Some shifts in arcs, cm
+$DELTA1=45.;  =>          45
+$DELTA2=50.;  =>          50
+$DELTA3=4.75;  =>        4.75
+$DELTA4=1.;  =>           1
+
+# Convert coefficients from MAD-X to OptiMX
+$K1=$BRHO*1.e-2;  =>  32.5431788
+$K2=$BRHO*1.e-4;  => 0.325431788
+$K3=$BRHO*1.e-6;  =>0.00325431788
+$TO_CM=1.e+2;  =>         100
+
+# Main dipole effective length, cm
+$BM_L=194.;  =>         194
+
+# Number of dipoles in the ring, pcs
+$BM_N=80;  =>          80
+
+# Number of turns in main dipole coil
+$BM_NT=10;  =>          10
+
+# Half gap of the main dipole, cm
+$BM_HGAP=3.6;  =>         3.6
+
+# Magnetic field in the main dipoles, kGs
+$BM_B=2.*$pi*$BRHO/$BM_N/$BM_L;  =>  1.31749242
+
+# Main dipole current, A
+$BM_I=($BM_B/10.)*(2.*$BM_HGAP/100.)/($MU0*$BM_NT);  =>  754.867549
+
+# Check dipole current value
+$BM_C=($BM_I *$BM_NT)*$MU0/(2.0*$BM_HGAP/100.)*10.;  =>  1.31749242
+
+# Half bending angle in main dipole, deg
+$PHI=0.5*$BM_B*$BM_L/$BRHO*180./$pi;  =>        2.25
+
+# Main dipole sextupole non-linearity, au
+$B2=((-2.21e-4)*$K1E+(-0.98e-4)*$K3E+(6.59e-4)*$K45E)*$ON_CHROMATICITY;  =>    0.000659
+
+# Reference radius of b2 determination, cm
+$R_REF=3.;  =>           3
+
+# Main dipole sextupole non-linearity, kGs/cm
+$B2L=0.025*$pi*$BRHO*$B2/$R_REF^2;  =>0.0187151261
+
+# Effective length of BV1 magnet, cm
+$BV1_L=138.;  =>         138
+
+# Effective length of BV2 magnet, cm
+$BV2_L=138.;  =>         138
+
+# Orbit elevation above median plane after BV2, cm
+$BV2_H=16.;  =>          16
+
+# Vertical bending angle, rad
+$ALPHA=0.04100340928;  =>0.0410034093
+
+# Long distance between CENTERS of BV1 and BV2, cm
+$BV12_CL=$BV2_H/tan($ALPHA);  =>  389.992746
+
+# Long distance between edges of BV1 and BV2, cm
+$OBV12_L=($BV2_H-(($BV1_L+$BV2_L)*(1.-cos($ALPHA)))/$ALPHA)/sin($ALPHA);  =>  252.301481
+
+# Magnetic field in BV1, BV2, kGs
+$BV1_B=$BRHO*$ALPHA/$BV1_L;  => 0.966942956
+$BV2_B=$BRHO*$ALPHA/$BV2_L;  => 0.966942956
+$DELTA0=($BV1_L-136.8801324)+($BV2_L-136.8801324)+($OBV12_L-($BV2_H-((136.8801324+136.8801324)*(1.-cos($ALPHA)))/$ALPHA)/sin($ALPHA));  =>  1.11971067
+
+# Collider circumference, cm
+$C_RING=503.04*$TO_CM;  =>       50304
+
+# Multipole corrector gradients: A1 in kGs, B2 in kGs/cm, B3 in kGs/cm^2
+
+$MCQ0=$MCQ0*$K1*$ON_COUPLING;  =>           0
+
+$MCS0=$MCS0*$K2*$ON_CHROMATICITY;  =>           0
+$MCS1=$MCS1*$K2*$ON_CHROMATICITY;  =>-0.266854066
+$MCS2=$MCS2*$K2*$ON_CHROMATICITY;  => 0.143189987
+$MCS3=$MCS3*$K2*$ON_CHROMATICITY;  => 0.325431788
+$MCS4=$MCS4*$K2*$ON_CHROMATICITY;  => 0.325431788
+
+$MCO1=$MCO1*$K3*$ON_DA;  =>-0.00976295364
+$MCO2=$MCO2*$K3*$ON_DA;  =>-0.0195259073
+$MCO3=$MCO3*$K3*$ON_DA;  =>0.0130172715
+
+$Q5W2="HQFF Q5W2 HQFF";  =>HQFF Q5W2 HQFF
+$Q6W2="HQFF Q6W2 HQFF";  =>HQFF Q6W2 HQFF
+
+$QD = "HQ QD HQ";  =>HQ QD HQ
+$QF1 = "HQ QF1 HQ";  =>HQ QF1 HQ
+$QF2 = "HQ QF2 HQ";  =>HQ QF2 HQ
+
+$Q7W2="HQ Q7W2 HQ";  =>HQ Q7W2 HQ
+$Q9W2="HQ Q9W2 HQ";  =>HQ Q9W2 HQ
+
+$Q7E2="HQ Q7E2 HQ";  =>HQ Q7E2 HQ
+$Q9E2="HQ Q9E2 HQ";  =>HQ Q9E2 HQ
+
+$MCS_0="KMC KHV MCQ0 MCS0 MCO0 KMC";  =>KMC KHV MCQ0 MCS0 MCO0 KMC
+
+$MCS_1="KMC KHV MCQ0 MCS1 MCO0 KMC";  =>KMC KHV MCQ0 MCS1 MCO0 KMC
+$MCS_2="KMC KHV MCQ0 MCS2 MCO0 KMC";  =>KMC KHV MCQ0 MCS2 MCO0 KMC
+
+$MCO_1="KMC KHV MCQ0 MCS0 MCO1 KMC";  =>KMC KHV MCQ0 MCS0 MCO1 KMC
+$MCO_2="KMC KHV MCQ0 MCS0 MCO2 KMC";  =>KMC KHV MCQ0 MCS0 MCO2 KMC
+$MCO_3="KMC KHV MCQ0 MCS0 MCO3 KMC";  =>KMC KHV MCQ0 MCS0 MCO3 KMC
+
+$BM="MB2L HD G BH G HD MB2L";  =>MB2L HD G BH G HD MB2L
+
+$L_WF =507.53794;  =>   507.53794
+$L_O =568.73      ;  =>      568.73
+$L_O =521      ;  =>         521
+$L_OO = ($L_O - $L_WF)/2;  =>    30.59603
+
+OptiM
+Energy[MeV]=240        Mass[MeV]=1862.9881 
+Emittance: ex[cm]=0.00396  ey[cm]=0.0031  DP/P=0.00156 
+Initial:	BetaX[cm]=837.948 	BetaY[cm]=1538.17 
+	AlfaX=-0.757259 	AlfaY=1.7845 
+	DispersX[cm]=0.96728 	DispersY[cm]=0 
+	Dsp_PrimeX=0.000208597 	DspPrimeY=-0 
+	X[cm]=0.000    	Y[cm]=0.000    	Z[cm]=0.000    	S[cm]=0.000    
+	tetaX[deg]=0        	tetaY[deg]=0        
+
+begin lattice. Number of periods=1 
+
+#=======================================ARC===================================================
+OQLBMD $BM OBMBM $BM OBMMC1 $MCS_0 OMCQL $Q7W2 OMISS1 $MCS_0 OMCQL $QD $QD
+OMISS2 $MCS_0 OMCQL $Q9W2 OQLBM1 $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_0 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC2 $MCS_0 OMCQL $Q9W2 OMISS3 $MCS_0 OMCQL $QD $QD
+OMISS4 $MCS_0 OMCQL $Q7W2 OQLBM2 $BM OBMBM $BM OBMMCOMCOMCQL
+#=======================================MATCH 1=================================================
+O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1
+#=======================================BY PASS=================================================
+BP1 OBP1 QM1 OBP2 QBP1 OBP3 QBP2 OBP4 QBP3 OBP5 QM1 OBP1 BP2 
+#=======================================MATCH 2=================================================
+OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85
+#==================================STRAIGHT SECTION=============================================
+OQLBMD OBM OBMBM OBM OBMMC1 $MCS_0 OMCQL Q7W2 OMISS1 $MCS_0 OMCQL $QD $QD
+OMISS2 $MCS_0 OMCQL Q9W2 OQLBM1 OBM OBMBM OBM OBMMC $MCS_0 OMCQL $QD $QD
+
+OQ $QF1 $QF1 OQ $QD $QD
+OQ $QF1 $QF1 OQ $QD $QD
+OQ $QF1 $QF1 OQ $QD $QD
+
+OQLBM OBM OBMBM OBM OBMMC2 $MCS_0 OMCQL Q9W2 OMISS3 $MCS_0 OMCQL $QD $QD
+OMISS4 $MCS_0 OMCQL Q7W2 OQLBM2 OBM OBMBM OBM OBMMCOMCOMCQL
+#=======================================MATCH 1=================================================
+O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1
+#=======================================BY PASS=================================================
+BP2 OBP1 QM1 OBP5 QBP3 OBP4 QBP2 OBP3 QBP1 OBP2 QM1 OBP1 BP1 
+#=======================================MATCH 2=================================================
+OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85
+
+#=======================================ARC===================================================
+OQLBMD $BM OBMBM $BM OBMMC1 $MCS_0 OMCQL $Q7W2 OMISS1 $MCS_0 OMCQL $QD $QD
+OMISS2 $MCS_0 OMCQL $Q9W2 OQLBM1 $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_0 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC2 $MCS_0 OMCQL $Q9W2 OMISS3 $MCS_0 OMCQL $QD $QD
+OMISS4 $MCS_0 OMCQL $Q7W2 OQLBM2 $BM OBMBM $BM OBMMCOMCOMCQL
+#=======================================MATCH 1=================================================
+O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1
+#=======================================BY PASS=================================================
+BP1 OBP1 QM1 OBP2 QBP1 OBP3 QBP2 OBP4 QBP3 OBP5 QM1 OBP1 BP2 
+#=======================================MATCH 2=================================================
+OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85
+#==================================STRAIGHT SECTION=============================================
+OQLBMD OBM OBMBM OBM OBMMC1 $MCS_0 OMCQL Q7W2 OMISS1 $MCS_0 OMCQL $QD $QD
+OMISS2 $MCS_0 OMCQL Q9W2 OQLBM1 OBM OBMBM OBM OBMMC $MCS_0 OMCQL $QD $QD
+
+OQ $QF1 $QF1 OQ $QD $QD
+OQ $QF1 $QF1 OQ $QD $QD
+OQ $QF1 $QF1 OQ $QD $QD
+
+OQLBM OBM OBMBM OBM OBMMC2 $MCS_0 OMCQL Q9W2 OMISS3 $MCS_0 OMCQL $QD $QD
+OMISS4 $MCS_0 OMCQL Q7W2 OQLBM2 OBM OBMBM OBM OBMMCOMCOMCQL
+#=======================================MATCH 1=================================================
+O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1
+#=======================================BY PASS=================================================
+BP2 OBP1 QM1 OBP5 QBP3 OBP4 QBP2 OBP3 QBP1 OBP2 QM1 OBP1 BP1 
+#=======================================MATCH 2=================================================
+OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85
+
+end lattice
+
+begin list
+
+O1 	L[cm]=134.22   
+O 	L[cm]=524      
+OO 	L[cm]=$L_OO
+# instead O we have OO ra OO
+
+HD 	Ax[cm]=6.04 	Ay[cm]=3.535 	Shape=1 	OffsetX[cm]=0 	OffsetY[cm]=0 	Tilt[deg]=0
+MB2L Order:m=2   Bm*L[kG/cm^(m-1)]=0   Tilt[deg]=0
+G 	B[kG]=1.3174924   Angle[deg]=2.25  EffLen[cm]=3.6  Tilt[deg]=0  
+BH 	L[cm]=194        	B[kG]=1.3174924   	G[kG/cm]=0        	Tilt[deg]=0
+
+#=======================================BY PASS=================================================
+BP1 	L[cm]=50         	B[kG]=10.224     	G[kG/cm]=0        	Tilt[deg]=0
+BP2 	L[cm]=50        	B[kG]=-10.224   	G[kG/cm]=0
+
+OBP1 	L[cm]=18       
+OBP2 	L[cm]=100.00 
+OBP3 	L[cm]=100.000 
+OBP4 	L[cm]=100.00 
+OBP5 	L[cm]=100
+OBP6 	L[cm]=20       
+
+
+OBM 	L[cm]=194
+
+QBP1 	L[cm]=47         	G[kG/cm]=0.9045  	Tilt[deg]=0
+QBP2 	L[cm]=47         	G[kG/cm]=-0.6389 	Tilt[deg]=0
+QBP3 	L[cm]=47         	G[kG/cm]=0.9045  	Tilt[deg]=0
+QM1 	L[cm]=47         	G[kG/cm]=-0.4617 	Tilt[deg]=0
+
+#=======================================MATCH=================================================
+Q6W2 	L[cm]=78.5       	G[kG/cm]=-0.23525 	Tilt[deg]=0
+Q5W2 	L[cm]=69         	G[kG/cm]=0.4210566 	Tilt[deg]=0
+
+
+QM2 	L[cm]=47         	G[kG/cm]=-0.5065 	Tilt[deg]=0
+QM3 	L[cm]=49         	G[kG/cm]=0.682   	Tilt[deg]=0
+QM4 	L[cm]=47         	G[kG/cm]=-0.3195 	Tilt[deg]=0
+
+OM1 	L[cm]=47       
+OM2	L[cm]=50
+OM3 	L[cm]=0        
+OM4 	L[cm]=50        
+OM5	L[cm]=50
+OM6 	L[cm]=510.75 
+OQ 	L[cm]=578      
+#=======================================BY PASS=================================================
+	
+OMC 	L[cm]=30       
+OQLBM 	L[cm]=66.5     
+OQLBM1 	L[cm]=67.5     
+OQLBM2 	L[cm]=71.25    
+OBMBM 	L[cm]=30       
+OBMMC 	L[cm]=28.9     
+OBMMC1 	L[cm]=33.65    
+OBMMC2 	L[cm]=29.9     
+OMCQL 	L[cm]=7.6      
+
+OQ1 	L[cm]=10       
+OQ2 	L[cm]=10       
+OQ3 	L[cm]=18.461519 
+OQ4 	L[cm]=154      
+OQ5 	L[cm]=41.5     
+OQ6 	L[cm]=11.787   
+O85 	L[cm]=8.5      
+OQLBMD 	L[cm]=21.5     
+OBMMCOMCOMCQL 	L[cm]=21.5     
+OMISS1 	L[cm]=518.15   
+OMISS2 	L[cm]=514.4    
+OMISS3 	L[cm]=514.4    
+OMISS4 	L[cm]=518.15   
+#-----------------------------Deflectors---1 “л = 10 к√аусс ----------------------------------------
+ra 	L[cm]=$L_WF   	B[kG]=0.0    	Gb[kG/cm]=0  	E[kV/cm]=0.0       	Ge[kV/cm^2]=0
+
+HQ 	Ax[cm]=6.04 	Ay[cm]=3.535 	Shape=1 	OffsetX[cm]=0 	OffsetY[cm]=0 	Tilt[deg]=0
+HQFF 	Ax[cm]=9.05 	Ay[cm]=9.05 	Shape=1 	OffsetX[cm]=0 	OffsetY[cm]=0 	Tilt[deg]=0
+
+QDS 	L[cm]=23.5       	G[kG/cm]=-0.1691888 	Tilt[deg]=0
+QFS 	L[cm]=23.5       	G[kG/cm]=0.1689665 	Tilt[deg]=0
+Q7W2SS 	L[cm]=37.5       	G[kG/cm]=0.1667245 	Tilt[deg]=0
+Q9W2SS 	L[cm]=45         	G[kG/cm]=0.1690879  	Tilt[deg]=0
+
+#-----------------------------------------------------------------------------------
+Q7W2 	L[cm]=37.5       	G[kG/cm]=0.1749665 	Tilt[deg]=0
+Q9W2 	L[cm]=45         	G[kG/cm]=0.1689665 	Tilt[deg]=0
+
+QD 	L[cm]=23.5       	G[kG/cm]=-0.1636888 	Tilt[deg]=0
+QF1 	L[cm]=23.5       	G[kG/cm]=0.1709665 	Tilt[deg]=0
+#-----------------------------------------------------------------------------------
+
+#---------------------------------------------------------------------------------
+
+KMC 	L[cm]=15         	B[kG]=0   	Tilt[deg]=0
+KHV 	L[cm]=0          	B[kG]=0   	Tilt[deg]=0
+
+#----------------------------------correctors-----------------------------------------------
+MCQ0 Order:m=1   Bm*L[kG/cm^(m-1)]=0   Tilt[deg]=0
+
+MCS0 Order:m=2   Bm*L[kG/cm^(m-1)]=0.0	Tilt[deg]=0
+MCS1 Order:m=2   Bm*L[kG/cm^(m-1)]=-0.0   	Tilt[deg]=0
+MCS2 Order:m=2   Bm*L[kG/cm^(m-1)]=0.0   	Tilt[deg]=0
+MCS1 Order:m=2   Bm*L[kG/cm^(m-1)]=-0.396201   	Tilt[deg]=0
+MCS2 Order:m=2   Bm*L[kG/cm^(m-1)]=0.19016   	Tilt[deg]=0
+
+MCO0 Order:m=3   Bm*L[kG/cm^(m-1)]=0.0   Tilt[deg]=0
+MCO1 Order:m=3   Bm*L[kG/cm^(m-1)]=0.0   Tilt[deg]=0
+MCO2 Order:m=3   Bm*L[kG/cm^(m-1)]=0.0   Tilt[deg]=0
+MCO3 Order:m=3   Bm*L[kG/cm^(m-1)]=0.0   Tilt[deg]=0
+
+end list of elements
+
+BetaFitBlock dL[cm]=0.01 dB[kG]=0.01 dG[kG/cm]=0.001
+#Requested parameters and corresponding accuracy are listed below (dPARM<=0. - no fitting)
+#Maximum Betas[cm] and Momentum Compaction (Alfa) are on the next line
+BtXmax=5000.  dBtXmax=0.  BtYmax=5000.  dBtYmax=0.  Alfa=0.  dAlfa=0.
+#Fitting parameters at the end of the lattice
+Beta_X[cm]=393.557   dBeta_X[cm]=0.1   Alfa_X=0.514275        dAlfa_X=0.01
+Beta_Y[cm]=1920.31   dBeta_Y[cm]=0.1   Alfa_Y=-2.42969        dAlfa_Y=0.01
+Disp_X[cm]=0.     dDisp_X[cm]=0.   D_prime_X=0.     dD_prime_X=0.
+Disp_Y[cm]=0.     dDisp_Y[cm]=0.   D_prime_Y=0.     dD_prime_Y=0.
+Qx=0.             dQx=0.
+Qy=0.             dQy=0.
+#Fit at Element with number =2 
+#To create a constraint at an intermediate element: uncomment the line above, 
+# write the correct Element number and insert six lines describing the
+# fit parameters. You can use up to 4 intermediate points
+#Each point has to be specified as described above
+#
+#Insert groups of Elements below. Each group has to be located on one line.
+#Start from the letter describing the type of changeable parameter such as: L:, B:, G: 
+G: Q6W2
+G: Q5W2
+G: QM1
+L: OM1
+L: OBP1
+EndBetaFitBlock
+
+#=======================================ARC===================================================
+OQLBMD $BM OBMBM $BM OBMMC1 $MCS_0 OMCQL $Q7W2 OMISS1 $MCS_0 OMCQL $QD $QD
+OMISS2 $MCS_0 OMCQL $Q9W2 OQLBM1 $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_0 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC2 $MCS_0 OMCQL $Q9W2 OMISS3 $MCS_0 OMCQL $QD $QD
+OMISS4 $MCS_0 OMCQL $Q7W2 OQLBM2 $BM OBMBM $BM OBMMCOMCOMCQL
+#=======================================MATCH 1=================================================
+O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1 QM1 OBP1
+#=======================================BY PASS=================================================
+BP1 OBP2 QBP1 OBP3 QBP2 OBP4 QBP3 OBP5 BP2 
+#=======================================MATCH 2=================================================
+OBP6 OM3 QM2 OM4 QM3 OM5 QM4 OM6
+#==================================STRAIGHT SECTION=============================================
+QDS 
+QDS O QFS QFS O QDS
+QDS O QFS QFS O QDS
+QDS  OO ra OO QFS QFS  OO ra OO QDS
+QDS  OO ra OO QFS QFS  OO ra OO QDS
+QDS  OO ra OO QFS QFS  OO ra OO QDS
+QDS O QFS QFS O QDS
+QDS O QFS QFS O QDS
+QDS 
+#=======================================MATCH 2=================================================
+OM6 QM4 OM5 QM3 OM4 QM2 OM3 OBP6
+#=======================================BY PASS=================================================
+BP2 OBP5 QBP3 OBP4 QBP2 OBP3 QBP1 OBP2 BP1
+#=======================================MATCH 1=================================================
+OBP1 QM1 OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85
+#===============================================================================================
+
+#=======================================ARC===================================================
+OQLBMD $BM OBMBM $BM OBMMC1 $MCS_0 OMCQL $Q7W2 OMISS1 $MCS_0 OMCQL $QD $QD
+OMISS2 $MCS_0 OMCQL $Q9W2 OQLBM1 $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_0 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC2 $MCS_0 OMCQL $Q9W2 OMISS3 $MCS_0 OMCQL $QD $QD
+OMISS4 $MCS_0 OMCQL $Q7W2 OQLBM2 $BM OBMBM $BM OBMMCOMCOMCQL
+#=======================================MATCH 1=================================================
+O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1 QM1 OBP1
+#=======================================BY PASS=================================================
+BP1 OBP2 QBP1 OBP3 QBP2 OBP4 QBP3 OBP5 BP2 
+#=======================================MATCH 2=================================================
+OBP1 QM1 OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85 OM6
+#==================================STRAIGHT SECTION=============================================
+QFS 
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS 
+#=======================================MATCH 2=================================================
+OM6 O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1 QM1 OBP1
+#=======================================BY PASS=================================================
+BP2 OBP5 QBP3 OBP4 QBP2 OBP3 QBP1 OBP2 BP1 
+#=======================================MATCH 2=================================================
+OBP1 QM1 OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85
+
+
+
+#=======================================ARC===================================================
+OQLBMD $BM OBMBM $BM OBMMC1 $MCS_0 OMCQL $Q7W2 OMISS1 $MCS_0 OMCQL $QD $QD
+OMISS2 $MCS_0 OMCQL $Q9W2 OQLBM1 $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_1 OMCQL $QD $QD
+OQLBM $BM OBMBM $BM OBMMC $MCS_2 OMCQL $QF1 $QF1 OQLBM $BM OBMBM $BM OBMMC $MCS_0 OMCQL $QD $QD
+
+OQLBM $BM OBMBM $BM OBMMC2 $MCS_0 OMCQL $Q9W2 OMISS3 $MCS_0 OMCQL $QD $QD
+OMISS4 $MCS_0 OMCQL $Q7W2 OQLBM2 $BM OBMBM $BM OBMMCOMCOMCQL
+#=======================================MATCH 1=================================================
+O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1 QM1 OBP1
+#=======================================BY PASS=================================================
+BP1 OBP2 QBP1 OBP3 QBP2 OBP4 QBP3 OBP5 BP2 
+#=======================================MATCH 2=================================================
+OBP1 QM1 OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85 OM6
+#==================================STRAIGHT SECTION=============================================
+QFS 
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS O QDS QDS O QFS
+QFS 
+#=======================================MATCH 2=================================================
+OM6 O85 $Q6W2 OQ6 $MCO_3 OQ1 $Q5W2 OM1 QM1 OBP1
+#=======================================BY PASS=================================================
+BP2 OBP5 QBP3 OBP4 QBP2 OBP3 QBP1 OBP2 BP1 
+#=======================================MATCH 2=================================================
+OBP1 QM1 OM1 $Q5W2 OQ1 $MCO_3 OQ6 $Q6W2 O85

@@ -1,0 +1,82 @@
+INCLUDE 'BYPASS_SEQ_WF';
+
+PROCEDURE MAIN;
+  VARIABLE WHERE 100; VARIABLE MRKR 10;
+  VARIABLE GAMMA 1; VARIABLE MAPSE 1;
+  VARIABLE MU 800; VARIABLE NBAR 800 3; VARIABLE EL 1;
+
+  VARIABLE PNUM 1;
+  VARIABLE PSI0_DEG 1;
+  VARIABLE NTURN 1;
+  VARIABLE TUNE 800 3;
+  VARIABLE MU_TP 800 3;
+  VARIABLE CHROM_X 1;
+  VARIABLE CHROM_Y 1;
+  VARIABLE SGx1 1; VARIABLE SGx2 1; VARIABLE SGy1 1;  VARIABLE SGy2 2; VARIABLE EB1 1; VARIABLE EB2 1;
+
+  GROUTF 'img/dump/TR' 1;
+  GAMMA := 1.12792344429;
+  MRKR := '5_qu_WF_45';
+
+  OV 3 3 0;
+  DAEPS 1E-12;
+  { SET lattice parameters }
+  SET_FOR_DEUTERONS GAMMA;
+
+  {WIEN FILTER}
+  EB1 := 99.04;
+  {EB1 := 99.14849674631157;}
+  {EB1 := 0.0;}
+
+  {SEXTUPOLES}
+  {beta chromaticity}
+  {#5 quad}
+  {SGx1 :=  5.0E-003;
+  SGy1 := -9.6E-003;}
+
+  SGx1 :=  0.1040199617883203E-002;
+  SGy1  := 0.1355600297070263E-003;
+
+  {#3 quad}
+  {SGx1 :=  6.5E-003;
+  SGy1 := -11.5E-003;}
+
+  {natural chromaticity}
+  {SGx1 :=  0.0;
+  SGy1  := 0.0;}
+
+  LATTICE SGx1 SGy1 EB1 1; PM 6;
+  WRITE 6 '++++++++++ Magnetic Rigidity';
+  WRITE 6 CONS(CHIM);
+  TSS MU NBAR 0;
+   OPENF 3618 'dat/'&MRKR&'/NU_'&MRKR&'.dat' 'REPLACE';
+      WRITE 3618 MU;
+    CLOSEF 3618;
+    LOOP EL 1 3;
+      OPENF 3618 'dat/'&MRKR&'/NBAR'&MRK(EL)&'_'&MRKR&'.dat' 'REPLACE';
+        WRITE 3618 NBAR(EL);
+      CLOSEF 3618;
+    ENDLOOP;
+
+  {print transfer map}
+   OPENF 636 'dat/'&MRKR&'/TrMAP_'&MRKR&'.dat' 'REPLACE';
+   PM 636; CLOSEF 636;
+   {pront spin transfer map}
+   OPENF 636 'dat/'&MRKR&'/SpTrMAP_'&MRKR&'.dat' 'REPLACE';
+   PSM 636; CLOSEF 636;
+   {print aberrations}
+   OPENF 636 'dat/'&MRKR&'/ABERRATIONS_'&MRKR&'.dat' 'REPLACE';
+   PA 636; CLOSEF 636;
+   {other stats about the map}
+   MAPSE := SE(MAP);
+   OPENF 636 'dat/'&MRKR&'/MAP-SYM-ERR_'&MRKR&'.dat' 'REPLACE';
+   WRITE 636 MAPSE; CLOSEF 636;
+   WRITE 6 'dat/'&MRKR&'/MAP SYMPLECTIFICATION ERROR.dat' MAPSE;
+   WRITE 6 'dat/'&MRKR&'/LATTICE LENGTH.dat' SPOS;
+
+ENDPROCEDURE; {MAIN}
+
+PROCEDURE RUN;
+  MAIN;
+ENDPROCEDURE;
+RUN; END;

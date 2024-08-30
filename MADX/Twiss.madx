@@ -1,0 +1,26 @@
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Wien filters_3.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/NICA.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full Regular Straight 2 8 FODO 120 MeV_u SEXT CORR.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full Regular Straight 2 8 FODO 120 MeV_u SEXT and OCT.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full PyBass_multipole_1.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass Symmetrical.seq";
+CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass REAL.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass Symmetrical 5 QUAD 4.seq";
+
+beam, MASS=1.862988122,CHARGE=1, ENERGY=2.102988122,
+      EX=3.96e-05, EY=3.1e-05, SIGE=0.00156;
+
+!beam, MASS=2.32283962,CHARGE=1, ENERGY=13.54435861,
+!      EX=3.96e-05, EY=3.1e-05, SIGE=0.00156;
+
+USE, PERIOD = MACHINE;
+
+!BETX=8.35516, ALFX=-0.87535,
+!BETY=15.2187, ALFY=1.69898,
+!DX=0.0, DPX=0.0, DY=0.0, DPY=0.0,
+
+twiss, DELTAP = 0.00, file=tbl/twiss.tbl;
+plot, TITLE = "dp/p = 0.0", haxis=s, hmax = 510, vaxis=betx,bety,colour=100, style=100,file=img/twiss_plot;
+plot, TITLE = "dp/p = 0.0", haxis=s, hmax = 510, vaxis=dx,dy,colour=100, style=100,file=img/twiss_plot;
+plot, TITLE = "dp/p = 0.0", haxis=s, hmax = 510, vaxis=betx,bety,dy,dx colour=100, style=100,file=img/twiss_plot;
+stop;

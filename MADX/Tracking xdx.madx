@@ -1,0 +1,62 @@
+CHDIR, DIR = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/";
+!call file = "Full Regular Straight 2 8 FODO 120 MeV_u.seq";
+!call file = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Wien filters_3.seq";
+!call file = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full PyBass_multipole.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass Symmetrical 5 QUAD 4 arc central.seq";
+CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass Symmetrical.seq";
+
+beam, MASS=1.8629881,CHARGE=1, ENERGY=2.1029881,
+      EX=3.0e-05, EY=3.0e-05, SIGE=0.00156;
+
+USE, SEQUENCE = MACHINE;
+CHDIR, DIR = "/Users/Bell/GIT_REPOS/By Pass project/MADX";
+TRACK, FILE = tracking_temp_full, onetable = true;
+
+start, x=0.000, px=0.0, y=0.0, py=0.0;
+start, x=0.001, px=0.0, y=0.0, py=0.0;
+start, x=0.0015, px=0.0, y=0.0, py=0.0;
+start, x=0.002, px=0.0, y=0.0, py=0.0;
+start, x=0.003, px=0.0, y=0.0, py=0.0;
+start, x=0.0035, px=0.0, y=0.0, py=0.0;
+start, x=0.004, px=0.0, y=0.0, py=0.0;
+start, x=0.0045, px=0.0, y=0.0, py=0.0;
+start, x=0.005, px=0.0, y=0.0, py=0.0;
+start, x=0.0055, px=0.0, y=0.0, py=0.0;
+start, x=0.0060, px=0.0, y=0.0, py=0.0;
+start, x=0.0065, px=0.0, y=0.0, py=0.0;
+start, x=0.007, px=0.0, y=0.0, py=0.0;
+start, x=0.0075, px=0.0, y=0.0, py=0.0;
+start, x=0.008, px=0.0, y=0.0, py=0.0;
+start, x=0.0085, px=0.0, y=0.0, py=0.0;
+start, x=0.009, px=0.0, y=0.0, py=0.0;
+start, x=0.010, px=0.0, y=0.0, py=0.0;
+start, x=0.011, px=0.0, y=0.0, py=0.0;
+start, x=0.012, px=0.0, y=0.0, py=0.0;
+start, x=0.013, px=0.0, y=0.0, py=0.0;
+start, x=0.015, px=0.0, y=0.0, py=0.0;
+start, x=0.020, px=0.0, y=0.0, py=0.0;
+start, x=0.025, px=0.0, y=0.0, py=0.0;
+start, x=0.030, px=0.0, y=0.0, py=0.0;
+start, x=0.035, px=0.0, y=0.0, py=0.0;
+start, x=0.040, px=0.0, y=0.0, py=0.0;
+start, x=0.045, px=0.0, y=0.0, py=0.0;
+start, x=0.050, px=0.0, y=0.0, py=0.0;
+start, x=0.055, px=0.0, y=0.0, py=0.0;
+start, x=0.060, px=0.0, y=0.0, py=0.0;
+start, x=0.065, px=0.0, y=0.0, py=0.0;
+start, x=0.070, px=0.0, y=0.0, py=0.0;
+!start, x=0.075, px=0.0, y=0.0, py=0.0;
+start, x=0.080, px=0.0, y=0.0, py=0.0;
+!start, x=0.090, px=0.0, y=0.0, py=0.0;
+start, x=0.100, px=0.0, y=0.0, py=0.0;
+!start, x=0.110, px=0.0, y=0.0, py=0.0;
+start, x=0.120, px=0.0, y=0.0, py=0.0;
+start, x=0.130, px=0.0, y=0.0, py=0.0;
+start, x=0.150, px=0.0, y=0.0, py=0.0;
+
+RUN, TURNS = 1000, ffile=1;
+ENDTRACK;
+
+twiss;
+
+stop;

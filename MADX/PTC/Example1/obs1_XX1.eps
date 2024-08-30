@@ -1,0 +1,7056 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%Title: obs1_XX1.eps
+%%Creator: gnuplot 5.4 patchlevel 4
+%%CreationDate: Tue Nov 15 13:00:12 2022
+%%DocumentFonts: (atend)
+%%BoundingBox: 50 50 410 302
+%%EndComments
+%%BeginProlog
+/gnudict 256 dict def
+gnudict begin
+%
+% The following true/false flags may be edited by hand if desired.
+% The unit line width and grayscale image gamma correction may also be changed.
+%
+/Color true def
+/Blacktext false def
+/Solid false def
+/Dashlength 1 def
+/Landscape false def
+/Level1 false def
+/Level3 false def
+/Rounded false def
+/ClipToBoundingBox false def
+/SuppressPDFMark false def
+/TransparentPatterns false def
+/gnulinewidth 5.000 def
+/userlinewidth gnulinewidth def
+/Gamma 1.0 def
+/BackgroundColor {-1.000 -1.000 -1.000} def
+%
+/vshift -46 def
+/dl1 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul sub dup 0 le { pop 0.01 } if } if
+} def
+/dl2 {
+  10.0 Dashlength userlinewidth gnulinewidth div mul mul mul
+  Rounded { currentlinewidth 0.75 mul add } if
+} def
+/hpt_ 31.5 def
+/vpt_ 31.5 def
+/hpt hpt_ def
+/vpt vpt_ def
+/doclip {
+  ClipToBoundingBox {
+    newpath 50 50 moveto 410 50 lineto 410 302 lineto 50 302 lineto closepath
+    clip
+  } if
+} def
+%
+% Gnuplot Prolog Version 5.2 (Dec 2017)
+%
+%/SuppressPDFMark true def
+%
+/M {moveto} bind def
+/L {lineto} bind def
+/R {rmoveto} bind def
+/V {rlineto} bind def
+/N {newpath moveto} bind def
+/Z {closepath} bind def
+/C {setrgbcolor} bind def
+/f {rlineto fill} bind def
+/g {setgray} bind def
+/Gshow {show} def   % May be redefined later in the file to support UTF-8
+/vpt2 vpt 2 mul def
+/hpt2 hpt 2 mul def
+/Lshow {currentpoint stroke M 0 vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Rshow {currentpoint stroke M dup stringwidth pop neg vshift R
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/Cshow {currentpoint stroke M dup stringwidth pop -2 div vshift R 
+	Blacktext {gsave 0 setgray textshow grestore} {textshow} ifelse} def
+/UP {dup vpt_ mul /vpt exch def hpt_ mul /hpt exch def
+  /hpt2 hpt 2 mul def /vpt2 vpt 2 mul def} def
+/DL {Color {setrgbcolor Solid {pop []} if 0 setdash}
+ {pop pop pop 0 setgray Solid {pop []} if 0 setdash} ifelse} def
+/BL {stroke userlinewidth 2 mul setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/AL {stroke userlinewidth 2 div setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+/UL {dup gnulinewidth mul /userlinewidth exch def
+	dup 1 lt {pop 1} if 10 mul /udl exch def} def
+/PL {stroke userlinewidth setlinewidth
+	Rounded {1 setlinejoin 1 setlinecap} if} def
+3.8 setmiterlimit
+% Classic Line colors (version 5.0)
+/LCw {1 1 1} def
+/LCb {0 0 0} def
+/LCa {0 0 0} def
+/LC0 {1 0 0} def
+/LC1 {0 1 0} def
+/LC2 {0 0 1} def
+/LC3 {1 0 1} def
+/LC4 {0 1 1} def
+/LC5 {1 1 0} def
+/LC6 {0 0 0} def
+/LC7 {1 0.3 0} def
+/LC8 {0.5 0.5 0.5} def
+% Default dash patterns (version 5.0)
+/LTB {BL [] LCb DL} def
+/LTw {PL [] 1 setgray} def
+/LTb {PL [] LCb DL} def
+/LTa {AL [1 udl mul 2 udl mul] 0 setdash LCa setrgbcolor} def
+/LT0 {PL [] LC0 DL} def
+/LT1 {PL [2 dl1 3 dl2] LC1 DL} def
+/LT2 {PL [1 dl1 1.5 dl2] LC2 DL} def
+/LT3 {PL [6 dl1 2 dl2 1 dl1 2 dl2] LC3 DL} def
+/LT4 {PL [1 dl1 2 dl2 6 dl1 2 dl2 1 dl1 2 dl2] LC4 DL} def
+/LT5 {PL [4 dl1 2 dl2] LC5 DL} def
+/LT6 {PL [1.5 dl1 1.5 dl2 1.5 dl1 1.5 dl2 1.5 dl1 6 dl2] LC6 DL} def
+/LT7 {PL [3 dl1 3 dl2 1 dl1 3 dl2] LC7 DL} def
+/LT8 {PL [2 dl1 2 dl2 2 dl1 6 dl2] LC8 DL} def
+/SL {[] 0 setdash} def
+/Pnt {stroke [] 0 setdash gsave 1 setlinecap M 0 0 V stroke grestore} def
+/Dia {stroke [] 0 setdash 2 copy vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke
+  Pnt} def
+/Pls {stroke [] 0 setdash vpt sub M 0 vpt2 V
+  currentpoint stroke M
+  hpt neg vpt neg R hpt2 0 V stroke
+ } def
+/Box {stroke [] 0 setdash 2 copy exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke
+  Pnt} def
+/Crs {stroke [] 0 setdash exch hpt sub exch vpt add M
+  hpt2 vpt2 neg V currentpoint stroke M
+  hpt2 neg 0 R hpt2 vpt2 V stroke} def
+/TriU {stroke [] 0 setdash 2 copy vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke
+  Pnt} def
+/Star {2 copy Pls Crs} def
+/BoxF {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath fill} def
+/TriUF {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath fill} def
+/TriD {stroke [] 0 setdash 2 copy vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke
+  Pnt} def
+/TriDF {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath fill} def
+/DiaF {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath fill} def
+/Pent {stroke [] 0 setdash 2 copy gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore Pnt} def
+/PentF {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath fill grestore} def
+/Circle {stroke [] 0 setdash 2 copy
+  hpt 0 360 arc stroke Pnt} def
+/CircleF {stroke [] 0 setdash hpt 0 360 arc fill} def
+/C0 {BL [] 0 setdash 2 copy moveto vpt 90 450 arc} bind def
+/C1 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C2 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C3 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C4 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C5 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc
+	2 copy moveto
+	2 copy vpt 180 270 arc closepath fill
+	vpt 0 360 arc} bind def
+/C6 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C7 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 270 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C8 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C9 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 270 450 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C10 {BL [] 0 setdash 2 copy 2 copy moveto vpt 270 360 arc closepath fill
+	2 copy moveto
+	2 copy vpt 90 180 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C11 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 180 arc closepath fill
+	2 copy moveto
+	2 copy vpt 270 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C12 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C13 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 0 90 arc closepath fill
+	2 copy moveto
+	2 copy vpt 180 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/C14 {BL [] 0 setdash 2 copy moveto
+	2 copy vpt 90 360 arc closepath fill
+	vpt 0 360 arc} bind def
+/C15 {BL [] 0 setdash 2 copy vpt 0 360 arc closepath fill
+	vpt 0 360 arc closepath} bind def
+/Rec {newpath 4 2 roll moveto 1 index 0 rlineto 0 exch rlineto
+	neg 0 rlineto closepath} bind def
+/Square {dup Rec} bind def
+/Bsquare {vpt sub exch vpt sub exch vpt2 Square} bind def
+/S0 {BL [] 0 setdash 2 copy moveto 0 vpt rlineto BL Bsquare} bind def
+/S1 {BL [] 0 setdash 2 copy vpt Square fill Bsquare} bind def
+/S2 {BL [] 0 setdash 2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S3 {BL [] 0 setdash 2 copy exch vpt sub exch vpt2 vpt Rec fill Bsquare} bind def
+/S4 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S5 {BL [] 0 setdash 2 copy 2 copy vpt Square fill
+	exch vpt sub exch vpt sub vpt Square fill Bsquare} bind def
+/S6 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S7 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt vpt2 Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S8 {BL [] 0 setdash 2 copy vpt sub vpt Square fill Bsquare} bind def
+/S9 {BL [] 0 setdash 2 copy vpt sub vpt vpt2 Rec fill Bsquare} bind def
+/S10 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt Square fill
+	Bsquare} bind def
+/S11 {BL [] 0 setdash 2 copy vpt sub vpt Square fill 2 copy exch vpt sub exch vpt2 vpt Rec fill
+	Bsquare} bind def
+/S12 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill Bsquare} bind def
+/S13 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy vpt Square fill Bsquare} bind def
+/S14 {BL [] 0 setdash 2 copy exch vpt sub exch vpt sub vpt2 vpt Rec fill
+	2 copy exch vpt sub exch vpt Square fill Bsquare} bind def
+/S15 {BL [] 0 setdash 2 copy Bsquare fill Bsquare} bind def
+/D0 {gsave translate 45 rotate 0 0 S0 stroke grestore} bind def
+/D1 {gsave translate 45 rotate 0 0 S1 stroke grestore} bind def
+/D2 {gsave translate 45 rotate 0 0 S2 stroke grestore} bind def
+/D3 {gsave translate 45 rotate 0 0 S3 stroke grestore} bind def
+/D4 {gsave translate 45 rotate 0 0 S4 stroke grestore} bind def
+/D5 {gsave translate 45 rotate 0 0 S5 stroke grestore} bind def
+/D6 {gsave translate 45 rotate 0 0 S6 stroke grestore} bind def
+/D7 {gsave translate 45 rotate 0 0 S7 stroke grestore} bind def
+/D8 {gsave translate 45 rotate 0 0 S8 stroke grestore} bind def
+/D9 {gsave translate 45 rotate 0 0 S9 stroke grestore} bind def
+/D10 {gsave translate 45 rotate 0 0 S10 stroke grestore} bind def
+/D11 {gsave translate 45 rotate 0 0 S11 stroke grestore} bind def
+/D12 {gsave translate 45 rotate 0 0 S12 stroke grestore} bind def
+/D13 {gsave translate 45 rotate 0 0 S13 stroke grestore} bind def
+/D14 {gsave translate 45 rotate 0 0 S14 stroke grestore} bind def
+/D15 {gsave translate 45 rotate 0 0 S15 stroke grestore} bind def
+/DiaE {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V closepath stroke} def
+/BoxE {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V closepath stroke} def
+/TriUE {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V closepath stroke} def
+/TriDE {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V closepath stroke} def
+/PentE {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  closepath stroke grestore} def
+/CircE {stroke [] 0 setdash 
+  hpt 0 360 arc stroke} def
+/Opaque {gsave closepath 1 setgray fill grestore 0 setgray closepath} def
+/DiaW {stroke [] 0 setdash vpt add M
+  hpt neg vpt neg V hpt vpt neg V
+  hpt vpt V hpt neg vpt V Opaque stroke} def
+/BoxW {stroke [] 0 setdash exch hpt sub exch vpt add M
+  0 vpt2 neg V hpt2 0 V 0 vpt2 V
+  hpt2 neg 0 V Opaque stroke} def
+/TriUW {stroke [] 0 setdash vpt 1.12 mul add M
+  hpt neg vpt -1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt 1.62 mul V Opaque stroke} def
+/TriDW {stroke [] 0 setdash vpt 1.12 mul sub M
+  hpt neg vpt 1.62 mul V
+  hpt 2 mul 0 V
+  hpt neg vpt -1.62 mul V Opaque stroke} def
+/PentW {stroke [] 0 setdash gsave
+  translate 0 hpt M 4 {72 rotate 0 hpt L} repeat
+  Opaque stroke grestore} def
+/CircW {stroke [] 0 setdash 
+  hpt 0 360 arc Opaque stroke} def
+/BoxFill {gsave Rec 1 setgray fill grestore} def
+/Density {
+  /Fillden exch def
+  currentrgbcolor
+  /ColB exch def /ColG exch def /ColR exch def
+  /ColR ColR Fillden mul Fillden sub 1 add def
+  /ColG ColG Fillden mul Fillden sub 1 add def
+  /ColB ColB Fillden mul Fillden sub 1 add def
+  ColR ColG ColB setrgbcolor} def
+/BoxColFill {gsave Rec PolyFill} def
+/PolyFill {gsave Density fill grestore grestore} def
+/h {rlineto rlineto rlineto closepath gsave fill grestore stroke} bind def
+%
+% PostScript Level 1 Pattern Fill routine for rectangles
+% Usage: x y w h s a XX PatternFill
+%	x,y = lower left corner of box to be filled
+%	w,h = width and height of box
+%	  a = angle in degrees between lines and x-axis
+%	 XX = 0/1 for no/yes cross-hatch
+%
+/PatternFill {gsave /PFa [ 9 2 roll ] def
+  PFa 0 get PFa 2 get 2 div add PFa 1 get PFa 3 get 2 div add translate
+  PFa 2 get -2 div PFa 3 get -2 div PFa 2 get PFa 3 get Rec
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+  clip
+  currentlinewidth 0.5 mul setlinewidth
+  /PFs PFa 2 get dup mul PFa 3 get dup mul add sqrt def
+  0 0 M PFa 5 get rotate PFs -2 div dup translate
+  0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 M 0 PFs V} for
+  0 PFa 6 get ne {
+	0 1 PFs PFa 4 get div 1 add floor cvi
+	{PFa 4 get mul 0 2 1 roll M PFs 0 V} for
+ } if
+  stroke grestore} def
+%
+/languagelevel where
+ {pop languagelevel} {1} ifelse
+dup 2 lt
+	{/InterpretLevel1 true def
+	 /InterpretLevel3 false def}
+	{/InterpretLevel1 Level1 def
+	 2 gt
+	    {/InterpretLevel3 Level3 def}
+	    {/InterpretLevel3 false def}
+	 ifelse }
+ ifelse
+%
+% PostScript level 2 pattern fill definitions
+%
+/Level2PatternFill {
+/Tile8x8 {/PaintType 2 /PatternType 1 /TilingType 1 /BBox [0 0 8 8] /XStep 8 /YStep 8}
+	bind def
+/KeepColor {currentrgbcolor [/Pattern /DeviceRGB] setcolorspace} bind def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke} 
+>> matrix makepattern
+/Pat1 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 8 8 L 0 8 M 8 0 L stroke
+	0 4 M 4 8 L 8 4 L 4 0 L 0 4 L stroke}
+>> matrix makepattern
+/Pat2 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 0 M 0 8 L
+	8 8 L 8 0 L 0 0 L fill}
+>> matrix makepattern
+/Pat3 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 8 M 8 -4 L
+	0 12 M 12 0 L stroke}
+>> matrix makepattern
+/Pat4 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -4 0 M 8 12 L
+	0 -4 M 12 8 L stroke}
+>> matrix makepattern
+/Pat5 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 8 M 4 -4 L
+	0 12 M 8 -4 L 4 12 M 10 0 L stroke}
+>> matrix makepattern
+/Pat6 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop -2 0 M 4 12 L
+	0 -4 M 8 12 L 4 -4 M 10 8 L stroke}
+>> matrix makepattern
+/Pat7 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 8 -2 M -4 4 L
+	12 0 M -4 8 L 12 4 M 0 10 L stroke}
+>> matrix makepattern
+/Pat8 exch def
+<< Tile8x8
+ /PaintProc {0.5 setlinewidth pop 0 -2 M 12 4 L
+	-4 0 M 12 8 L -4 4 M 8 10 L stroke}
+>> matrix makepattern
+/Pat9 exch def
+/Pattern1 {PatternBgnd KeepColor Pat1 setpattern} bind def
+/Pattern2 {PatternBgnd KeepColor Pat2 setpattern} bind def
+/Pattern3 {PatternBgnd KeepColor Pat3 setpattern} bind def
+/Pattern4 {PatternBgnd KeepColor Landscape {Pat5} {Pat4} ifelse setpattern} bind def
+/Pattern5 {PatternBgnd KeepColor Landscape {Pat4} {Pat5} ifelse setpattern} bind def
+/Pattern6 {PatternBgnd KeepColor Landscape {Pat9} {Pat6} ifelse setpattern} bind def
+/Pattern7 {PatternBgnd KeepColor Landscape {Pat8} {Pat7} ifelse setpattern} bind def
+} def
+%
+%
+%End of PostScript Level 2 code
+%
+/PatternBgnd {
+  TransparentPatterns {} {gsave 1 setgray fill grestore} ifelse
+} def
+%
+% Substitute for Level 2 pattern fill codes with
+% grayscale if Level 2 support is not selected.
+%
+/Level1PatternFill {
+/Pattern1 {0.250 Density} bind def
+/Pattern2 {0.500 Density} bind def
+/Pattern3 {0.750 Density} bind def
+/Pattern4 {0.125 Density} bind def
+/Pattern5 {0.375 Density} bind def
+/Pattern6 {0.625 Density} bind def
+/Pattern7 {0.875 Density} bind def
+} def
+%
+% Now test for support of Level 2 code
+%
+Level1 {Level1PatternFill} {Level2PatternFill} ifelse
+%
+/Symbol-Oblique /Symbol findfont [1 0 .167 1 0 0] makefont
+dup length dict begin {1 index /FID eq {pop pop} {def} ifelse} forall
+currentdict end definefont pop
+%
+/Metrics {ExtendTextBox Gswidth} def
+/Lwidth {currentpoint stroke M 0 vshift R Metrics} def
+/Rwidth {currentpoint stroke M dup stringwidth pop neg vshift R Metrics} def
+/Cwidth {currentpoint stroke M dup stringwidth pop -2 div vshift R Metrics} def
+/GLwidth {currentpoint stroke M 0 vshift R {ExtendTextBox} forall} def
+/GRwidth {currentpoint stroke M dup Gwidth vshift R {ExtendTextBox} forall} def
+/GCwidth {currentpoint stroke M dup Gwidth 2 div vshift R {ExtendTextBox} forall} def
+/GLwidth2 {0 Gwidth AddGlyphWidth} def
+/GRwidth2 {Gwidth -1 mul 0 AddGlyphWidth} def
+/GCwidth2 {Gwidth 2 div dup -1 mul AddGlyphWidth} def
+/AddGlyphWidth { dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+                 dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse } def
+/MFshow {
+   { dup 5 get 3 ge
+     { 5 get 3 eq {gsave} {grestore} ifelse }
+     {dup dup 0 get findfont exch 1 get scalefont setfont
+     [ currentpoint ] exch dup 2 get 0 exch R dup 5 get 2 ne {dup dup 6
+     get exch 4 get {textshow} {Metrics pop 0 R} ifelse }if dup 5 get 0 eq
+     {dup 3 get {2 get neg 0 exch R pop} {pop aload pop M} ifelse} {dup 5
+     get 1 eq {dup 2 get exch dup 3 get exch 6 get Gswidth pop -2 div
+     dup 0 R} {dup 6 get Gswidth pop -2 div 0 R 6 get
+     textshow 2 index {aload pop M neg 3 -1 roll neg R pop pop} {pop pop pop
+     pop aload pop M} ifelse }ifelse }ifelse }
+     ifelse }
+   forall} def
+/Gswidth {dup type /stringtype eq {stringwidth} {pop (n) stringwidth} ifelse} def
+/MFwidth {0 exch { dup 5 get 3 ge { 5 get 3 eq { 0 } { pop } ifelse }
+ {dup 3 get{dup dup 0 get findfont exch 1 get scalefont setfont
+     6 get Gswidth pop add} {pop} ifelse} ifelse} forall} def
+/MLshow { currentpoint stroke M
+  0 exch R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MRshow { currentpoint stroke M
+  exch dup MFwidth neg 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/MCshow { currentpoint stroke M
+  exch dup MFwidth -2 div 3 -1 roll R
+  Blacktext {gsave 0 setgray MFshow grestore} {MFshow} ifelse } bind def
+/XYsave    { [( ) 1 2 true false 3 ()] } bind def
+/XYrestore { [( ) 1 2 true false 4 ()] } bind def
+Level1 SuppressPDFMark or 
+{} {
+/SDict 10 dict def
+systemdict /pdfmark known not {
+  userdict /pdfmark systemdict /cleartomark get put
+} if
+SDict begin [
+  /Title (obs1_XX1.eps)
+  /Subject (gnuplot plot)
+  /Creator (gnuplot 5.4 patchlevel 4)
+%  /Producer (gnuplot)
+%  /Keywords ()
+  /CreationDate (Tue Nov 15 13:00:12 2022)
+  /DOCINFO pdfmark
+end
+} ifelse
+%
+% Support for boxed text - Ethan A Merritt Sep 2016
+%
+/InitTextBox { userdict /TBy2 3 -1 roll put userdict /TBx2 3 -1 roll put
+           userdict /TBy1 3 -1 roll put userdict /TBx1 3 -1 roll put
+	   /Boxing true def } def
+/ExtendTextBox { dup type /stringtype eq
+    { Boxing { gsave dup false charpath pathbbox
+      dup TBy2 gt {userdict /TBy2 3 -1 roll put} {pop} ifelse
+      dup TBx2 gt {userdict /TBx2 3 -1 roll put} {pop} ifelse
+      dup TBy1 lt {userdict /TBy1 3 -1 roll put} {pop} ifelse
+      dup TBx1 lt {userdict /TBx1 3 -1 roll put} {pop} ifelse
+      grestore } if }
+    {} ifelse} def
+/PopTextBox { newpath TBx1 TBxmargin sub TBy1 TBymargin sub M
+               TBx1 TBxmargin sub TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy2 TBymargin add L
+	       TBx2 TBxmargin add TBy1 TBymargin sub L closepath } def
+/DrawTextBox { PL PopTextBox stroke /Boxing false def} def
+/FillTextBox { gsave PopTextBox fill grestore /Boxing false def} def
+0 0 0 0 InitTextBox
+/TBxmargin 20 def
+/TBymargin 20 def
+/Boxing false def
+/textshow { ExtendTextBox Gshow } def
+%
+end
+%%EndProlog
+%%Page: 1 1
+gnudict begin
+gsave
+doclip
+50 50 translate
+0.050 0.050 scale
+0 setgray
+newpath
+(Helvetica) findfont 140 scalefont setfont
+BackgroundColor 0 lt 3 1 roll 0 lt exch 0 lt or or not {BackgroundColor C 1.000 0 0 7200.00 5040.00 BoxColFill} if
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 280 M
+6233 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 280 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.02)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+/vshift -46 def
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 822 M
+3314 0 V
+2835 0 R
+84 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 822 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 822 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.015)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 1365 M
+6233 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1365 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 1365 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.01)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 1907 M
+6233 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 1907 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 1907 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.005)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 2450 M
+6233 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2450 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 2450 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 2992 M
+6233 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 2992 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 2992 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.005)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 3534 M
+6233 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 3534 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 3534 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.01)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 4077 M
+6233 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4077 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 4077 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.015)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 4619 M
+6233 0 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 4619 M
+63 0 V
+6170 0 R
+-63 0 V
+stroke
+630 4619 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.02)]
+] -46.7 MRshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+714 280 M
+0 4339 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+714 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+714 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.02)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+1493 280 M
+0 4339 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+1493 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+1493 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.015)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+2272 280 M
+0 4339 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+2272 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+2272 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.01)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+3051 280 M
+0 4339 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+3051 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+3051 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 (-0.005)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+3831 280 M
+0 4339 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+3831 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+3831 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+4610 280 M
+0 63 V
+0 840 R
+0 3436 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+4610 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+4610 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.005)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+5389 280 M
+0 63 V
+0 840 R
+0 3436 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+5389 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+5389 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.01)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+6168 280 M
+0 63 V
+0 840 R
+0 3436 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+6168 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+6168 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.015)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+0.500 UL
+LTa
+LCa setrgbcolor
+6947 280 M
+0 4339 V
+stroke
+1.000 UL
+LTb
+LCb setrgbcolor
+6947 280 M
+0 63 V
+0 4276 R
+0 -63 V
+stroke
+6947 140 M
+[ [(Helvetica) 140.0 0.0 true true 0 ( 0.02)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTb
+LCb setrgbcolor
+4028 343 N
+0 840 V
+2835 0 V
+0 -840 V
+-2835 0 V
+Z stroke
+% Begin plot #1
+0.500 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C
+LCb setrgbcolor
+6296 1113 M
+('track.obs0001.p0001' u 3:4) Rshow
+0.500 UP
+1.000 UL
+LTb
+0.58 0.00 0.83 C
+3831 2450 Crs
+3785 2521 Crs
+3867 2468 Crs
+3789 2481 Crs
+3900 2464 Crs
+3811 2428 Crs
+3877 2477 Crs
+3820 2429 Crs
+3814 2514 Crs
+3839 2461 Crs
+3782 2513 Crs
+3881 2468 Crs
+3799 2459 Crs
+3898 2464 Crs
+3817 2422 Crs
+3855 2489 Crs
+3824 2442 Crs
+3797 2520 Crs
+3851 2467 Crs
+3787 2497 Crs
+3891 2465 Crs
+3809 2441 Crs
+3889 2467 Crs
+3819 2425 Crs
+3833 2501 Crs
+3829 2454 Crs
+3788 2518 Crs
+3865 2469 Crs
+3795 2477 Crs
+3896 2462 Crs
+3815 2429 Crs
+3872 2476 Crs
+3821 2434 Crs
+3812 2512 Crs
+3838 2464 Crs
+3787 2509 Crs
+3878 2467 Crs
+3805 2457 Crs
+3894 2462 Crs
+3819 2425 Crs
+3851 2488 Crs
+3823 2447 Crs
+3798 2518 Crs
+3850 2469 Crs
+3792 2494 Crs
+3889 2463 Crs
+3813 2440 Crs
+3884 2466 Crs
+3820 2429 Crs
+3830 2501 Crs
+3828 2459 Crs
+3791 2516 Crs
+3863 2470 Crs
+3801 2475 Crs
+3893 2460 Crs
+3818 2430 Crs
+3868 2475 Crs
+3820 2439 Crs
+3811 2511 Crs
+3837 2467 Crs
+3791 2507 Crs
+3877 2466 Crs
+3810 2455 Crs
+3891 2460 Crs
+3820 2427 Crs
+3848 2488 Crs
+3822 2451 Crs
+3799 2517 Crs
+3849 2471 Crs
+3797 2491 Crs
+3887 2462 Crs
+3817 2440 Crs
+3881 2465 Crs
+3820 2432 Crs
+3828 2501 Crs
+3827 2462 Crs
+3793 2514 Crs
+3863 2469 Crs
+3805 2472 Crs
+3891 2459 Crs
+3820 2431 Crs
+3865 2475 Crs
+3819 2443 Crs
+3811 2511 Crs
+3836 2469 Crs
+3794 2504 Crs
+3876 2465 Crs
+3813 2454 Crs
+3888 2459 Crs
+3821 2430 Crs
+3845 2488 Crs
+3821 2454 Crs
+3800 2516 Crs
+3848 2471 Crs
+3800 2488 Crs
+3886 2460 Crs
+3819 2439 Crs
+3878 2465 Crs
+3819 2435 Crs
+3826 2501 Crs
+3826 2464 Crs
+3795 2513 Crs
+3863 2469 Crs
+3808 2470 Crs
+3890 2457 Crs
+3821 2432 Crs
+3862 2475 Crs
+3818 2446 Crs
+3810 2511 Crs
+3835 2470 Crs
+3797 2502 Crs
+3876 2463 Crs
+3816 2452 Crs
+3887 2458 Crs
+3820 2432 Crs
+3843 2489 Crs
+3820 2457 Crs
+3800 2515 Crs
+3849 2471 Crs
+3803 2486 Crs
+3886 2458 Crs
+3820 2439 Crs
+3876 2465 Crs
+3818 2438 Crs
+3825 2503 Crs
+3825 2466 Crs
+3797 2512 Crs
+3863 2467 Crs
+3811 2468 Crs
+3889 2456 Crs
+3821 2432 Crs
+3860 2476 Crs
+3817 2448 Crs
+3810 2512 Crs
+3836 2470 Crs
+3800 2500 Crs
+3877 2462 Crs
+3817 2451 Crs
+3885 2458 Crs
+3819 2433 Crs
+3842 2491 Crs
+3819 2459 Crs
+3801 2515 Crs
+3849 2470 Crs
+3806 2484 Crs
+3886 2456 Crs
+3820 2438 Crs
+3875 2465 Crs
+3816 2440 Crs
+3824 2504 Crs
+3825 2467 Crs
+3799 2511 Crs
+3865 2465 Crs
+3812 2466 Crs
+3889 2454 Crs
+3820 2433 Crs
+3858 2478 Crs
+3815 2451 Crs
+3810 2513 Crs
+3836 2470 Crs
+3801 2499 Crs
+3878 2459 Crs
+3818 2449 Crs
+3885 2458 Crs
+3817 2435 Crs
+3840 2493 Crs
+3818 2460 Crs
+3802 2516 Crs
+3851 2468 Crs
+3807 2482 Crs
+3888 2455 Crs
+3819 2438 Crs
+3874 2467 Crs
+3814 2442 Crs
+3823 2506 Crs
+3825 2467 Crs
+3800 2510 Crs
+3867 2463 Crs
+3813 2464 Crs
+3890 2454 Crs
+3818 2433 Crs
+3857 2480 Crs
+3814 2452 Crs
+3810 2515 Crs
+3838 2469 Crs
+3802 2498 Crs
+3881 2457 Crs
+3817 2448 Crs
+3885 2458 Crs
+3815 2436 Crs
+3839 2495 Crs
+3817 2461 Crs
+3802 2517 Crs
+3853 2466 Crs
+3808 2481 Crs
+3890 2453 Crs
+3818 2437 Crs
+3873 2468 Crs
+3812 2443 Crs
+3822 2509 Crs
+3826 2466 Crs
+3800 2510 Crs
+3870 2461 Crs
+3813 2463 Crs
+3892 2453 Crs
+3815 2434 Crs
+3857 2483 Crs
+3812 2453 Crs
+3809 2517 Crs
+3839 2467 Crs
+3803 2497 Crs
+3884 2455 Crs
+3815 2447 Crs
+3886 2459 Crs
+3812 2437 Crs
+3838 2499 Crs
+3817 2461 Crs
+3802 2518 Crs
+3856 2464 Crs
+3807 2479 Crs
+3893 2451 Crs
+3815 2437 Crs
+3873 2471 Crs
+3809 2444 Crs
+3821 2512 Crs
+3827 2465 Crs
+3800 2510 Crs
+3873 2458 Crs
+3811 2461 Crs
+3894 2453 Crs
+3812 2434 Crs
+3856 2486 Crs
+3810 2453 Crs
+3809 2520 Crs
+3842 2465 Crs
+3802 2496 Crs
+3888 2453 Crs
+3813 2446 Crs
+3887 2460 Crs
+3808 2437 Crs
+3837 2503 Crs
+3817 2460 Crs
+3801 2519 Crs
+3860 2461 Crs
+3806 2478 Crs
+3896 2450 Crs
+3811 2436 Crs
+3874 2474 Crs
+3807 2444 Crs
+3821 2516 Crs
+3829 2463 Crs
+3799 2511 Crs
+3878 2455 Crs
+3809 2460 Crs
+3897 2453 Crs
+3808 2433 Crs
+3856 2490 Crs
+3809 2452 Crs
+3808 2523 Crs
+3846 2462 Crs
+3801 2496 Crs
+3893 2450 Crs
+3809 2444 Crs
+3889 2463 Crs
+3805 2437 Crs
+3837 2507 Crs
+3817 2458 Crs
+3800 2521 Crs
+3865 2457 Crs
+3804 2477 Crs
+3901 2449 Crs
+3807 2435 Crs
+3875 2477 Crs
+3804 2443 Crs
+3820 2520 Crs
+3831 2460 Crs
+3798 2511 Crs
+3884 2452 Crs
+3805 2458 Crs
+3900 2454 Crs
+3803 2432 Crs
+3856 2495 Crs
+3808 2451 Crs
+3807 2526 Crs
+3850 2458 Crs
+3799 2495 Crs
+3898 2448 Crs
+3804 2443 Crs
+3892 2465 Crs
+3800 2436 Crs
+3837 2512 Crs
+3818 2456 Crs
+3799 2523 Crs
+3871 2454 Crs
+3800 2476 Crs
+3906 2449 Crs
+3801 2434 Crs
+3877 2482 Crs
+3801 2442 Crs
+3819 2525 Crs
+3835 2457 Crs
+3796 2512 Crs
+3890 2449 Crs
+3800 2456 Crs
+3905 2456 Crs
+3798 2431 Crs
+3857 2501 Crs
+3807 2448 Crs
+3805 2530 Crs
+3855 2454 Crs
+3795 2495 Crs
+3905 2446 Crs
+3798 2441 Crs
+3895 2469 Crs
+3796 2434 Crs
+3836 2518 Crs
+3820 2452 Crs
+3796 2526 Crs
+3878 2449 Crs
+3795 2474 Crs
+3912 2449 Crs
+3795 2432 Crs
+3879 2487 Crs
+3798 2440 Crs
+3817 2530 Crs
+3839 2452 Crs
+3792 2514 Crs
+3898 2445 Crs
+3794 2455 Crs
+3910 2458 Crs
+3791 2429 Crs
+3858 2507 Crs
+3807 2445 Crs
+3803 2534 Crs
+3862 2449 Crs
+3790 2495 Crs
+3913 2445 Crs
+3791 2439 Crs
+3899 2474 Crs
+3791 2431 Crs
+3836 2525 Crs
+3822 2447 Crs
+3793 2529 Crs
+3886 2445 Crs
+3789 2473 Crs
+3920 2450 Crs
+3787 2429 Crs
+3881 2494 Crs
+3795 2436 Crs
+3816 2537 Crs
+3844 2447 Crs
+3787 2515 Crs
+3907 2442 Crs
+3786 2453 Crs
+3916 2461 Crs
+3785 2426 Crs
+3858 2515 Crs
+3807 2440 Crs
+3800 2539 Crs
+3870 2443 Crs
+3784 2495 Crs
+3922 2444 Crs
+3782 2436 Crs
+3904 2479 Crs
+3786 2428 Crs
+3835 2533 Crs
+3826 2442 Crs
+3788 2533 Crs
+3896 2440 Crs
+3781 2472 Crs
+3928 2451 Crs
+3779 2426 Crs
+3884 2501 Crs
+3793 2432 Crs
+3813 2544 Crs
+3851 2440 Crs
+3781 2517 Crs
+3918 2439 Crs
+3777 2450 Crs
+3924 2465 Crs
+3777 2423 Crs
+3859 2523 Crs
+3808 2434 Crs
+3796 2545 Crs
+3879 2437 Crs
+3776 2495 Crs
+3933 2443 Crs
+3772 2433 Crs
+3909 2486 Crs
+3780 2423 Crs
+3834 2541 Crs
+3831 2435 Crs
+3783 2537 Crs
+3907 2435 Crs
+3771 2470 Crs
+3938 2453 Crs
+3769 2423 Crs
+3887 2510 Crs
+3791 2426 Crs
+3810 2552 Crs
+3859 2433 Crs
+3773 2519 Crs
+3930 2436 Crs
+3766 2448 Crs
+3932 2471 Crs
+3769 2418 Crs
+3860 2533 Crs
+3810 2427 Crs
+3790 2552 Crs
+3890 2430 Crs
+3766 2495 Crs
+3945 2443 Crs
+3761 2429 Crs
+3916 2494 Crs
+3775 2417 Crs
+3832 2551 Crs
+3837 2427 Crs
+3775 2541 Crs
+3920 2430 Crs
+3759 2469 Crs
+3949 2456 Crs
+3758 2418 Crs
+3891 2520 Crs
+3790 2418 Crs
+3806 2561 Crs
+3869 2425 Crs
+3763 2521 Crs
+3944 2433 Crs
+3753 2444 Crs
+3942 2477 Crs
+3760 2412 Crs
+3861 2544 Crs
+3813 2418 Crs
+3784 2559 Crs
+3903 2423 Crs
+3754 2495 Crs
+3959 2443 Crs
+3747 2425 Crs
+3923 2503 Crs
+3770 2410 Crs
+3830 2562 Crs
+3845 2417 Crs
+3766 2546 Crs
+3936 2424 Crs
+3745 2467 Crs
+3962 2461 Crs
+3746 2412 Crs
+3895 2531 Crs
+3789 2409 Crs
+3801 2571 Crs
+3881 2415 Crs
+3751 2524 Crs
+3961 2431 Crs
+3737 2440 Crs
+3952 2485 Crs
+3751 2404 Crs
+3862 2556 Crs
+3818 2408 Crs
+3775 2567 Crs
+3919 2415 Crs
+3739 2495 Crs
+3976 2445 Crs
+3732 2419 Crs
+3931 2514 Crs
+3765 2400 Crs
+3827 2575 Crs
+3854 2406 Crs
+3754 2552 Crs
+3953 2419 Crs
+3728 2464 Crs
+3977 2466 Crs
+3732 2404 Crs
+3899 2544 Crs
+3789 2398 Crs
+3794 2582 Crs
+3895 2405 Crs
+3736 2526 Crs
+3980 2429 Crs
+3720 2435 Crs
+3965 2495 Crs
+3741 2395 Crs
+3862 2571 Crs
+3824 2396 Crs
+3765 2576 Crs
+3937 2407 Crs
+3721 2494 Crs
+3994 2448 Crs
+3715 2412 Crs
+3939 2527 Crs
+3760 2389 Crs
+3823 2589 Crs
+3866 2393 Crs
+3740 2558 Crs
+3974 2414 Crs
+3709 2461 Crs
+3994 2474 Crs
+3718 2395 Crs
+3903 2559 Crs
+3791 2385 Crs
+3785 2594 Crs
+3912 2393 Crs
+3719 2529 Crs
+4001 2428 Crs
+3699 2429 Crs
+3978 2506 Crs
+3731 2383 Crs
+3861 2587 Crs
+3832 2381 Crs
+3752 2586 Crs
+3958 2398 Crs
+3701 2494 Crs
+4015 2452 Crs
+3696 2403 Crs
+3948 2542 Crs
+3756 2375 Crs
+3817 2604 Crs
+3881 2379 Crs
+3722 2565 Crs
+3997 2409 Crs
+3686 2456 Crs
+4012 2483 Crs
+3702 2383 Crs
+3908 2577 Crs
+3794 2369 Crs
+3774 2608 Crs
+3933 2381 Crs
+3697 2532 Crs
+4026 2429 Crs
+3676 2422 Crs
+3993 2520 Crs
+3721 2369 Crs
+3860 2605 Crs
+3842 2365 Crs
+3736 2597 Crs
+3983 2388 Crs
+3676 2492 Crs
+4039 2457 Crs
+3675 2392 Crs
+3958 2560 Crs
+3753 2358 Crs
+3810 2622 Crs
+3898 2363 Crs
+3701 2572 Crs
+4025 2404 Crs
+3660 2451 Crs
+4033 2494 Crs
+3685 2369 Crs
+3911 2597 Crs
+3799 2351 Crs
+3761 2624 Crs
+3956 2367 Crs
+3672 2535 Crs
+4054 2430 Crs
+3650 2412 Crs
+4010 2536 Crs
+3710 2352 Crs
+3857 2626 Crs
+3856 2346 Crs
+3716 2609 Crs
+4011 2379 Crs
+3647 2490 Crs
+4065 2465 Crs
+3652 2379 Crs
+3969 2580 Crs
+3751 2339 Crs
+3800 2642 Crs
+3919 2345 Crs
+3676 2579 Crs
+4056 2400 Crs
+3630 2444 Crs
+4057 2508 Crs
+3667 2353 Crs
+3915 2619 Crs
+3806 2329 Crs
+3744 2641 Crs
+3984 2352 Crs
+3642 2537 Crs
+4085 2433 Crs
+3621 2401 Crs
+4028 2556 Crs
+3700 2332 Crs
+3853 2649 Crs
+3872 2324 Crs
+3693 2622 Crs
+4044 2369 Crs
+3614 2487 Crs
+4095 2475 Crs
+3626 2363 Crs
+3980 2603 Crs
+3750 2316 Crs
+3787 2663 Crs
+3945 2325 Crs
+3647 2587 Crs
+4091 2397 Crs
+3595 2435 Crs
+4082 2525 Crs
+3649 2333 Crs
+3917 2645 Crs
+3816 2304 Crs
+3724 2660 Crs
+4017 2336 Crs
+3607 2539 Crs
+4121 2437 Crs
+3589 2387 Crs
+4047 2578 Crs
+3691 2308 Crs
+3846 2674 Crs
+3893 2299 Crs
+3664 2636 Crs
+4081 2359 Crs
+3576 2482 Crs
+4128 2487 Crs
+3599 2344 Crs
+3991 2629 Crs
+3752 2289 Crs
+3771 2687 Crs
+3975 2303 Crs
+3612 2595 Crs
+4131 2395 Crs
+3557 2425 Crs
+4110 2544 Crs
+3629 2309 Crs
+3919 2673 Crs
+3830 2276 Crs
+3699 2680 Crs
+4054 2320 Crs
+3567 2540 Crs
+4161 2444 Crs
+3553 2370 Crs
+4067 2604 Crs
+3682 2280 Crs
+3837 2703 Crs
+3918 2272 Crs
+3631 2651 Crs
+4124 2350 Crs
+3533 2476 Crs
+4165 2503 Crs
+3570 2322 Crs
+4001 2659 Crs
+3756 2258 Crs
+3752 2714 Crs
+4010 2280 Crs
+3571 2602 Crs
+4177 2395 Crs
+3514 2411 Crs
+4141 2568 Crs
+3610 2281 Crs
+3918 2705 Crs
+3847 2244 Crs
+3669 2701 Crs
+4097 2302 Crs
+3521 2539 Crs
+4205 2454 Crs
+3514 2350 Crs
+4088 2633 Crs
+3676 2247 Crs
+3825 2734 Crs
+3948 2242 Crs
+3592 2666 Crs
+4172 2342 Crs
+3485 2468 Crs
+4205 2522 Crs
+3539 2295 Crs
+4011 2693 Crs
+3764 2223 Crs
+3728 2742 Crs
+4050 2255 Crs
+3525 2609 Crs
+4227 2397 Crs
+3467 2395 Crs
+4172 2595 Crs
+3591 2248 Crs
+3915 2740 Crs
+3869 2209 Crs
+3634 2724 Crs
+4146 2285 Crs
+3470 2537 Crs
+4253 2466 Crs
+3473 2326 Crs
+4109 2666 Crs
+3671 2210 Crs
+3809 2768 Crs
+3983 2210 Crs
+3547 2681 Crs
+4226 2335 Crs
+3432 2457 Crs
+4247 2544 Crs
+3507 2264 Crs
+4019 2730 Crs
+3775 2183 Crs
+3699 2771 Crs
+4097 2229 Crs
+3472 2615 Crs
+4281 2401 Crs
+3416 2376 Crs
+4205 2626 Crs
+3573 2211 Crs
+3910 2778 Crs
+3896 2171 Crs
+3593 2747 Crs
+4201 2269 Crs
+3412 2534 Crs
+4304 2482 Crs
+3430 2298 Crs
+4130 2703 Crs
+3670 2169 Crs
+3788 2804 Crs
+4024 2176 Crs
+3496 2695 Crs
+4285 2329 Crs
+3374 2444 Crs
+4290 2571 Crs
+3477 2228 Crs
+4025 2770 Crs
+3791 2140 Crs
+3665 2801 Crs
+4149 2203 Crs
+3413 2619 Crs
+4339 2409 Crs
+3363 2352 Crs
+4238 2660 Crs
+3558 2169 Crs
+3900 2818 Crs
+3928 2130 Crs
+3546 2769 Crs
+4260 2254 Crs
+3351 2527 Crs
+4357 2501 Crs
+3387 2266 Crs
+4148 2744 Crs
+3672 2123 Crs
+3763 2840 Crs
+4070 2141 Crs
+3439 2707 Crs
+4347 2327 Crs
+3314 2427 Crs
+4334 2600 Crs
+3448 2188 Crs
+4028 2812 Crs
+3812 2095 Crs
+3625 2831 Crs
+4206 2178 Crs
+3350 2621 Crs
+4399 2419 Crs
+3310 2326 Crs
+4268 2698 Crs
+3547 2123 Crs
+3886 2858 Crs
+3966 2089 Crs
+3494 2790 Crs
+4323 2241 Crs
+3286 2518 Crs
+4410 2524 Crs
+3345 2230 Crs
+4163 2786 Crs
+3680 2076 Crs
+3734 2875 Crs
+4122 2108 Crs
+3379 2717 Crs
+4411 2328 Crs
+3253 2407 Crs
+4375 2634 Crs
+3423 2145 Crs
+4026 2855 Crs
+3838 2049 Crs
+3581 2858 Crs
+4267 2156 Crs
+3285 2620 Crs
+4458 2434 Crs
+3259 2296 Crs
+4295 2738 Crs
+3541 2076 Crs
+3867 2898 Crs
+4008 2049 Crs
+3439 2807 Crs
+4387 2233 Crs
+3222 2506 Crs
+4459 2551 Crs
+3309 2191 Crs
+4173 2828 Crs
+3694 2028 Crs
+3699 2908 Crs
+4176 2078 Crs
+3316 2723 Crs
+4472 2334 Crs
+3197 2384 Crs
+4411 2669 Crs
+3405 2101 Crs
+4019 2896 Crs
+3869 2006 Crs
+3534 2881 Crs
+4327 2139 Crs
+3222 2615 Crs
+4512 2453 Crs
+3215 2263 Crs
+4314 2778 Crs
+3543 2029 Crs
+3844 2933 Crs
+4053 2014 Crs
+3383 2819 Crs
+4448 2230 Crs
+3164 2490 Crs
+4501 2580 Crs
+3282 2152 Crs
+4176 2868 Crs
+3714 1984 Crs
+3661 2934 Crs
+4230 2055 Crs
+3257 2724 Crs
+4527 2345 Crs
+3148 2358 Crs
+4438 2704 Crs
+3396 2058 Crs
+4005 2931 Crs
+3905 1969 Crs
+3486 2897 Crs
+4384 2130 Crs
+3165 2605 Crs
+4556 2475 Crs
+3182 2230 Crs
+4324 2815 Crs
+3553 1987 Crs
+3815 2961 Crs
+4100 1988 Crs
+3330 2824 Crs
+4501 2234 Crs
+3115 2471 Crs
+4531 2610 Crs
+3267 2114 Crs
+4169 2902 Crs
+3740 1948 Crs
+3622 2952 Crs
+4281 2042 Crs
+3205 2719 Crs
+4571 2361 Crs
+3114 2332 Crs
+4451 2737 Crs
+3400 2020 Crs
+3984 2959 Crs
+3943 1942 Crs
+3440 2905 Crs
+4432 2130 Crs
+3120 2591 Crs
+4586 2500 Crs
+3165 2199 Crs
+4322 2846 Crs
+3572 1954 Crs
+3783 2979 Crs
+4143 1974 Crs
+3284 2821 Crs
+4541 2247 Crs
+3083 2450 Crs
+4545 2638 Crs
+3267 2082 Crs
+4153 2928 Crs
+3772 1923 Crs
+3583 2959 Crs
+4323 2041 Crs
+3165 2708 Crs
+4597 2382 Crs
+3098 2306 Crs
+4450 2765 Crs
+3416 1991 Crs
+3957 2975 Crs
+3981 1930 Crs
+3401 2902 Crs
+4467 2141 Crs
+3092 2573 Crs
+4597 2525 Crs
+3166 2171 Crs
+4307 2869 Crs
+3601 1934 Crs
+3750 2984 Crs
+4180 1974 Crs
+3250 2811 Crs
+4563 2266 Crs
+3071 2427 Crs
+4541 2663 Crs
+3284 2058 Crs
+4128 2941 Crs
+3806 1915 Crs
+3549 2955 Crs
+4353 2053 Crs
+3142 2691 Crs
+4604 2406 Crs
+3102 2282 Crs
+4433 2785 Crs
+3444 1975 Crs
+3925 2978 Crs
+4015 1934 Crs
+3372 2890 Crs
+4484 2162 Crs
+3085 2552 Crs
+4589 2549 Crs
+3186 2151 Crs
+4280 2880 Crs
+3636 1929 Crs
+3717 2977 Crs
+4208 1990 Crs
+3232 2792 Crs
+4565 2292 Crs
+3080 2406 Crs
+4519 2683 Crs
+3316 2045 Crs
+4095 2942 Crs
+3841 1922 Crs
+3522 2939 Crs
+4368 2078 Crs
+3139 2669 Crs
+4591 2432 Crs
+3128 2264 Crs
+4401 2795 Crs
+3483 1974 Crs
+3892 2968 Crs
+4043 1953 Crs
+3355 2868 Crs
+4484 2192 Crs
+3099 2530 Crs
+4562 2570 Crs
+3223 2140 Crs
+4242 2879 Crs
+3674 1940 Crs
+3689 2958 Crs
+4223 2018 Crs
+3231 2767 Crs
+4548 2322 Crs
+3110 2386 Crs
+4482 2694 Crs
+3360 2045 Crs
+4056 2929 Crs
+3873 1946 Crs
+3504 2914 Crs
+4367 2112 Crs
+3155 2644 Crs
+4559 2457 Crs
+3171 2251 Crs
+4357 2795 Crs
+3528 1986 Crs
+3858 2946 Crs
+4063 1986 Crs
+3352 2840 Crs
+4465 2226 Crs
+3132 2507 Crs
+4519 2586 Crs
+3274 2137 Crs
+4198 2867 Crs
+3714 1965 Crs
+3665 2929 Crs
+4226 2058 Crs
+3245 2738 Crs
+4514 2352 Crs
+3157 2370 Crs
+4432 2698 Crs
+3413 2055 Crs
+4016 2907 Crs
+3901 1981 Crs
+3495 2882 Crs
+4352 2153 Crs
+3188 2617 Crs
+4513 2479 Crs
+3226 2245 Crs
+4306 2787 Crs
+3576 2009 Crs
+3827 2915 Crs
+4073 2029 Crs
+3362 2806 Crs
+4433 2264 Crs
+3179 2486 Crs
+4465 2596 Crs
+3333 2144 Crs
+4149 2846 Crs
+3750 2000 Crs
+3649 2894 Crs
+4218 2103 Crs
+3273 2707 Crs
+4468 2382 Crs
+3215 2357 Crs
+4375 2695 Crs
+3469 2075 Crs
+3976 2877 Crs
+3922 2024 Crs
+3496 2845 Crs
+4326 2196 Crs
+3232 2590 Crs
+4457 2497 Crs
+3290 2244 Crs
+4251 2771 Crs
+3623 2041 Crs
+3800 2880 Crs
+4076 2076 Crs
+3381 2771 Crs
+4391 2300 Crs
+3236 2467 Crs
+4405 2601 Crs
+3396 2156 Crs
+4101 2820 Crs
+3783 2042 Crs
+3638 2856 Crs
+4202 2150 Crs
+3310 2675 Crs
+4415 2408 Crs
+6579 1113 Crs
+% End plot #1
+% Begin plot #2
+0.500 UP
+1.000 UL
+LTb
+0.00 0.62 0.45 C
+LCb setrgbcolor
+6296 973 M
+('track.obs0001.p0002' u 3:4) Rshow
+0.500 UP
+1.000 UL
+LTb
+0.00 0.62 0.45 C
+3831 2450 Box
+3735 2603 Box
+3908 2485 Box
+3743 2517 Box
+3977 2479 Box
+3788 2405 Box
+3931 2506 Box
+3807 2408 Box
+3799 2583 Box
+3848 2473 Box
+3732 2585 Box
+3931 2486 Box
+3767 2475 Box
+3971 2478 Box
+3801 2395 Box
+3888 2526 Box
+3815 2435 Box
+3766 2594 Box
+3868 2487 Box
+3742 2554 Box
+3948 2483 Box
+3788 2438 Box
+3952 2483 Box
+3808 2400 Box
+3843 2548 Box
+3825 2462 Box
+3748 2592 Box
+3889 2493 Box
+3761 2517 Box
+3957 2477 Box
+3804 2414 Box
+3921 2494 Box
+3812 2419 Box
+3803 2569 Box
+3837 2484 Box
+3746 2577 Box
+3911 2492 Box
+3784 2478 Box
+3954 2473 Box
+3814 2404 Box
+3883 2512 Box
+3816 2445 Box
+3774 2581 Box
+3854 2497 Box
+3757 2551 Box
+3929 2485 Box
+3804 2444 Box
+3939 2475 Box
+3818 2410 Box
+3843 2535 Box
+3820 2472 Box
+3758 2583 Box
+3874 2501 Box
+3776 2517 Box
+3940 2476 Box
+3818 2421 Box
+3913 2484 Box
+3818 2428 Box
+3807 2556 Box
+3829 2493 Box
+3757 2571 Box
+3895 2497 Box
+3797 2481 Box
+3940 2469 Box
+3826 2412 Box
+3879 2501 Box
+3817 2453 Box
+3780 2571 Box
+3843 2505 Box
+3768 2548 Box
+3914 2487 Box
+3817 2449 Box
+3929 2468 Box
+3826 2417 Box
+3843 2523 Box
+3817 2479 Box
+3766 2574 Box
+3861 2507 Box
+3787 2517 Box
+3926 2476 Box
+3830 2427 Box
+3906 2476 Box
+3823 2435 Box
+3810 2545 Box
+3823 2500 Box
+3766 2566 Box
+3881 2502 Box
+3809 2483 Box
+3928 2467 Box
+3835 2418 Box
+3876 2492 Box
+3818 2460 Box
+3786 2562 Box
+3834 2511 Box
+3778 2545 Box
+3900 2490 Box
+3827 2453 Box
+3920 2464 Box
+3834 2423 Box
+3843 2514 Box
+3816 2486 Box
+3773 2567 Box
+3850 2513 Box
+3797 2517 Box
+3914 2476 Box
+3839 2432 Box
+3900 2469 Box
+3828 2440 Box
+3813 2536 Box
+3818 2506 Box
+3773 2561 Box
+3870 2506 Box
+3818 2486 Box
+3918 2465 Box
+3844 2423 Box
+3873 2484 Box
+3820 2465 Box
+3790 2554 Box
+3826 2517 Box
+3785 2543 Box
+3889 2493 Box
+3836 2457 Box
+3912 2460 Box
+3841 2428 Box
+3843 2505 Box
+3815 2490 Box
+3778 2561 Box
+3841 2518 Box
+3804 2517 Box
+3903 2477 Box
+3848 2436 Box
+3895 2464 Box
+3832 2444 Box
+3814 2528 Box
+3814 2511 Box
+3779 2557 Box
+3860 2510 Box
+3825 2487 Box
+3910 2464 Box
+3851 2427 Box
+3871 2477 Box
+3822 2469 Box
+3793 2546 Box
+3820 2522 Box
+3791 2541 Box
+3879 2495 Box
+3843 2460 Box
+3905 2457 Box
+3847 2431 Box
+3843 2498 Box
+3814 2494 Box
+3783 2556 Box
+3833 2523 Box
+3810 2517 Box
+3894 2478 Box
+3855 2439 Box
+3891 2459 Box
+3837 2448 Box
+3816 2521 Box
+3811 2515 Box
+3784 2553 Box
+3851 2514 Box
+3831 2489 Box
+3902 2463 Box
+3858 2430 Box
+3869 2471 Box
+3825 2472 Box
+3796 2540 Box
+3815 2526 Box
+3796 2539 Box
+3871 2498 Box
+3849 2462 Box
+3900 2455 Box
+3852 2434 Box
+3842 2491 Box
+3814 2497 Box
+3786 2551 Box
+3827 2527 Box
+3815 2517 Box
+3886 2480 Box
+3861 2442 Box
+3887 2455 Box
+3841 2450 Box
+3817 2514 Box
+3809 2518 Box
+3787 2550 Box
+3844 2517 Box
+3836 2491 Box
+3895 2463 Box
+3863 2433 Box
+3867 2466 Box
+3827 2474 Box
+3798 2534 Box
+3812 2529 Box
+3799 2538 Box
+3863 2501 Box
+3854 2465 Box
+3894 2453 Box
+3858 2437 Box
+3842 2486 Box
+3815 2500 Box
+3789 2546 Box
+3822 2530 Box
+3818 2517 Box
+3879 2482 Box
+3866 2445 Box
+3884 2452 Box
+3845 2452 Box
+3818 2509 Box
+3808 2521 Box
+3790 2547 Box
+3838 2521 Box
+3840 2492 Box
+3889 2464 Box
+3869 2436 Box
+3865 2462 Box
+3830 2476 Box
+3800 2529 Box
+3808 2533 Box
+3802 2537 Box
+3856 2504 Box
+3859 2467 Box
+3890 2452 Box
+3862 2439 Box
+3842 2480 Box
+3816 2501 Box
+3791 2542 Box
+3817 2534 Box
+3822 2517 Box
+3873 2484 Box
+3870 2447 Box
+3880 2449 Box
+3849 2454 Box
+3819 2503 Box
+3807 2523 Box
+3793 2544 Box
+3832 2524 Box
+3843 2493 Box
+3883 2465 Box
+3873 2438 Box
+3863 2458 Box
+3833 2477 Box
+3801 2524 Box
+3806 2535 Box
+3805 2535 Box
+3850 2507 Box
+3862 2469 Box
+3885 2451 Box
+3867 2440 Box
+3841 2475 Box
+3818 2503 Box
+3793 2538 Box
+3813 2537 Box
+3824 2517 Box
+3867 2486 Box
+3875 2449 Box
+3877 2447 Box
+3854 2455 Box
+3819 2498 Box
+3807 2525 Box
+3795 2541 Box
+3827 2528 Box
+3846 2494 Box
+3878 2466 Box
+3878 2440 Box
+3861 2454 Box
+3837 2478 Box
+3803 2519 Box
+3804 2538 Box
+3807 2533 Box
+3844 2511 Box
+3866 2470 Box
+3880 2451 Box
+3872 2442 Box
+3840 2471 Box
+3820 2504 Box
+3794 2534 Box
+3809 2540 Box
+3826 2517 Box
+3861 2489 Box
+3879 2451 Box
+3874 2445 Box
+3858 2456 Box
+3820 2493 Box
+3807 2527 Box
+3796 2538 Box
+3822 2531 Box
+3849 2494 Box
+3872 2467 Box
+3883 2441 Box
+3859 2451 Box
+3840 2479 Box
+3803 2514 Box
+3802 2541 Box
+3809 2532 Box
+3838 2514 Box
+3869 2471 Box
+3876 2451 Box
+3877 2443 Box
+3839 2466 Box
+3822 2505 Box
+3795 2530 Box
+3806 2543 Box
+3828 2516 Box
+3855 2492 Box
+3883 2453 Box
+3870 2444 Box
+3863 2457 Box
+3819 2488 Box
+3808 2528 Box
+3798 2535 Box
+3817 2535 Box
+3851 2495 Box
+3867 2469 Box
+3888 2443 Box
+3856 2448 Box
+3844 2480 Box
+3804 2509 Box
+3801 2543 Box
+3810 2530 Box
+3833 2518 Box
+3873 2472 Box
+3871 2452 Box
+3882 2444 Box
+3838 2462 Box
+3825 2506 Box
+3796 2525 Box
+3803 2547 Box
+3830 2515 Box
+3849 2495 Box
+3887 2454 Box
+3866 2443 Box
+3868 2458 Box
+3819 2483 Box
+3809 2530 Box
+3799 2532 Box
+3813 2539 Box
+3854 2495 Box
+3861 2471 Box
+3893 2444 Box
+3854 2445 Box
+3849 2481 Box
+3804 2504 Box
+3800 2546 Box
+3812 2527 Box
+3827 2522 Box
+3876 2473 Box
+3866 2452 Box
+3888 2445 Box
+3836 2458 Box
+3828 2508 Box
+3797 2520 Box
+3800 2551 Box
+3832 2514 Box
+3843 2498 Box
+3892 2455 Box
+3862 2442 Box
+3874 2459 Box
+3817 2478 Box
+3811 2532 Box
+3800 2528 Box
+3808 2543 Box
+3857 2494 Box
+3855 2474 Box
+3898 2445 Box
+3850 2442 Box
+3854 2482 Box
+3803 2499 Box
+3800 2549 Box
+3813 2524 Box
+3822 2526 Box
+3880 2474 Box
+3860 2453 Box
+3894 2447 Box
+3833 2454 Box
+3832 2509 Box
+3797 2515 Box
+3798 2555 Box
+3835 2512 Box
+3836 2502 Box
+3897 2456 Box
+3856 2441 Box
+3880 2460 Box
+3816 2472 Box
+3813 2535 Box
+3801 2523 Box
+3804 2548 Box
+3860 2493 Box
+3848 2477 Box
+3904 2447 Box
+3845 2439 Box
+3860 2483 Box
+3802 2493 Box
+3800 2553 Box
+3815 2521 Box
+3815 2531 Box
+3884 2473 Box
+3853 2454 Box
+3901 2448 Box
+3829 2449 Box
+3837 2511 Box
+3797 2510 Box
+3795 2559 Box
+3837 2509 Box
+3829 2507 Box
+3903 2457 Box
+3850 2440 Box
+3888 2461 Box
+3813 2467 Box
+3816 2538 Box
+3801 2518 Box
+3799 2554 Box
+3864 2492 Box
+3840 2480 Box
+3911 2448 Box
+3840 2437 Box
+3867 2485 Box
+3801 2487 Box
+3800 2557 Box
+3816 2516 Box
+3809 2537 Box
+3890 2473 Box
+3845 2456 Box
+3909 2449 Box
+3825 2444 Box
+3842 2513 Box
+3796 2503 Box
+3793 2565 Box
+3840 2506 Box
+3821 2512 Box
+3909 2457 Box
+3843 2440 Box
+3896 2463 Box
+3809 2460 Box
+3819 2541 Box
+3802 2512 Box
+3794 2560 Box
+3868 2490 Box
+3831 2484 Box
+3920 2449 Box
+3833 2434 Box
+3875 2487 Box
+3798 2479 Box
+3801 2562 Box
+3818 2511 Box
+3802 2543 Box
+3896 2472 Box
+3836 2458 Box
+3919 2451 Box
+3819 2439 Box
+3849 2517 Box
+3795 2496 Box
+3790 2571 Box
+3844 2501 Box
+3812 2518 Box
+3917 2457 Box
+3833 2439 Box
+3906 2465 Box
+3804 2453 Box
+3823 2546 Box
+3802 2504 Box
+3789 2567 Box
+3874 2486 Box
+3821 2489 Box
+3929 2449 Box
+3824 2431 Box
+3884 2490 Box
+3795 2471 Box
+3802 2568 Box
+3821 2504 Box
+3794 2551 Box
+3903 2469 Box
+3825 2461 Box
+3930 2453 Box
+3811 2434 Box
+3857 2520 Box
+3793 2487 Box
+3788 2578 Box
+3848 2496 Box
+3802 2525 Box
+3927 2456 Box
+3822 2439 Box
+3918 2468 Box
+3798 2446 Box
+3829 2551 Box
+3803 2496 Box
+3783 2575 Box
+3880 2482 Box
+3809 2494 Box
+3941 2450 Box
+3814 2428 Box
+3895 2493 Box
+3790 2462 Box
+3804 2575 Box
+3823 2496 Box
+3785 2559 Box
+3912 2466 Box
+3812 2464 Box
+3943 2454 Box
+3801 2428 Box
+3866 2525 Box
+3791 2477 Box
+3786 2587 Box
+3853 2488 Box
+3790 2533 Box
+3939 2454 Box
+3809 2439 Box
+3932 2471 Box
+3790 2437 Box
+3835 2558 Box
+3803 2485 Box
+3777 2585 Box
+3888 2475 Box
+3796 2501 Box
+3955 2450 Box
+3800 2424 Box
+3909 2498 Box
+3784 2451 Box
+3807 2583 Box
+3826 2486 Box
+3775 2570 Box
+3923 2462 Box
+3797 2467 Box
+3959 2456 Box
+3789 2421 Box
+3878 2532 Box
+3787 2465 Box
+3784 2598 Box
+3859 2479 Box
+3777 2543 Box
+3953 2452 Box
+3793 2439 Box
+3948 2474 Box
+3779 2427 Box
+3844 2566 Box
+3802 2473 Box
+3770 2597 Box
+3897 2467 Box
+3779 2508 Box
+3972 2450 Box
+3784 2420 Box
+3925 2504 Box
+3775 2439 Box
+3810 2594 Box
+3829 2473 Box
+3763 2582 Box
+3936 2456 Box
+3778 2472 Box
+3978 2458 Box
+3773 2413 Box
+3892 2540 Box
+3782 2451 Box
+3783 2610 Box
+3866 2467 Box
+3761 2554 Box
+3969 2448 Box
+3773 2440 Box
+3968 2479 Box
+3765 2416 Box
+3854 2576 Box
+3801 2458 Box
+3762 2612 Box
+3909 2457 Box
+3760 2518 Box
+3992 2449 Box
+3764 2416 Box
+3945 2511 Box
+3764 2425 Box
+3815 2607 Box
+3833 2458 Box
+3750 2597 Box
+3952 2447 Box
+3756 2478 Box
+4001 2461 Box
+3754 2404 Box
+3909 2549 Box
+3775 2434 Box
+3781 2626 Box
+3875 2452 Box
+3742 2568 Box
+3990 2443 Box
+3749 2441 Box
+3993 2484 Box
+3747 2403 Box
+3867 2589 Box
+3799 2439 Box
+3754 2629 Box
+3923 2444 Box
+3737 2529 Box
+4017 2447 Box
+3739 2412 Box
+3969 2519 Box
+3750 2408 Box
+3822 2623 Box
+3837 2439 Box
+3735 2615 Box
+3972 2437 Box
+3729 2485 Box
+4028 2463 Box
+3729 2395 Box
+3931 2561 Box
+3766 2414 Box
+3780 2645 Box
+3885 2433 Box
+3721 2585 Box
+4015 2436 Box
+3719 2442 Box
+4022 2490 Box
+3725 2388 Box
+3883 2605 Box
+3796 2417 Box
+3745 2650 Box
+3940 2426 Box
+3709 2542 Box
+4047 2444 Box
+3708 2407 Box
+3998 2529 Box
+3732 2388 Box
+3831 2642 Box
+3841 2415 Box
+3717 2636 Box
+3995 2423 Box
+3697 2493 Box
+4062 2465 Box
+3699 2383 Box
+3956 2576 Box
+3754 2390 Box
+3780 2667 Box
+3897 2410 Box
+3695 2605 Box
+4045 2426 Box
+3683 2445 Box
+4058 2498 Box
+3697 2370 Box
+3903 2624 Box
+3792 2390 Box
+3735 2675 Box
+3960 2405 Box
+3676 2559 Box
+4083 2440 Box
+3670 2402 Box
+4033 2542 Box
+3709 2364 Box
+3842 2666 Box
+3845 2387 Box
+3697 2662 Box
+4024 2404 Box
+3658 2504 Box
+4103 2466 Box
+3661 2370 Box
+3988 2594 Box
+3737 2361 Box
+3781 2695 Box
+3911 2381 Box
+3665 2630 Box
+4082 2413 Box
+3640 2448 Box
+4101 2506 Box
+3662 2349 Box
+3928 2647 Box
+3785 2358 Box
+3724 2705 Box
+3984 2378 Box
+3637 2580 Box
+4127 2433 Box
+3623 2397 Box
+4076 2557 Box
+3679 2336 Box
+3857 2694 Box
+3850 2352 Box
+3673 2694 Box
+4059 2381 Box
+3611 2518 Box
+4153 2468 Box
+3614 2355 Box
+4028 2615 Box
+3716 2327 Box
+3784 2728 Box
+3928 2345 Box
+3629 2659 Box
+4126 2395 Box
+3587 2453 Box
+4154 2516 Box
+3618 2325 Box
+3959 2675 Box
+3775 2318 Box
+3712 2742 Box
+4013 2343 Box
+3590 2605 Box
+4180 2424 Box
+3566 2391 Box
+4129 2575 Box
+3641 2303 Box
+3877 2729 Box
+3854 2308 Box
+3646 2732 Box
+4100 2351 Box
+3554 2535 Box
+4213 2468 Box
+3556 2338 Box
+4076 2642 Box
+3689 2285 Box
+3788 2769 Box
+3947 2300 Box
+3588 2696 Box
+4180 2372 Box
+3522 2460 Box
+4219 2526 Box
+3562 2296 Box
+3999 2709 Box
+3762 2269 Box
+3700 2787 Box
+4048 2300 Box
+3535 2636 Box
+4245 2411 Box
+3496 2385 Box
+4193 2596 Box
+3593 2263 Box
+3903 2771 Box
+3857 2255 Box
+3616 2778 Box
+4150 2312 Box
+3486 2557 Box
+4286 2466 Box
+3484 2319 Box
+4136 2673 Box
+3653 2235 Box
+3796 2817 Box
+3968 2245 Box
+3539 2740 Box
+4245 2342 Box
+3443 2469 Box
+4297 2537 Box
+3493 2263 Box
+4049 2750 Box
+3742 2210 Box
+3687 2840 Box
+4088 2245 Box
+3468 2673 Box
+4322 2392 Box
+3410 2380 Box
+4272 2620 Box
+3533 2215 Box
+3937 2820 Box
+3858 2189 Box
+3581 2833 Box
+4209 2263 Box
+3404 2585 Box
+4374 2462 Box
+3395 2297 Box
+4210 2709 Box
+3607 2174 Box
+3809 2874 Box
+3991 2176 Box
+3482 2792 Box
+4322 2303 Box
+3348 2482 Box
+4391 2549 Box
+3408 2224 Box
+4111 2799 Box
+3716 2139 Box
+3676 2903 Box
+4135 2178 Box
+3390 2719 Box
+4415 2367 Box
+3307 2376 Box
+4367 2647 Box
+3457 2159 Box
+3981 2879 Box
+3855 2110 Box
+3543 2898 Box
+4278 2202 Box
+3307 2619 Box
+4478 2454 Box
+3288 2274 Box
+4299 2752 Box
+3548 2102 Box
+3829 2941 Box
+4016 2093 Box
+3417 2855 Box
+4412 2253 Box
+3236 2501 Box
+4503 2559 Box
+3304 2180 Box
+4187 2854 Box
+3680 2053 Box
+3667 2975 Box
+4187 2095 Box
+3300 2774 Box
+4522 2333 Box
+3184 2375 Box
+4480 2677 Box
+3364 2095 Box
+4037 2946 Box
+3847 2015 Box
+3504 2972 Box
+4356 2126 Box
+3195 2661 Box
+4599 2440 Box
+3162 2250 Box
+4405 2799 Box
+3474 2019 Box
+3858 3017 Box
+4039 1994 Box
+3347 2926 Box
+4513 2191 Box
+3108 2526 Box
+4629 2567 Box
+3183 2132 Box
+4278 2916 Box
+3633 1955 Box
+3664 3055 Box
+4241 1999 Box
+3201 2837 Box
+4641 2290 Box
+3046 2378 Box
+4605 2706 Box
+3257 2024 Box
+4105 3019 Box
+3831 1907 Box
+3467 3052 Box
+4439 2039 Box
+3074 2711 Box
+4729 2419 Box
+3023 2229 Box
+4522 2847 Box
+3389 1928 Box
+3898 3096 Box
+4056 1885 Box
+3277 3001 Box
+4617 2119 Box
+2972 2557 Box
+4762 2570 Box
+3052 2086 Box
+4378 2978 Box
+3576 1850 Box
+3671 3136 Box
+4290 1896 Box
+3103 2903 Box
+4760 2239 Box
+2905 2388 Box
+4733 2731 Box
+3143 1954 Box
+4182 3089 Box
+3807 1798 Box
+3439 3129 Box
+4514 1949 Box
+2957 2764 Box
+4853 2392 Box
+2887 2215 Box
+4637 2889 Box
+3300 1841 Box
+3946 3167 Box
+4064 1779 Box
+3218 3070 Box
+4710 2048 Box
+2847 2593 Box
+4882 2565 Box
+2931 2048 Box
+4475 3030 Box
+3515 1756 Box
+3688 3203 Box
+4325 1803 Box
+3023 2963 Box
+4859 2189 Box
+2785 2405 Box
+4842 2745 Box
+3044 1898 Box
+4256 3143 Box
+3775 1707 Box
+3427 3188 Box
+4567 1873 Box
+2867 2812 Box
+4946 2363 Box
+2782 2212 Box
+4730 2915 Box
+3225 1776 Box
+3996 3216 Box
+4057 1700 Box
+3184 3121 Box
+4768 1991 Box
+2761 2630 Box
+4964 2554 Box
+2846 2029 Box
+4550 3060 Box
+3464 1694 Box
+3714 3243 Box
+4334 1741 Box
+2979 3006 Box
+4911 2151 Box
+2715 2429 Box
+4907 2744 Box
+2981 1871 Box
+4314 3167 Box
+3742 1657 Box
+3437 3218 Box
+4580 1830 Box
+2826 2849 Box
+4985 2338 Box
+2733 2225 Box
+4779 2916 Box
+3181 1752 Box
+4039 3229 Box
+4035 1668 Box
+3187 3145 Box
+4774 1965 Box
+2736 2661 Box
+4985 2537 Box
+2820 2037 Box
+4588 3055 Box
+3432 1681 Box
+3748 3244 Box
+4311 1728 Box
+2986 3026 Box
+4901 2134 Box
+2713 2457 Box
+4914 2726 Box
+2971 1883 Box
+4345 3150 Box
+3714 1662 Box
+3469 3212 Box
+4546 1832 Box
+2849 2870 Box
+4957 2324 Box
+2754 2253 Box
+4777 2890 Box
+3178 1776 Box
+4069 3200 Box
+3998 1692 Box
+3228 3137 Box
+4720 1974 Box
+2781 2685 Box
+4942 2516 Box
+2857 2072 Box
+4584 3014 Box
+3426 1722 Box
+3785 3205 Box
+4257 1766 Box
+3044 3022 Box
+4827 2141 Box
+2780 2487 Box
+4863 2693 Box
+3014 1931 Box
+4347 3095 Box
+3692 1720 Box
+3520 3171 Box
+4468 1876 Box
+2928 2874 Box
+4867 2321 Box
+2837 2294 Box
+4726 2839 Box
+3214 1840 Box
+4085 3133 Box
+3952 1763 Box
+3299 3101 Box
+4619 2014 Box
+2882 2700 Box
+4844 2496 Box
+2946 2127 Box
+4543 2946 Box
+3443 1802 Box
+3821 3135 Box
+4182 1843 Box
+3138 2996 Box
+4707 2169 Box
+2896 2515 Box
+4767 2651 Box
+3096 2003 Box
+4324 3013 Box
+3680 1812 Box
+3580 3105 Box
+4366 1949 Box
+3043 2860 Box
+4738 2328 Box
+2961 2339 Box
+4642 2776 Box
+3277 1927 Box
+4086 3045 Box
+3907 1861 Box
+3384 3044 Box
+4494 2074 Box
+3012 2703 Box
+4716 2479 Box
+3064 2190 Box
+4477 2867 Box
+3477 1901 Box
+3850 3048 Box
+4104 1938 Box
+3245 2953 Box
+4570 2208 Box
+3034 2536 Box
+4649 2610 Box
+3198 2081 Box
+4284 2924 Box
+3679 1916 Box
+3637 3026 Box
+4260 2033 Box
+3168 2835 Box
+4597 2343 Box
+3096 2379 Box
+4542 2714 Box
+6579 973 Box
+% End plot #2
+% Begin plot #3
+0.500 UP
+1.000 UL
+LTb
+0.34 0.71 0.91 C
+LCb setrgbcolor
+6296 833 M
+('track.obs0001.p0003' u 3:4) Rshow
+0.500 UP
+1.000 UL
+LTb
+0.34 0.71 0.91 C
+3831 2450 TriUF
+3639 2769 TriUF
+3989 2504 TriUF
+3656 2595 TriUF
+4124 2504 TriUF
+3733 2364 TriUF
+4049 2557 TriUF
+3769 2368 TriUF
+3786 2713 TriUF
+3857 2491 TriUF
+3638 2733 TriUF
+4014 2515 TriUF
+3702 2524 TriUF
+4108 2504 TriUF
+3764 2348 TriUF
+3975 2579 TriUF
+3789 2418 TriUF
+3729 2728 TriUF
+3881 2522 TriUF
+3659 2684 TriUF
+4033 2516 TriUF
+3746 2462 TriUF
+4077 2504 TriUF
+3786 2355 TriUF
+3900 2607 TriUF
+3805 2469 TriUF
+3694 2728 TriUF
+3904 2541 TriUF
+3696 2627 TriUF
+4043 2511 TriUF
+3784 2415 TriUF
+4033 2508 TriUF
+3800 2383 TriUF
+3831 2638 TriUF
+3819 2515 TriUF
+3683 2713 TriUF
+3927 2548 TriUF
+3740 2565 TriUF
+4042 2501 TriUF
+3814 2387 TriUF
+3979 2519 TriUF
+3807 2425 TriUF
+3775 2663 TriUF
+3831 2551 TriUF
+3694 2683 TriUF
+3948 2546 TriUF
+3785 2507 TriUF
+4029 2489 TriUF
+3834 2381 TriUF
+3918 2540 TriUF
+3810 2476 TriUF
+3736 2678 TriUF
+3843 2574 TriUF
+3723 2641 TriUF
+3965 2534 TriUF
+3825 2459 TriUF
+4003 2481 TriUF
+3844 2395 TriUF
+3858 2568 TriUF
+3809 2526 TriUF
+3718 2679 TriUF
+3858 2585 TriUF
+3764 2591 TriUF
+3975 2517 TriUF
+3859 2424 TriUF
+3965 2480 TriUF
+3845 2428 TriUF
+3806 2597 TriUF
+3808 2569 TriUF
+3720 2666 TriUF
+3875 2583 TriUF
+3810 2540 TriUF
+3974 2496 TriUF
+3882 2407 TriUF
+3919 2488 TriUF
+3837 2474 TriUF
+3766 2621 TriUF
+3808 2601 TriUF
+3742 2639 TriUF
+3893 2571 TriUF
+3856 2494 TriUF
+3961 2475 TriUF
+3894 2409 TriUF
+3869 2507 TriUF
+3826 2526 TriUF
+3744 2635 TriUF
+3810 2619 TriUF
+3779 2602 TriUF
+3907 2549 TriUF
+3895 2456 TriUF
+3938 2460 TriUF
+3894 2431 TriUF
+3822 2533 TriUF
+3811 2576 TriUF
+3740 2635 TriUF
+3817 2623 TriUF
+3826 2560 TriUF
+3913 2520 TriUF
+3925 2432 TriUF
+3904 2454 TriUF
+3883 2470 TriUF
+3784 2560 TriUF
+3797 2618 TriUF
+3756 2622 TriUF
+3829 2614 TriUF
+3876 2518 TriUF
+3910 2490 TriUF
+3944 2426 TriUF
+3864 2459 TriUF
+3864 2520 TriUF
+3760 2582 TriUF
+3785 2647 TriUF
+3788 2597 TriUF
+3841 2592 TriUF
+3923 2481 TriUF
+3897 2461 TriUF
+3950 2437 TriUF
+3823 2475 TriUF
+3839 2574 TriUF
+3752 2593 TriUF
+3778 2661 TriUF
+3834 2564 TriUF
+3850 2561 TriUF
+3962 2455 TriUF
+3874 2439 TriUF
+3941 2466 TriUF
+3788 2498 TriUF
+3811 2625 TriUF
+3764 2591 TriUF
+3777 2660 TriUF
+3888 2529 TriUF
+3852 2523 TriUF
+3991 2442 TriUF
+3843 2428 TriUF
+3921 2511 TriUF
+3764 2522 TriUF
+3784 2666 TriUF
+3792 2577 TriUF
+3781 2644 TriUF
+3942 2496 TriUF
+3845 2483 TriUF
+4007 2446 TriUF
+3809 2429 TriUF
+3890 2566 TriUF
+3755 2540 TriUF
+3761 2694 TriUF
+3837 2554 TriUF
+3786 2614 TriUF
+3992 2469 TriUF
+3829 2445 TriUF
+4007 2467 TriUF
+3776 2441 TriUF
+3852 2624 TriUF
+3764 2547 TriUF
+3743 2705 TriUF
+3893 2525 TriUF
+3788 2572 TriUF
+4033 2454 TriUF
+3806 2417 TriUF
+3991 2504 TriUF
+3753 2460 TriUF
+3811 2677 TriUF
+3790 2542 TriUF
+3733 2699 TriUF
+3954 2497 TriUF
+3784 2524 TriUF
+4062 2454 TriUF
+3777 2399 TriUF
+3961 2557 TriUF
+3743 2479 TriUF
+3770 2719 TriUF
+3834 2527 TriUF
+3727 2676 TriUF
+4016 2473 TriUF
+3772 2474 TriUF
+4076 2469 TriUF
+3747 2395 TriUF
+3918 2618 TriUF
+3751 2491 TriUF
+3733 2746 TriUF
+3892 2505 TriUF
+3723 2637 TriUF
+4071 2458 TriUF
+3752 2427 TriUF
+4072 2501 TriUF
+3724 2402 TriUF
+3866 2680 TriUF
+3778 2493 TriUF
+3702 2755 TriUF
+3960 2480 TriUF
+3716 2585 TriUF
+4116 2456 TriUF
+3726 2390 TriUF
+4049 2549 TriUF
+3714 2414 TriUF
+3809 2737 TriUF
+3823 2484 TriUF
+3679 2744 TriUF
+4033 2459 TriUF
+3702 2526 TriUF
+4148 2469 TriUF
+3697 2364 TriUF
+4008 2610 TriUF
+3721 2425 TriUF
+3751 2781 TriUF
+3885 2466 TriUF
+3660 2714 TriUF
+4104 2446 TriUF
+3681 2463 TriUF
+4161 2498 TriUF
+3673 2352 TriUF
+3952 2679 TriUF
+3749 2428 TriUF
+3697 2809 TriUF
+3961 2444 TriUF
+3643 2666 TriUF
+4169 2445 TriUF
+3654 2404 TriUF
+4153 2544 TriUF
+3660 2350 TriUF
+3883 2749 TriUF
+3798 2422 TriUF
+3649 2817 TriUF
+4045 2424 TriUF
+3622 2602 TriUF
+4222 2459 TriUF
+3623 2355 TriUF
+4124 2605 TriUF
+3665 2351 TriUF
+3807 2812 TriUF
+3867 2406 TriUF
+3608 2802 TriUF
+4134 2412 TriUF
+3594 2527 TriUF
+4258 2489 TriUF
+3594 2318 TriUF
+4072 2678 TriUF
+3694 2349 TriUF
+3727 2861 TriUF
+3953 2384 TriUF
+3570 2765 TriUF
+4221 2412 TriUF
+3559 2449 TriUF
+4274 2537 TriUF
+3575 2293 TriUF
+3999 2759 TriUF
+3748 2340 TriUF
+3650 2892 TriUF
+4052 2362 TriUF
+3532 2705 TriUF
+4301 2429 TriUF
+3519 2374 TriUF
+4265 2601 TriUF
+3574 2275 TriUF
+3908 2839 TriUF
+3826 2321 TriUF
+3576 2901 TriUF
+4161 2347 TriUF
+3489 2626 TriUF
+4367 2464 TriUF
+3479 2307 TriUF
+4230 2681 TriUF
+3599 2258 TriUF
+3805 2913 TriUF
+3928 2293 TriUF
+3507 2884 TriUF
+4275 2346 TriUF
+3438 2532 TriUF
+4415 2518 TriUF
+3446 2251 TriUF
+4165 2772 TriUF
+3655 2236 TriUF
+3695 2973 TriUF
+4048 2263 TriUF
+3438 2839 TriUF
+4388 2363 TriUF
+3379 2432 TriUF
+4440 2592 TriUF
+3431 2203 TriUF
+4072 2870 TriUF
+3744 2204 TriUF
+3582 3013 TriUF
+4184 2238 TriUF
+3365 2765 TriUF
+4494 2404 TriUF
+3316 2332 TriUF
+4435 2683 TriUF
+3443 2158 TriUF
+3952 2969 TriUF
+3865 2162 TriUF
+3468 3027 TriUF
+4332 2227 TriUF
+3284 2666 TriUF
+4587 2468 TriUF
+3256 2237 TriUF
+4396 2791 TriUF
+3493 2108 TriUF
+3812 3062 TriUF
+4014 2114 TriUF
+3352 3010 TriUF
+4487 2239 TriUF
+3192 2547 TriUF
+4659 2558 TriUF
+3211 2148 TriUF
+4319 2910 TriUF
+3586 2048 TriUF
+3656 3140 TriUF
+4188 2067 TriUF
+3230 2957 TriUF
+4645 2279 TriUF
+3091 2415 TriUF
+4703 2671 TriUF
+3196 2058 TriUF
+4202 3036 TriUF
+3725 1975 TriUF
+3488 3196 TriUF
+4382 2033 TriUF
+3097 2868 TriUF
+4797 2352 TriUF
+2986 2277 TriUF
+4712 2804 TriUF
+3223 1961 TriUF
+4046 3163 TriUF
+3907 1894 TriUF
+3308 3220 TriUF
+4593 2024 TriUF
+2953 2744 TriUF
+4932 2460 TriUF
+2894 2135 TriUF
+4675 2954 TriUF
+3305 1851 TriUF
+3855 3282 TriUF
+4129 1812 TriUF
+3115 3202 TriUF
+4812 2052 TriUF
+2799 2592 TriUF
+5037 2600 TriUF
+2834 1988 TriUF
+4585 3111 TriUF
+3449 1732 TriUF
+3634 3378 TriUF
+4380 1746 TriUF
+2912 3138 TriUF
+5025 2125 TriUF
+2647 2419 TriUF
+5097 2768 TriUF
+2828 1830 TriUF
+4435 3267 TriUF
+3656 1613 TriUF
+3388 3437 TriUF
+4649 1715 TriUF
+2708 3026 TriUF
+5212 2247 TriUF
+2520 2230 TriUF
+5097 2952 TriUF
+2896 1668 TriUF
+4226 3406 TriUF
+3919 1512 TriUF
+3126 3443 TriUF
+4916 1737 TriUF
+2519 2870 TriUF
+5348 2414 TriUF
+2446 2030 TriUF
+5023 3137 TriUF
+3047 1517 TriUF
+3965 3512 TriUF
+4219 1450 TriUF
+2866 3392 TriUF
+5155 1822 TriUF
+2368 2680 TriUF
+5412 2612 TriUF
+2449 1828 TriUF
+4871 3303 TriUF
+3276 1398 TriUF
+3668 3569 TriUF
+4529 1442 TriUF
+2631 3286 TriUF
+5340 1968 TriUF
+2275 2463 TriUF
+5397 2823 TriUF
+2540 1643 TriUF
+4645 3433 TriUF
+3568 1330 TriUF
+3359 3570 TriUF
+4813 1497 TriUF
+2449 3136 TriUF
+5450 2161 TriUF
+2253 2233 TriUF
+5302 3021 TriUF
+2716 1497 TriUF
+4360 3515 TriUF
+3892 1322 TriUF
+3069 3519 TriUF
+5040 1614 TriUF
+2339 2950 TriUF
+5480 2379 TriUF
+2308 2014 TriUF
+5137 3183 TriUF
+2962 1409 TriUF
+4042 3546 TriUF
+4209 1372 TriUF
+2830 3426 TriUF
+5190 1782 TriUF
+2309 2739 TriUF
+5431 2595 TriUF
+2437 1829 TriUF
+4913 3292 TriUF
+3251 1389 TriUF
+3724 3531 TriUF
+4480 1475 TriUF
+2668 3299 TriUF
+5256 1983 TriUF
+2355 2518 TriUF
+5316 2784 TriUF
+2629 1702 TriUF
+4644 3343 TriUF
+3553 1433 TriUF
+3439 3480 TriUF
+4677 1620 TriUF
+2595 3142 TriUF
+5246 2192 TriUF
+2466 2310 TriUF
+5149 2927 TriUF
+2865 1641 TriUF
+4352 3347 TriUF
+3834 1529 TriUF
+3213 3404 TriUF
+4793 1792 TriUF
+2606 2962 TriUF
+5178 2386 TriUF
+2622 2136 TriUF
+4945 3016 TriUF
+3120 1645 TriUF
+4062 3320 TriUF
+4068 1658 TriUF
+3064 3305 TriUF
+4836 1971 TriUF
+2681 2768 TriUF
+5072 2550 TriUF
+2803 2013 TriUF
+4717 3057 TriUF
+3370 1699 TriUF
+3799 3281 TriUF
+4243 1801 TriUF
+2990 3184 TriUF
+4830 2143 TriUF
+2796 2579 TriUF
+4940 2673 TriUF
+2995 1943 TriUF
+4478 3066 TriUF
+3596 1785 TriUF
+3582 3236 TriUF
+4359 1943 TriUF
+2982 3043 TriUF
+4796 2295 TriUF
+2927 2409 TriUF
+4792 2756 TriUF
+3185 1923 TriUF
+4240 3060 TriUF
+3788 1889 TriUF
+3422 3181 TriUF
+4427 2075 TriUF
+3023 2889 TriUF
+4743 2423 TriUF
+3062 2274 TriUF
+4631 2807 TriUF
+3363 1943 TriUF
+4016 3052 TriUF
+3942 1997 TriUF
+3321 3109 TriUF
+4459 2194 TriUF
+3095 2731 TriUF
+4677 2523 TriUF
+3192 2180 TriUF
+4462 2834 TriUF
+3524 1993 TriUF
+3818 3043 TriUF
+4059 2099 TriUF
+3275 3020 TriUF
+4470 2299 TriUF
+3182 2580 TriUF
+4596 2596 TriUF
+3317 2127 TriUF
+4288 2851 TriUF
+3665 2061 TriUF
+3659 3029 TriUF
+4141 2191 TriUF
+3273 2914 TriUF
+4466 2388 TriUF
+3272 2447 TriUF
+4502 2645 TriUF
+3434 2113 TriUF
+4114 2865 TriUF
+3786 2137 TriUF
+3544 3002 TriUF
+4197 2272 TriUF
+3306 2796 TriUF
+4450 2459 TriUF
+3361 2342 TriUF
+4395 2679 TriUF
+3541 2130 TriUF
+3950 2880 TriUF
+3885 2214 TriUF
+3473 2957 TriUF
+4233 2341 TriUF
+3359 2675 TriUF
+4420 2514 TriUF
+3445 2270 TriUF
+4276 2703 TriUF
+3637 2171 TriUF
+3807 2892 TriUF
+3962 2284 TriUF
+3444 2894 TriUF
+4256 2400 TriUF
+3422 2558 TriUF
+4374 2554 TriUF
+3522 2231 TriUF
+4149 2725 TriUF
+3721 2227 TriUF
+3692 2895 TriUF
+4020 2344 TriUF
+3449 2814 TriUF
+4269 2448 TriUF
+3487 2456 TriUF
+4313 2582 TriUF
+3593 2224 TriUF
+4020 2749 TriUF
+3795 2289 TriUF
+3611 2883 TriUF
+4064 2394 TriUF
+3480 2723 TriUF
+4270 2484 TriUF
+3549 2375 TriUF
+4237 2603 TriUF
+3656 2243 TriUF
+3898 2774 TriUF
+3856 2348 TriUF
+3565 2853 TriUF
+4098 2434 TriUF
+3526 2628 TriUF
+4256 2510 TriUF
+3606 2321 TriUF
+4148 2623 TriUF
+3712 2283 TriUF
+3792 2795 TriUF
+3906 2400 TriUF
+3551 2805 TriUF
+4124 2464 TriUF
+3578 2536 TriUF
+4228 2528 TriUF
+3656 2295 TriUF
+4051 2646 TriUF
+3760 2334 TriUF
+3709 2806 TriUF
+3946 2443 TriUF
+3565 2742 TriUF
+4142 2486 TriUF
+3629 2456 TriUF
+4184 2540 TriUF
+3699 2296 TriUF
+3951 2674 TriUF
+3802 2389 TriUF
+3653 2801 TriUF
+3979 2474 TriUF
+3597 2669 TriUF
+4149 2499 TriUF
+3677 2394 TriUF
+4126 2553 TriUF
+3734 2319 TriUF
+3858 2703 TriUF
+3838 2440 TriUF
+3627 2778 TriUF
+4008 2496 TriUF
+3641 2592 TriUF
+4143 2505 TriUF
+3718 2355 TriUF
+4056 2569 TriUF
+3763 2360 TriUF
+3779 2727 TriUF
+3867 2482 TriUF
+3626 2739 TriUF
+4033 2508 TriUF
+3688 2518 TriUF
+4123 2508 TriUF
+3751 2340 TriUF
+3978 2592 TriUF
+3787 2411 TriUF
+3720 2741 TriUF
+3894 2512 TriUF
+3648 2687 TriUF
+4051 2511 TriUF
+3733 2455 TriUF
+4089 2510 TriUF
+3775 2348 TriUF
+3900 2621 TriUF
+3807 2462 TriUF
+3685 2739 TriUF
+3918 2532 TriUF
+3685 2626 TriUF
+4060 2508 TriUF
+3771 2408 TriUF
+4042 2516 TriUF
+3791 2377 TriUF
+3828 2651 TriUF
+3823 2508 TriUF
+3674 2720 TriUF
+3942 2541 TriUF
+3729 2563 TriUF
+4057 2500 TriUF
+3802 2380 TriUF
+3984 2529 TriUF
+3801 2420 TriUF
+3770 2676 TriUF
+3838 2543 TriUF
+3685 2687 TriUF
+3964 2539 TriUF
+3774 2503 TriUF
+4042 2491 TriUF
+3823 2375 TriUF
+3921 2551 TriUF
+3806 2471 TriUF
+3730 2689 TriUF
+3853 2566 TriUF
+3715 2643 TriUF
+3981 2529 TriUF
+3815 2453 TriUF
+4013 2485 TriUF
+3834 2390 TriUF
+3859 2579 TriUF
+3809 2521 TriUF
+3712 2688 TriUF
+3870 2577 TriUF
+3756 2591 TriUF
+3989 2513 TriUF
+3848 2418 TriUF
+3973 2486 TriUF
+3836 2424 TriUF
+3804 2609 TriUF
+3810 2563 TriUF
+3714 2672 TriUF
+3888 2576 TriUF
+3802 2539 TriUF
+3987 2494 TriUF
+3871 2402 TriUF
+3925 2496 TriUF
+3831 2471 TriUF
+3763 2632 TriUF
+3813 2594 TriUF
+3736 2643 TriUF
+3906 2564 TriUF
+3847 2490 TriUF
+3972 2476 TriUF
+3883 2405 TriUF
+3872 2517 TriUF
+3821 2523 TriUF
+3740 2645 TriUF
+3818 2611 TriUF
+3773 2604 TriUF
+3920 2543 TriUF
+3885 2452 TriUF
+3947 2463 TriUF
+3883 2428 TriUF
+3823 2544 TriUF
+3809 2572 TriUF
+3736 2643 TriUF
+3827 2615 TriUF
+3820 2560 TriUF
+3926 2516 TriUF
+3915 2428 TriUF
+3912 2459 TriUF
+3874 2467 TriUF
+3784 2571 TriUF
+3798 2612 TriUF
+3751 2628 TriUF
+3840 2606 TriUF
+3869 2517 TriUF
+3922 2487 TriUF
+3933 2422 TriUF
+3870 2467 TriUF
+3856 2517 TriUF
+3758 2592 TriUF
+3789 2640 TriUF
+3784 2602 TriUF
+3853 2585 TriUF
+3914 2479 TriUF
+3908 2461 TriUF
+3938 2434 TriUF
+3828 2485 TriUF
+3833 2571 TriUF
+3750 2602 TriUF
+3785 2653 TriUF
+3829 2568 TriUF
+3863 2554 TriUF
+3952 2452 TriUF
+3884 2442 TriUF
+3930 2464 TriUF
+3791 2509 TriUF
+3808 2621 TriUF
+3761 2599 TriUF
+3786 2651 TriUF
+3881 2531 TriUF
+3865 2517 TriUF
+3980 2439 TriUF
+3852 2433 TriUF
+3909 2509 TriUF
+3765 2533 TriUF
+3784 2660 TriUF
+3789 2584 TriUF
+3792 2634 TriUF
+3935 2496 TriUF
+3858 2479 TriUF
+3994 2443 TriUF
+3816 2437 TriUF
+3880 2564 TriUF
+3755 2551 TriUF
+3764 2686 TriUF
+3833 2560 TriUF
+3799 2604 TriUF
+3983 2469 TriUF
+3842 2445 TriUF
+3993 2464 TriUF
+3783 2451 TriUF
+3844 2620 TriUF
+3763 2558 TriUF
+3750 2695 TriUF
+3887 2530 TriUF
+3802 2564 TriUF
+4022 2453 TriUF
+3817 2419 TriUF
+3977 2502 TriUF
+3758 2472 TriUF
+3806 2672 TriUF
+3789 2552 TriUF
+3742 2688 TriUF
+3947 2500 TriUF
+3798 2518 TriUF
+4049 2452 TriUF
+3788 2405 TriUF
+3947 2554 TriUF
+3747 2491 TriUF
+3768 2712 TriUF
+3831 2536 TriUF
+3739 2665 TriUF
+4007 2475 TriUF
+3786 2470 TriUF
+4061 2466 TriUF
+3757 2403 TriUF
+3905 2614 TriUF
+3754 2503 TriUF
+3735 2736 TriUF
+3888 2513 TriUF
+3737 2626 TriUF
+4060 2459 TriUF
+3766 2426 TriUF
+4055 2498 TriUF
+3733 2413 TriUF
+3856 2675 TriUF
+3779 2505 TriUF
+3709 2743 TriUF
+3954 2487 TriUF
+3731 2575 TriUF
+4102 2456 TriUF
+3740 2392 TriUF
+4032 2546 TriUF
+3722 2427 TriUF
+3802 2730 TriUF
+3822 2496 TriUF
+3689 2731 TriUF
+4024 2465 TriUF
+3719 2517 TriUF
+4131 2468 TriUF
+3712 2370 TriUF
+3991 2606 TriUF
+3728 2439 TriUF
+3749 2771 TriUF
+3882 2478 TriUF
+3674 2700 TriUF
+4093 2451 TriUF
+3699 2458 TriUF
+4141 2496 TriUF
+3688 2362 TriUF
+3936 2674 TriUF
+3754 2443 TriUF
+3700 2796 TriUF
+3955 2456 TriUF
+3660 2652 TriUF
+4154 2448 TriUF
+3673 2403 TriUF
+4132 2540 TriUF
+3674 2362 TriUF
+3870 2741 TriUF
+3801 2437 TriUF
+3657 2802 TriUF
+4036 2435 TriUF
+3641 2589 TriUF
+4202 2461 TriUF
+3643 2358 TriUF
+4101 2600 TriUF
+3678 2367 TriUF
+3797 2801 TriUF
+3866 2422 TriUF
+3620 2785 TriUF
+4121 2422 TriUF
+3616 2517 TriUF
+4235 2489 TriUF
+3615 2326 TriUF
+4048 2672 TriUF
+3705 2368 TriUF
+3723 2847 TriUF
+3948 2401 TriUF
+3588 2746 TriUF
+4204 2421 TriUF
+3584 2443 TriUF
+4247 2534 TriUF
+3597 2305 TriUF
+3977 2750 TriUF
+3756 2360 TriUF
+3652 2875 TriUF
+4043 2380 TriUF
+3554 2686 TriUF
+4278 2436 TriUF
+3547 2372 TriUF
+4235 2596 TriUF
+3596 2292 TriUF
+3890 2828 TriUF
+3831 2343 TriUF
+3586 2880 TriUF
+4147 2365 TriUF
+3516 2609 TriUF
+4339 2468 TriUF
+3509 2311 TriUF
+4197 2673 TriUF
+3620 2280 TriUF
+3792 2897 TriUF
+3927 2318 TriUF
+3524 2860 TriUF
+4255 2363 TriUF
+3470 2518 TriUF
+4381 2519 TriUF
+3479 2262 TriUF
+4131 2761 TriUF
+3673 2262 TriUF
+3689 2952 TriUF
+4041 2290 TriUF
+3463 2813 TriUF
+4360 2379 TriUF
+3417 2423 TriUF
+4399 2589 TriUF
+3466 2221 TriUF
+4039 2856 TriUF
+3758 2234 TriUF
+3585 2986 TriUF
+4169 2267 TriUF
+3398 2739 TriUF
+4458 2417 TriUF
+3360 2330 TriUF
+4389 2676 TriUF
+3480 2183 TriUF
+3924 2949 TriUF
+3872 2197 TriUF
+3482 2995 TriUF
+4308 2258 TriUF
+3326 2641 TriUF
+4541 2477 TriUF
+3306 2244 TriUF
+4346 2778 TriUF
+3529 2141 TriUF
+3791 3036 TriUF
+4013 2154 TriUF
+3377 2973 TriUF
+4454 2270 TriUF
+3243 2526 TriUF
+4604 2561 TriUF
+3268 2163 TriUF
+4266 2891 TriUF
+3619 2089 TriUF
+3644 3107 TriUF
+4176 2112 TriUF
+3268 2918 TriUF
+4600 2309 TriUF
+3152 2401 TriUF
+4639 2667 TriUF
+3257 2085 TriUF
+4150 3011 TriUF
+3751 2026 TriUF
+3489 3156 TriUF
+4358 2083 TriUF
+3149 2827 TriUF
+4739 2378 TriUF
+3058 2272 TriUF
+4639 2793 TriUF
+3287 2000 TriUF
+3997 3131 TriUF
+3924 1953 TriUF
+3324 3173 TriUF
+4555 2077 TriUF
+3018 2705 TriUF
+4861 2479 TriUF
+2975 2142 TriUF
+4596 2934 TriUF
+3368 1904 TriUF
+3814 3243 TriUF
+4133 1879 TriUF
+3148 3151 TriUF
+4761 2106 TriUF
+2876 2557 TriUF
+4957 2611 TriUF
+2921 2008 TriUF
+4503 3084 TriUF
+3507 1795 TriUF
+3605 3335 TriUF
+4370 1817 TriUF
+2962 3085 TriUF
+4964 2176 TriUF
+2732 2392 TriUF
+5012 2770 TriUF
+2917 1864 TriUF
+4355 3235 TriUF
+3706 1683 TriUF
+3374 3392 TriUF
+4627 1785 TriUF
+2769 2973 TriUF
+5146 2291 TriUF
+2605 2213 TriUF
+5013 2947 TriUF
+2979 1711 TriUF
+4154 3374 TriUF
+3957 1580 TriUF
+3126 3400 TriUF
+4887 1801 TriUF
+2582 2821 TriUF
+5285 2449 TriUF
+2523 2022 TriUF
+4945 3127 TriUF
+3120 1562 TriUF
+3904 3485 TriUF
+4246 1508 TriUF
+2875 3353 TriUF
+5127 1876 TriUF
+2422 2635 TriUF
+5359 2639 TriUF
+2512 1827 TriUF
+4802 3294 TriUF
+3338 1436 TriUF
+3619 3550 TriUF
+4550 1486 TriUF
+2641 3250 TriUF
+5321 2011 TriUF
+2312 2423 TriUF
+5357 2845 TriUF
+2589 1643 TriUF
+4585 3431 TriUF
+3621 1354 TriUF
+3318 3558 TriUF
+4835 1526 TriUF
+2451 3101 TriUF
+5446 2196 TriUF
+2270 2198 TriUF
+5274 3044 TriUF
+2753 1490 TriUF
+4306 3523 TriUF
+3942 1329 TriUF
+3029 3511 TriUF
+5071 1631 TriUF
+2326 2914 TriUF
+5491 2411 TriUF
+2306 1978 TriUF
+5116 3211 TriUF
+2992 1391 TriUF
+3990 3564 TriUF
+4263 1362 TriUF
+2785 3417 TriUF
+5236 1793 TriUF
+2277 2700 TriUF
+5455 2630 TriUF
+2421 1788 TriUF
+4894 3329 TriUF
+3283 1356 TriUF
+3668 3557 TriUF
+4545 1450 TriUF
+2611 3287 TriUF
+5318 1992 TriUF
+2305 2474 TriUF
+5348 2826 TriUF
+2606 1652 TriUF
+4622 3391 TriUF
+3592 1386 TriUF
+3375 3509 TriUF
+4756 1587 TriUF
+2524 3126 TriUF
+5321 2205 TriUF
+2400 2260 TriUF
+5184 2977 TriUF
+2843 1582 TriUF
+4324 3402 TriUF
+3886 1472 TriUF
+3141 3431 TriUF
+4882 1759 TriUF
+2524 2940 TriUF
+5259 2407 TriUF
+2550 2081 TriUF
+6579 833 TriUF
+% End plot #3
+% Begin plot #4
+0.500 UP
+1.000 UL
+LTb
+0.90 0.62 0.00 C
+LCb setrgbcolor
+6296 693 M
+('track.obs0001.p0004' u 3:4) Rshow
+0.500 UP
+1.000 UL
+LTb
+0.90 0.62 0.00 C
+3831 2450 TriUF
+3467 3095 TriUF
+4138 2494 TriUF
+3487 2779 TriUF
+4400 2530 TriUF
+3587 2309 TriUF
+4329 2639 TriUF
+3639 2279 TriUF
+3854 2932 TriUF
+3844 2498 TriUF
+3480 3057 TriUF
+4129 2518 TriUF
+3544 2721 TriUF
+4368 2533 TriUF
+3634 2299 TriUF
+4265 2635 TriUF
+3669 2327 TriUF
+3800 2939 TriUF
+3854 2537 TriUF
+3497 3019 TriUF
+4126 2536 TriUF
+3595 2667 TriUF
+4339 2533 TriUF
+3673 2294 TriUF
+4205 2636 TriUF
+3693 2375 TriUF
+3755 2945 TriUF
+3863 2569 TriUF
+3518 2981 TriUF
+4125 2548 TriUF
+3640 2617 TriUF
+4311 2531 TriUF
+3706 2294 TriUF
+4146 2642 TriUF
+3713 2421 TriUF
+3717 2949 TriUF
+3869 2595 TriUF
+3543 2942 TriUF
+4127 2556 TriUF
+3682 2572 TriUF
+4283 2527 TriUF
+3733 2299 TriUF
+4089 2651 TriUF
+3729 2467 TriUF
+3687 2950 TriUF
+3874 2617 TriUF
+3572 2903 TriUF
+4128 2561 TriUF
+3720 2531 TriUF
+4255 2522 TriUF
+3756 2310 TriUF
+4034 2664 TriUF
+3743 2512 TriUF
+3663 2947 TriUF
+3878 2635 TriUF
+3604 2862 TriUF
+4128 2562 TriUF
+3755 2496 TriUF
+4225 2516 TriUF
+3775 2326 TriUF
+3981 2680 TriUF
+3754 2554 TriUF
+3646 2941 TriUF
+3881 2650 TriUF
+3639 2820 TriUF
+4127 2561 TriUF
+3789 2465 TriUF
+4193 2510 TriUF
+3791 2348 TriUF
+3931 2697 TriUF
+3762 2594 TriUF
+3637 2930 TriUF
+3885 2662 TriUF
+3677 2778 TriUF
+4122 2557 TriUF
+3820 2439 TriUF
+4159 2505 TriUF
+3804 2374 TriUF
+3885 2715 TriUF
+3767 2632 TriUF
+3634 2915 TriUF
+3888 2672 TriUF
+3717 2736 TriUF
+4115 2550 TriUF
+3851 2419 TriUF
+4123 2500 TriUF
+3814 2406 TriUF
+3843 2732 TriUF
+3770 2667 TriUF
+3637 2896 TriUF
+3891 2679 TriUF
+3758 2695 TriUF
+4104 2541 TriUF
+3880 2405 TriUF
+4084 2497 TriUF
+3821 2442 TriUF
+3806 2747 TriUF
+3770 2699 TriUF
+3648 2874 TriUF
+3894 2683 TriUF
+3799 2655 TriUF
+4090 2530 TriUF
+3908 2396 TriUF
+4042 2497 TriUF
+3826 2482 TriUF
+3774 2760 TriUF
+3767 2728 TriUF
+3665 2848 TriUF
+3897 2684 TriUF
+3841 2618 TriUF
+4072 2516 TriUF
+3933 2394 TriUF
+4000 2498 TriUF
+3828 2525 TriUF
+3749 2770 TriUF
+3762 2754 TriUF
+3689 2820 TriUF
+3898 2682 TriUF
+3882 2584 TriUF
+4052 2500 TriUF
+3956 2397 TriUF
+3957 2502 TriUF
+3828 2570 TriUF
+3730 2775 TriUF
+3755 2777 TriUF
+3718 2789 TriUF
+3898 2677 TriUF
+3923 2553 TriUF
+4030 2483 TriUF
+3975 2406 TriUF
+3915 2508 TriUF
+3824 2616 TriUF
+3717 2776 TriUF
+3746 2796 TriUF
+3752 2757 TriUF
+3897 2669 TriUF
+3962 2527 TriUF
+4005 2466 TriUF
+3991 2420 TriUF
+3875 2517 TriUF
+3817 2663 TriUF
+3712 2773 TriUF
+3737 2813 TriUF
+3791 2725 TriUF
+3893 2656 TriUF
+4000 2505 TriUF
+3978 2447 TriUF
+4003 2440 TriUF
+3837 2528 TriUF
+3807 2708 TriUF
+3713 2765 TriUF
+3727 2826 TriUF
+3833 2692 TriUF
+3886 2640 TriUF
+4036 2488 TriUF
+3949 2430 TriUF
+4011 2465 TriUF
+3804 2541 TriUF
+3793 2752 TriUF
+3721 2753 TriUF
+3717 2836 TriUF
+3878 2660 TriUF
+3878 2621 TriUF
+4071 2476 TriUF
+3919 2413 TriUF
+4013 2496 TriUF
+3776 2554 TriUF
+3776 2794 TriUF
+3734 2738 TriUF
+3709 2841 TriUF
+3924 2629 TriUF
+3866 2598 TriUF
+4103 2469 TriUF
+3887 2398 TriUF
+4012 2530 TriUF
+3753 2566 TriUF
+3757 2832 TriUF
+3754 2720 TriUF
+3701 2843 TriUF
+3971 2601 TriUF
+3852 2572 TriUF
+4133 2466 TriUF
+3855 2386 TriUF
+4005 2569 TriUF
+3735 2578 TriUF
+3735 2867 TriUF
+3778 2700 TriUF
+3694 2840 TriUF
+4019 2575 TriUF
+3836 2544 TriUF
+4159 2469 TriUF
+3823 2377 TriUF
+3994 2611 TriUF
+3725 2587 TriUF
+3711 2898 TriUF
+3808 2677 TriUF
+3688 2833 TriUF
+4065 2552 TriUF
+3818 2514 TriUF
+4182 2475 TriUF
+3790 2371 TriUF
+3979 2657 TriUF
+3720 2593 TriUF
+3686 2926 TriUF
+3842 2653 TriUF
+3683 2821 TriUF
+4111 2532 TriUF
+3798 2482 TriUF
+4202 2487 TriUF
+3759 2368 TriUF
+3960 2704 TriUF
+3722 2597 TriUF
+3661 2949 TriUF
+3881 2628 TriUF
+3676 2805 TriUF
+4156 2517 TriUF
+3776 2450 TriUF
+4218 2502 TriUF
+3729 2369 TriUF
+3937 2753 TriUF
+3729 2596 TriUF
+3635 2970 TriUF
+3923 2601 TriUF
+3669 2784 TriUF
+4200 2505 TriUF
+3751 2418 TriUF
+4229 2523 TriUF
+3701 2371 TriUF
+3910 2802 TriUF
+3743 2590 TriUF
+3610 2987 TriUF
+3970 2575 TriUF
+3659 2760 TriUF
+4243 2497 TriUF
+3724 2387 TriUF
+4237 2549 TriUF
+3676 2376 TriUF
+3880 2852 TriUF
+3763 2580 TriUF
+3585 3001 TriUF
+4021 2547 TriUF
+3645 2731 TriUF
+4286 2493 TriUF
+3693 2357 TriUF
+4242 2579 TriUF
+3654 2381 TriUF
+3847 2902 TriUF
+3788 2564 TriUF
+3561 3013 TriUF
+4076 2520 TriUF
+3627 2699 TriUF
+4330 2493 TriUF
+3658 2327 TriUF
+4243 2616 TriUF
+3636 2384 TriUF
+3812 2952 TriUF
+3820 2542 TriUF
+3535 3022 TriUF
+4135 2493 TriUF
+3603 2664 TriUF
+4375 2499 TriUF
+3618 2299 TriUF
+4243 2658 TriUF
+3623 2384 TriUF
+3773 3002 TriUF
+3860 2514 TriUF
+3508 3030 TriUF
+4201 2467 TriUF
+3571 2626 TriUF
+4423 2509 TriUF
+3572 2272 TriUF
+4241 2708 TriUF
+3614 2378 TriUF
+3731 3053 TriUF
+3907 2477 TriUF
+3476 3037 TriUF
+4273 2441 TriUF
+3529 2585 TriUF
+4476 2526 TriUF
+3517 2244 TriUF
+4240 2765 TriUF
+3610 2362 TriUF
+3685 3108 TriUF
+3964 2431 TriUF
+3437 3044 TriUF
+4355 2415 TriUF
+3472 2541 TriUF
+4538 2551 TriUF
+3452 2214 TriUF
+4241 2832 TriUF
+3611 2334 TriUF
+3635 3168 TriUF
+4034 2372 TriUF
+3386 3053 TriUF
+4452 2389 TriUF
+3396 2494 TriUF
+4613 2585 TriUF
+3373 2178 TriUF
+4246 2910 TriUF
+3618 2285 TriUF
+3577 3239 TriUF
+4120 2295 TriUF
+3314 3067 TriUF
+4570 2362 TriUF
+3290 2442 TriUF
+4709 2632 TriUF
+3273 2131 TriUF
+4261 3002 TriUF
+3631 2208 TriUF
+3510 3326 TriUF
+4230 2193 TriUF
+3211 3091 TriUF
+4722 2331 TriUF
+3141 2386 TriUF
+4840 2695 TriUF
+3142 2062 TriUF
+4293 3115 TriUF
+3648 2086 TriUF
+3428 3439 TriUF
+4373 2052 TriUF
+3058 3131 TriUF
+4923 2290 TriUF
+2925 2326 TriUF
+5025 2781 TriUF
+2961 1952 TriUF
+4358 3256 TriUF
+3664 1897 TriUF
+3326 3587 TriUF
+4561 1852 TriUF
+2830 3201 TriUF
+5194 2229 TriUF
+2617 2266 TriUF
+5287 2895 TriUF
+2709 1776 TriUF
+4482 3430 TriUF
+3663 1614 TriUF
+3209 3767 TriUF
+4803 1583 TriUF
+2510 3307 TriUF
+5528 2133 TriUF
+2225 2223 TriUF
+5603 3025 TriUF
+2402 1526 TriUF
+4672 3626 TriUF
+3627 1268 TriUF
+3103 3922 TriUF
+5065 1296 TriUF
+2156 3409 TriUF
+5841 2025 TriUF
+1871 2205 TriUF
+5848 3135 TriUF
+2166 1283 TriUF
+4830 3789 TriUF
+3598 998 TriUF
+3032 3989 TriUF
+5259 1123 TriUF
+1915 3446 TriUF
+6018 1983 TriUF
+1697 2181 TriUF
+5933 3208 TriUF
+2101 1149 TriUF
+4862 3860 TriUF
+3632 903 TriUF
+2977 3983 TriUF
+5339 1111 TriUF
+1846 3442 TriUF
+6027 2018 TriUF
+1716 2156 TriUF
+5887 3232 TriUF
+2179 1142 TriUF
+4814 3820 TriUF
+3683 980 TriUF
+2974 3921 TriUF
+5275 1245 TriUF
+1953 3440 TriUF
+5852 2093 TriUF
+1931 2188 TriUF
+5716 3173 TriUF
+2387 1277 TriUF
+4733 3656 TriUF
+3701 1221 TriUF
+3070 3791 TriUF
+5045 1517 TriUF
+2236 3412 TriUF
+5512 2193 TriUF
+2306 2272 TriUF
+5431 3042 TriUF
+2693 1511 TriUF
+4601 3423 TriUF
+3709 1542 TriUF
+3202 3622 TriUF
+4757 1819 TriUF
+2573 3318 TriUF
+5161 2303 TriUF
+2683 2328 TriUF
+5136 2915 TriUF
+2984 1729 TriUF
+4436 3228 TriUF
+3736 1821 TriUF
+3293 3474 TriUF
+4536 2050 TriUF
+2846 3196 TriUF
+4905 2390 TriUF
+2968 2341 TriUF
+4903 2826 TriUF
+3201 1888 TriUF
+4283 3103 TriUF
+3770 2027 TriUF
+3345 3362 TriUF
+4392 2207 TriUF
+3045 3083 TriUF
+4735 2450 TriUF
+3169 2333 TriUF
+4731 2765 TriUF
+3352 2000 TriUF
+4155 3031 TriUF
+3801 2176 TriUF
+3376 3278 TriUF
+4300 2314 TriUF
+3190 2985 TriUF
+4622 2489 TriUF
+3312 2318 TriUF
+4600 2724 TriUF
+3457 2085 TriUF
+4049 2992 TriUF
+3825 2285 TriUF
+3398 3212 TriUF
+4241 2387 TriUF
+3302 2900 TriUF
+4542 2514 TriUF
+3418 2303 TriUF
+4497 2695 TriUF
+3533 2155 TriUF
+3962 2973 TriUF
+3844 2368 TriUF
+3417 3158 TriUF
+4204 2439 TriUF
+3391 2826 TriUF
+4483 2528 TriUF
+3498 2291 TriUF
+4411 2676 TriUF
+3588 2216 TriUF
+3889 2966 TriUF
+3858 2432 TriUF
+3435 3110 TriUF
+4181 2477 TriUF
+3465 2759 TriUF
+4436 2536 TriUF
+3561 2282 TriUF
+4335 2664 TriUF
+3630 2272 TriUF
+3827 2966 TriUF
+3869 2483 TriUF
+3455 3066 TriUF
+4168 2504 TriUF
+3527 2699 TriUF
+4397 2539 TriUF
+3612 2277 TriUF
+4266 2659 TriUF
+3663 2324 TriUF
+3775 2968 TriUF
+3878 2524 TriUF
+3478 3024 TriUF
+4161 2524 TriUF
+3581 2645 TriUF
+4363 2539 TriUF
+3654 2276 TriUF
+4201 2660 TriUF
+3690 2375 TriUF
+3731 2971 TriUF
+3884 2557 TriUF
+3504 2982 TriUF
+4158 2537 TriUF
+3628 2595 TriUF
+4331 2536 TriUF
+3688 2280 TriUF
+4139 2665 TriUF
+3711 2423 TriUF
+3695 2972 TriUF
+3890 2583 TriUF
+3532 2941 TriUF
+4157 2546 TriUF
+3670 2550 TriUF
+4300 2532 TriUF
+3716 2289 TriUF
+4080 2676 TriUF
+3729 2470 TriUF
+3667 2970 TriUF
+3894 2605 TriUF
+3564 2898 TriUF
+4157 2551 TriUF
+3708 2511 TriUF
+4269 2527 TriUF
+3740 2303 TriUF
+4024 2689 TriUF
+3743 2514 TriUF
+3645 2965 TriUF
+3898 2623 TriUF
+3598 2856 TriUF
+4156 2553 TriUF
+3744 2476 TriUF
+4237 2522 TriUF
+3759 2322 TriUF
+3970 2706 TriUF
+3755 2556 TriUF
+3631 2955 TriUF
+3902 2637 TriUF
+3635 2812 TriUF
+4152 2552 TriUF
+3777 2447 TriUF
+4203 2518 TriUF
+3775 2346 TriUF
+3920 2723 TriUF
+3764 2595 TriUF
+3623 2942 TriUF
+3906 2648 TriUF
+3674 2769 TriUF
+4147 2548 TriUF
+3808 2423 TriUF
+4167 2514 TriUF
+3787 2375 TriUF
+3874 2741 TriUF
+3770 2631 TriUF
+3622 2925 TriUF
+3911 2657 TriUF
+3713 2726 TriUF
+4138 2542 TriUF
+3837 2404 TriUF
+4129 2511 TriUF
+3797 2409 TriUF
+3832 2759 TriUF
+3774 2664 TriUF
+3628 2905 TriUF
+3915 2663 TriUF
+3754 2684 TriUF
+4126 2533 TriUF
+3865 2392 TriUF
+4088 2510 TriUF
+3804 2446 TriUF
+3795 2774 TriUF
+3775 2694 TriUF
+3640 2881 TriUF
+3919 2666 TriUF
+3794 2644 TriUF
+4111 2523 TriUF
+3891 2385 TriUF
+4046 2511 TriUF
+3810 2487 TriUF
+3764 2785 TriUF
+3773 2721 TriUF
+3659 2854 TriUF
+3923 2667 TriUF
+3835 2606 TriUF
+4093 2510 TriUF
+3915 2384 TriUF
+4002 2515 TriUF
+3812 2531 TriUF
+3740 2794 TriUF
+3770 2745 TriUF
+3683 2824 TriUF
+3925 2664 TriUF
+3875 2572 TriUF
+4072 2495 TriUF
+3936 2389 TriUF
+3959 2521 TriUF
+3812 2576 TriUF
+3722 2797 TriUF
+3764 2766 TriUF
+3714 2792 TriUF
+3925 2659 TriUF
+3914 2542 TriUF
+4048 2480 TriUF
+3955 2400 TriUF
+3916 2530 TriUF
+3809 2622 TriUF
+3710 2796 TriUF
+3757 2783 TriUF
+3749 2759 TriUF
+3923 2650 TriUF
+3951 2516 TriUF
+4022 2464 TriUF
+3969 2416 TriUF
+3875 2541 TriUF
+3803 2668 TriUF
+3706 2791 TriUF
+3749 2798 TriUF
+3788 2725 TriUF
+3919 2637 TriUF
+3988 2495 TriUF
+3994 2447 TriUF
+3980 2438 TriUF
+3838 2554 TriUF
+3794 2712 TriUF
+3708 2782 TriUF
+3741 2810 TriUF
+3831 2692 TriUF
+3912 2622 TriUF
+4023 2479 TriUF
+3964 2432 TriUF
+3986 2465 TriUF
+3805 2567 TriUF
+3782 2754 TriUF
+3716 2768 TriUF
+3734 2818 TriUF
+3876 2659 TriUF
+3902 2602 TriUF
+4056 2467 TriUF
+3933 2417 TriUF
+3988 2497 TriUF
+3776 2580 TriUF
+3766 2794 TriUF
+3731 2752 TriUF
+3727 2822 TriUF
+3922 2628 TriUF
+3890 2580 TriUF
+4087 2461 TriUF
+3900 2405 TriUF
+3985 2534 TriUF
+3754 2593 TriUF
+3748 2830 TriUF
+3751 2732 TriUF
+3721 2822 TriUF
+3969 2599 TriUF
+3875 2555 TriUF
+4116 2459 TriUF
+3867 2395 TriUF
+3978 2574 TriUF
+3738 2604 TriUF
+3728 2863 TriUF
+3776 2710 TriUF
+3716 2818 TriUF
+4015 2573 TriUF
+3859 2528 TriUF
+4141 2463 TriUF
+3833 2388 TriUF
+3967 2618 TriUF
+3728 2612 TriUF
+3706 2892 TriUF
+3807 2687 TriUF
+3711 2810 TriUF
+4061 2550 TriUF
+3840 2499 TriUF
+4162 2470 TriUF
+3801 2385 TriUF
+3951 2664 TriUF
+3724 2618 TriUF
+3683 2917 TriUF
+3842 2662 TriUF
+3706 2796 TriUF
+4105 2531 TriUF
+3819 2469 TriUF
+4179 2483 TriUF
+3769 2385 TriUF
+3932 2711 TriUF
+3726 2620 TriUF
+3660 2938 TriUF
+3881 2636 TriUF
+3701 2779 TriUF
+4148 2516 TriUF
+3797 2439 TriUF
+4192 2500 TriUF
+3739 2388 TriUF
+3909 2760 TriUF
+3735 2618 TriUF
+3637 2956 TriUF
+3924 2610 TriUF
+3694 2757 TriUF
+4190 2504 TriUF
+3772 2409 TriUF
+4201 2522 TriUF
+3713 2393 TriUF
+3882 2808 TriUF
+3749 2611 TriUF
+3614 2970 TriUF
+3970 2583 TriUF
+3685 2731 TriUF
+4230 2497 TriUF
+3746 2380 TriUF
+4206 2548 TriUF
+3689 2400 TriUF
+3853 2856 TriUF
+3769 2600 TriUF
+3593 2981 TriUF
+4020 2557 TriUF
+3673 2702 TriUF
+4270 2494 TriUF
+3716 2352 TriUF
+4206 2580 TriUF
+3670 2407 TriUF
+3820 2903 TriUF
+3795 2585 TriUF
+3572 2989 TriUF
+4074 2531 TriUF
+3656 2669 TriUF
+4309 2495 TriUF
+3684 2326 TriUF
+4204 2617 TriUF
+3655 2413 TriUF
+3785 2950 TriUF
+3826 2564 TriUF
+3550 2994 TriUF
+4130 2506 TriUF
+3635 2633 TriUF
+4349 2500 TriUF
+3647 2302 TriUF
+4198 2659 TriUF
+3645 2415 TriUF
+3747 2995 TriUF
+3864 2538 TriUF
+3528 2997 TriUF
+4192 2483 TriUF
+3607 2595 TriUF
+4390 2511 TriUF
+3606 2280 TriUF
+4190 2708 TriUF
+3640 2413 TriUF
+3707 3041 TriUF
+3909 2505 TriUF
+3502 2997 TriUF
+4258 2461 TriUF
+3570 2553 TriUF
+4434 2528 TriUF
+3559 2257 TriUF
+4181 2763 TriUF
+3641 2402 TriUF
+3663 3088 TriUF
+3963 2465 TriUF
+3471 2997 TriUF
+4331 2440 TriUF
+3523 2509 TriUF
+4483 2552 TriUF
+3506 2234 TriUF
+4172 2825 TriUF
+3649 2381 TriUF
+3615 3139 TriUF
+4027 2416 TriUF
+3430 2996 TriUF
+4416 2422 TriUF
+3460 2463 TriUF
+4540 2584 TriUF
+3443 2208 TriUF
+4163 2897 TriUF
+3663 2345 TriUF
+3562 3195 TriUF
+4105 2354 TriUF
+3374 2996 TriUF
+4515 2404 TriUF
+3375 2412 TriUF
+4611 2627 TriUF
+3368 2173 TriUF
+4158 2979 TriUF
+3685 2287 TriUF
+3500 3263 TriUF
+4202 2276 TriUF
+3295 3000 TriUF
+4639 2387 TriUF
+3259 2357 TriUF
+4704 2685 TriUF
+3274 2122 TriUF
+4160 3077 TriUF
+3716 2197 TriUF
+3425 3349 TriUF
+4325 2172 TriUF
+3179 3013 TriUF
+4799 2370 TriUF
+3096 2295 TriUF
+4835 2762 TriUF
+3151 2042 TriUF
+4177 3196 TriUF
+3756 2058 TriUF
+3329 3463 TriUF
+4485 2030 TriUF
+3006 3042 TriUF
+5014 2346 TriUF
+2860 2226 TriUF
+5024 2866 TriUF
+2980 1912 TriUF
+4225 3345 TriUF
+3800 1847 TriUF
+3204 3614 TriUF
+4697 1831 TriUF
+2750 3100 TriUF
+5302 2306 TriUF
+2530 2152 TriUF
+5291 3000 TriUF
+2740 1702 TriUF
+4331 3526 TriUF
+3834 1544 TriUF
+3050 3789 TriUF
+4967 1566 TriUF
+2400 3195 TriUF
+5642 2236 TriUF
+2134 2087 TriUF
+5597 3151 TriUF
+2462 1421 TriUF
+4496 3717 TriUF
+3838 1201 TriUF
+2907 3924 TriUF
+5246 1306 TriUF
+2042 3285 TriUF
+5933 2163 TriUF
+1815 2040 TriUF
+5806 3276 TriUF
+2274 1176 TriUF
+4617 3857 TriUF
+3849 970 TriUF
+2811 3967 TriUF
+5431 1174 TriUF
+1828 3313 TriUF
+6070 2150 TriUF
+1689 1996 TriUF
+5858 3348 TriUF
+2248 1063 TriUF
+4621 3899 TriUF
+3899 917 TriUF
+2755 3949 TriUF
+5483 1194 TriUF
+1797 3309 TriUF
+6040 2193 TriUF
+1751 1976 TriUF
+5791 3353 TriUF
+2347 1091 TriUF
+4572 3831 TriUF
+3932 1031 TriUF
+2779 3886 TriUF
+5373 1353 TriUF
+1952 3312 TriUF
+5826 2254 TriUF
+2010 2030 TriUF
+5603 3258 TriUF
+2558 1267 TriUF
+4509 3643 TriUF
+3904 1302 TriUF
+2916 3762 TriUF
+5098 1628 TriUF
+2273 3286 TriUF
+5474 2326 TriUF
+2401 2135 TriUF
+5319 3096 TriUF
+2841 1524 TriUF
+4401 3413 TriUF
+3868 1626 TriUF
+3081 3602 TriUF
+4795 1905 TriUF
+2616 3196 TriUF
+5141 2401 TriUF
+2761 2208 TriUF
+5043 2954 TriUF
+3096 1747 TriUF
+4263 3236 TriUF
+3860 1894 TriUF
+3197 3459 TriUF
+4572 2109 TriUF
+2886 3085 TriUF
+4902 2461 TriUF
+3026 2239 TriUF
+4828 2855 TriUF
+3282 1907 TriUF
+4133 3128 TriUF
+3868 2086 TriUF
+3270 3348 TriUF
+4428 2247 TriUF
+3082 2980 TriUF
+4741 2501 TriUF
+3212 2248 TriUF
+4666 2790 TriUF
+3412 2023 TriUF
+4024 3067 TriUF
+3879 2224 TriUF
+3319 3262 TriUF
+4337 2341 TriUF
+3226 2889 TriUF
+4631 2525 TriUF
+3345 2249 TriUF
+4540 2746 TriUF
+3503 2113 TriUF
+3934 3034 TriUF
+3889 2324 TriUF
+3357 3193 TriUF
+4279 2406 TriUF
+3336 2809 TriUF
+4550 2539 TriUF
+3444 2248 TriUF
+4438 2718 TriUF
+3569 2188 TriUF
+3859 3017 TriUF
+3898 2399 TriUF
+3389 3134 TriUF
+4243 2452 TriUF
+3423 2739 TriUF
+4489 2547 TriUF
+3519 2247 TriUF
+4351 2700 TriUF
+3618 2253 TriUF
+3798 3009 TriUF
+3904 2457 TriUF
+3419 3082 TriUF
+4221 2485 TriUF
+3494 2677 TriUF
+4439 2549 TriUF
+3578 2249 TriUF
+4274 2691 TriUF
+3656 2312 TriUF
+3747 3005 TriUF
+3909 2502 TriUF
+3450 3033 TriUF
+4207 2508 TriUF
+3554 2622 TriUF
+4397 2548 TriUF
+3625 2254 TriUF
+4202 2690 TriUF
+3685 2367 TriUF
+3705 3003 TriUF
+3913 2537 TriUF
+3482 2987 TriUF
+4200 2524 TriUF
+3605 2572 TriUF
+4359 2545 TriUF
+3663 2263 TriUF
+4136 2695 TriUF
+3710 2419 TriUF
+3671 2999 TriUF
+3917 2565 TriUF
+3515 2941 TriUF
+4195 2535 TriUF
+3650 2528 TriUF
+4323 2541 TriUF
+3694 2276 TriUF
+4074 2705 TriUF
+3729 2467 TriUF
+3644 2993 TriUF
+3920 2588 TriUF
+3551 2896 TriUF
+4192 2541 TriUF
+3690 2489 TriUF
+4288 2537 TriUF
+3719 2294 TriUF
+4015 2719 TriUF
+3746 2512 TriUF
+3625 2984 TriUF
+3924 2606 TriUF
+3588 2850 TriUF
+4188 2544 TriUF
+3726 2455 TriUF
+4253 2532 TriUF
+3739 2316 TriUF
+3960 2735 TriUF
+3759 2553 TriUF
+3613 2972 TriUF
+3928 2620 TriUF
+3626 2805 TriUF
+4182 2544 TriUF
+3759 2427 TriUF
+4216 2528 TriUF
+3755 2343 TriUF
+3909 2753 TriUF
+3769 2591 TriUF
+3607 2956 TriUF
+3932 2631 TriUF
+3666 2759 TriUF
+4174 2541 TriUF
+3791 2405 TriUF
+4177 2526 TriUF
+3769 2375 TriUF
+3862 2770 TriUF
+3776 2626 TriUF
+3608 2937 TriUF
+3937 2640 TriUF
+3706 2715 TriUF
+4164 2535 TriUF
+3820 2388 TriUF
+4137 2525 TriUF
+3779 2411 TriUF
+3820 2787 TriUF
+3781 2658 TriUF
+3616 2914 TriUF
+3942 2646 TriUF
+3746 2672 TriUF
+4150 2527 TriUF
+3847 2378 TriUF
+4094 2526 TriUF
+3788 2450 TriUF
+3784 2801 TriUF
+3783 2686 TriUF
+3630 2888 TriUF
+3947 2649 TriUF
+3786 2632 TriUF
+4134 2517 TriUF
+3872 2373 TriUF
+4050 2529 TriUF
+3794 2492 TriUF
+3754 2811 TriUF
+3783 2711 TriUF
+3650 2859 TriUF
+3951 2649 TriUF
+3826 2594 TriUF
+4114 2506 TriUF
+3895 2374 TriUF
+4005 2535 TriUF
+3797 2536 TriUF
+3730 2818 TriUF
+6579 693 TriUF
+% End plot #4
+% Begin plot #5
+0.500 UP
+1.000 UL
+LTb
+0.94 0.89 0.26 C
+LCb setrgbcolor
+6296 553 M
+('track.obs0001.p0005' u 3:4) Rshow
+0.500 UP
+1.000 UL
+LTb
+0.94 0.89 0.26 C
+3831 2450 TriUF
+3417 3198 TriUF
+4181 2478 TriUF
+3433 2849 TriUF
+4485 2529 TriUF
+3531 2299 TriUF
+4432 2662 TriUF
+3578 2244 TriUF
+3909 2990 TriUF
+3826 2488 TriUF
+3440 3169 TriUF
+4156 2500 TriUF
+3478 2821 TriUF
+4452 2529 TriUF
+3568 2302 TriUF
+4394 2649 TriUF
+3598 2276 TriUF
+3885 2985 TriUF
+3824 2516 TriUF
+3456 3147 TriUF
+4142 2514 TriUF
+3512 2796 TriUF
+4431 2527 TriUF
+3594 2303 TriUF
+4365 2642 TriUF
+3611 2301 TriUF
+3864 2985 TriUF
+3824 2536 TriUF
+3466 3131 TriUF
+4137 2521 TriUF
+3536 2774 TriUF
+4419 2526 TriUF
+3610 2301 TriUF
+4343 2640 TriUF
+3618 2321 TriUF
+3846 2990 TriUF
+3826 2549 TriUF
+3473 3119 TriUF
+4138 2523 TriUF
+3553 2755 TriUF
+4414 2524 TriUF
+3618 2297 TriUF
+4327 2642 TriUF
+3621 2337 TriUF
+3830 2999 TriUF
+3830 2555 TriUF
+3476 3112 TriUF
+4145 2521 TriUF
+3562 2738 TriUF
+4415 2523 TriUF
+3619 2292 TriUF
+4317 2647 TriUF
+3620 2348 TriUF
+3815 3012 TriUF
+3837 2556 TriUF
+3475 3109 TriUF
+4157 2515 TriUF
+3565 2722 TriUF
+4423 2522 TriUF
+3612 2285 TriUF
+4312 2657 TriUF
+3615 2356 TriUF
+3801 3028 TriUF
+3845 2551 TriUF
+3470 3110 TriUF
+4176 2505 TriUF
+3561 2709 TriUF
+4438 2521 TriUF
+3598 2275 TriUF
+4313 2671 TriUF
+3606 2359 TriUF
+3789 3048 TriUF
+3857 2540 TriUF
+3461 3116 TriUF
+4201 2491 TriUF
+3548 2696 TriUF
+4461 2522 TriUF
+3575 2264 TriUF
+4320 2690 TriUF
+3594 2357 TriUF
+3777 3073 TriUF
+3872 2521 TriUF
+3447 3127 TriUF
+4233 2471 TriUF
+3526 2686 TriUF
+4494 2523 TriUF
+3541 2250 TriUF
+4336 2713 TriUF
+3576 2348 TriUF
+3765 3104 TriUF
+3892 2493 TriUF
+3426 3145 TriUF
+4275 2445 TriUF
+3492 2677 TriUF
+4539 2527 TriUF
+3493 2231 TriUF
+4362 2744 TriUF
+3552 2329 TriUF
+3755 3144 TriUF
+3917 2452 TriUF
+3395 3173 TriUF
+4330 2410 TriUF
+3441 2671 TriUF
+4602 2532 TriUF
+3425 2207 TriUF
+4405 2784 TriUF
+3518 2296 TriUF
+3746 3194 TriUF
+3951 2393 TriUF
+3351 3216 TriUF
+4403 2362 TriUF
+3366 2670 TriUF
+4691 2539 TriUF
+3327 2174 TriUF
+4473 2836 TriUF
+3468 2242 TriUF
+3740 3262 TriUF
+3995 2306 TriUF
+3285 3280 TriUF
+4504 2292 TriUF
+3253 2677 TriUF
+4821 2547 TriUF
+3182 2129 TriUF
+4582 2907 TriUF
+3391 2152 TriUF
+3743 3355 TriUF
+4054 2172 TriUF
+3186 3381 TriUF
+4646 2184 TriUF
+3079 2701 TriUF
+5017 2555 TriUF
+2958 2064 TriUF
+4765 3006 TriUF
+3260 2001 TriUF
+3772 3487 TriUF
+4129 1958 TriUF
+3035 3540 TriUF
+4854 2005 TriUF
+2804 2766 TriUF
+5316 2548 TriUF
+2605 1972 TriUF
+5074 3146 TriUF
+3021 1744 TriUF
+3879 3664 TriUF
+4199 1615 TriUF
+2816 3771 TriUF
+5149 1706 TriUF
+2382 2921 TriUF
+5725 2487 TriUF
+2110 1867 TriUF
+5522 3326 TriUF
+2630 1359 TriUF
+4159 3853 TriUF
+4181 1176 TriUF
+2611 3983 TriUF
+5479 1325 TriUF
+1902 3161 TriUF
+6089 2330 TriUF
+1686 1831 TriUF
+5873 3461 TriUF
+2280 1027 TriUF
+4490 3981 TriUF
+4054 877 TriUF
+2574 4052 TriUF
+5648 1103 TriUF
+1647 3316 TriUF
+6228 2200 TriUF
+1549 1880 TriUF
+5981 3470 TriUF
+2157 936 TriUF
+4664 3989 TriUF
+3934 835 TriUF
+2658 4042 TriUF
+5590 1109 TriUF
+1682 3421 TriUF
+6120 2140 TriUF
+1685 2004 TriUF
+5911 3359 TriUF
+2222 1067 TriUF
+4771 3831 TriUF
+3773 1040 TriUF
+2890 3942 TriUF
+5276 1350 TriUF
+2000 3522 TriUF
+5725 2135 TriUF
+2107 2248 TriUF
+5629 3119 TriUF
+2509 1388 TriUF
+4777 3519 TriUF
+3618 1430 TriUF
+3213 3724 TriUF
+4811 1736 TriUF
+2466 3488 TriUF
+5228 2220 TriUF
+2595 2444 TriUF
+5265 2896 TriUF
+2865 1702 TriUF
+4647 3232 TriUF
+3584 1779 TriUF
+3414 3519 TriUF
+4470 2034 TriUF
+2822 3374 TriUF
+4876 2317 TriUF
+2944 2519 TriUF
+4987 2767 TriUF
+3126 1902 TriUF
+4506 3052 TriUF
+3603 2010 TriUF
+3507 3381 TriUF
+4275 2221 TriUF
+3045 3270 TriUF
+4663 2387 TriUF
+3167 2537 TriUF
+4801 2695 TriUF
+3296 2021 TriUF
+4395 2946 TriUF
+3629 2157 TriUF
+3550 3292 TriUF
+4163 2338 TriUF
+3187 3189 TriUF
+4532 2434 TriUF
+3312 2535 TriUF
+4678 2651 TriUF
+3407 2094 TriUF
+4312 2883 TriUF
+3652 2257 TriUF
+3571 3233 TriUF
+4094 2414 TriUF
+3282 3129 TriUF
+4450 2465 TriUF
+3410 2526 TriUF
+4593 2622 TriUF
+3482 2143 TriUF
+4248 2846 TriUF
+3669 2327 TriUF
+3581 3194 TriUF
+4051 2466 TriUF
+3349 3082 TriUF
+4397 2485 TriUF
+3479 2515 TriUF
+4533 2603 TriUF
+3533 2178 TriUF
+4198 2824 TriUF
+3682 2379 TriUF
+3585 3167 TriUF
+4023 2501 TriUF
+3397 3045 TriUF
+4362 2498 TriUF
+3528 2502 TriUF
+4489 2589 TriUF
+3569 2203 TriUF
+4159 2813 TriUF
+3692 2418 TriUF
+3585 3148 TriUF
+4006 2525 TriUF
+3434 3016 TriUF
+4341 2506 TriUF
+3563 2490 TriUF
+4459 2580 TriUF
+3592 2222 TriUF
+4126 2809 TriUF
+3700 2448 TriUF
+3584 3136 TriUF
+3996 2540 TriUF
+3461 2992 TriUF
+4329 2510 TriUF
+3587 2477 TriUF
+4437 2574 TriUF
+3607 2237 TriUF
+4100 2812 TriUF
+3706 2471 TriUF
+3580 3129 TriUF
+3993 2549 TriUF
+3481 2972 TriUF
+4324 2511 TriUF
+3603 2464 TriUF
+4422 2570 TriUF
+3614 2248 TriUF
+4078 2819 TriUF
+3711 2488 TriUF
+3574 3127 TriUF
+3994 2552 TriUF
+3496 2955 TriUF
+4326 2510 TriUF
+3612 2451 TriUF
+4414 2570 TriUF
+3615 2256 TriUF
+4060 2830 TriUF
+3715 2499 TriUF
+3567 3128 TriUF
+4001 2550 TriUF
+3504 2941 TriUF
+4334 2507 TriUF
+3614 2438 TriUF
+4412 2572 TriUF
+3610 2262 TriUF
+4045 2845 TriUF
+3720 2506 TriUF
+3559 3132 TriUF
+4012 2543 TriUF
+3508 2931 TriUF
+4347 2503 TriUF
+3608 2424 TriUF
+4416 2576 TriUF
+3600 2264 TriUF
+4034 2863 TriUF
+3723 2506 TriUF
+3548 3141 TriUF
+4028 2531 TriUF
+3505 2923 TriUF
+4367 2498 TriUF
+3595 2410 TriUF
+4426 2584 TriUF
+3583 2264 TriUF
+4026 2886 TriUF
+3728 2501 TriUF
+3535 3155 TriUF
+4049 2513 TriUF
+3495 2918 TriUF
+4395 2491 TriUF
+3573 2394 TriUF
+4444 2595 TriUF
+3560 2259 TriUF
+4022 2914 TriUF
+3732 2488 TriUF
+3519 3174 TriUF
+4078 2488 TriUF
+3477 2918 TriUF
+4432 2483 TriUF
+3541 2377 TriUF
+4472 2611 TriUF
+3528 2250 TriUF
+4023 2947 TriUF
+3738 2466 TriUF
+3498 3201 TriUF
+4114 2455 TriUF
+3448 2922 TriUF
+4480 2472 TriUF
+3493 2358 TriUF
+4512 2632 TriUF
+3484 2233 TriUF
+4030 2988 TriUF
+3744 2430 TriUF
+3472 3238 TriUF
+4162 2408 TriUF
+3403 2934 TriUF
+4547 2459 TriUF
+3425 2336 TriUF
+4572 2661 TriUF
+3423 2205 TriUF
+4048 3039 TriUF
+3750 2376 TriUF
+3437 3291 TriUF
+4226 2344 TriUF
+3336 2957 TriUF
+4638 2440 TriUF
+3327 2310 TriUF
+4661 2700 TriUF
+3336 2161 TriUF
+4081 3105 TriUF
+3756 2294 TriUF
+3390 3368 TriUF
+4313 2249 TriUF
+3233 2999 TriUF
+4769 2410 TriUF
+3179 2279 TriUF
+4797 2755 TriUF
+3205 2089 TriUF
+4144 3194 TriUF
+3757 2162 TriUF
+3327 3482 TriUF
+4435 2104 TriUF
+3073 3074 TriUF
+4963 2359 TriUF
+2950 2244 TriUF
+5015 2830 TriUF
+2994 1968 TriUF
+4269 3315 TriUF
+3736 1948 TriUF
+3245 3653 TriUF
+4610 1871 TriUF
+2815 3211 TriUF
+5252 2257 TriUF
+2592 2220 TriUF
+5358 2932 TriUF
+2648 1762 TriUF
+4524 3481 TriUF
+3645 1599 TriUF
+3168 3879 TriUF
+4847 1507 TriUF
+2427 3438 TriUF
+5631 2049 TriUF
+2105 2263 TriUF
+5801 3027 TriUF
+2171 1470 TriUF
+4946 3685 TriUF
+3412 1148 TriUF
+3199 4058 TriUF
+5068 1105 TriUF
+2029 3655 TriUF
+5963 1776 TriUF
+1693 2406 TriUF
+6109 3033 TriUF
+1822 1255 TriUF
+5290 3840 TriUF
+3171 845 TriUF
+3341 4109 TriUF
+5118 914 TriUF
+1873 3742 TriUF
+6077 1632 TriUF
+1558 2533 TriUF
+6179 2979 TriUF
+1746 1228 TriUF
+5415 3848 TriUF
+3057 813 TriUF
+3483 4060 TriUF
+5008 964 TriUF
+1956 3794 TriUF
+5940 1629 TriUF
+1699 2678 TriUF
+6041 2873 TriUF
+1921 1372 TriUF
+5402 3680 TriUF
+3013 1033 TriUF
+3703 3865 TriUF
+4695 1264 TriUF
+2286 3798 TriUF
+5518 1776 TriUF
+2110 2874 TriUF
+5665 2717 TriUF
+2356 1670 TriUF
+5210 3363 TriUF
+3098 1419 TriUF
+3893 3575 TriUF
+4327 1678 TriUF
+2704 3666 TriUF
+5024 2010 TriUF
+2577 2950 TriUF
+5252 2618 TriUF
+2786 1931 TriUF
+4958 3090 TriUF
+3250 1739 TriUF
+3940 3355 TriUF
+4108 1990 TriUF
+2993 3507 TriUF
+4685 2192 TriUF
+2914 2927 TriUF
+4961 2580 TriUF
+3076 2079 TriUF
+4762 2921 TriUF
+3374 1943 TriUF
+3925 3222 TriUF
+3999 2187 TriUF
+3162 3385 TriUF
+4485 2311 TriUF
+3130 2883 TriUF
+4775 2564 TriUF
+3261 2159 TriUF
+4623 2822 TriUF
+3461 2072 TriUF
+3898 3143 TriUF
+3942 2312 TriUF
+3265 3299 TriUF
+4365 2387 TriUF
+3272 2841 TriUF
+4654 2556 TriUF
+3382 2204 TriUF
+4525 2761 TriUF
+3520 2158 TriUF
+3871 3095 TriUF
+3909 2395 TriUF
+3331 3238 TriUF
+4290 2437 TriUF
+3369 2804 TriUF
+4573 2550 TriUF
+3464 2231 TriUF
+4453 2722 TriUF
+3560 2220 TriUF
+3847 3066 TriUF
+3889 2453 TriUF
+3376 3193 TriUF
+4243 2470 TriUF
+3437 2773 TriUF
+4518 2546 TriUF
+3522 2248 TriUF
+4399 2698 TriUF
+3588 2267 TriUF
+3825 3049 TriUF
+3877 2493 TriUF
+3408 3159 TriUF
+4214 2491 TriUF
+3486 2747 TriUF
+4480 2542 TriUF
+3561 2258 TriUF
+4358 2683 TriUF
+3607 2303 TriUF
+3806 3040 TriUF
+3870 2521 TriUF
+3431 3134 TriUF
+4197 2505 TriUF
+3522 2724 TriUF
+4455 2538 TriUF
+3588 2263 TriUF
+4326 2676 TriUF
+3620 2331 TriUF
+3789 3038 TriUF
+3867 2540 TriUF
+3447 3115 TriUF
+4190 2512 TriUF
+3548 2703 TriUF
+4439 2535 TriUF
+3605 2266 TriUF
+4302 2674 TriUF
+3628 2353 TriUF
+3774 3040 TriUF
+3868 2552 TriUF
+3458 3101 TriUF
+4190 2514 TriUF
+3565 2684 TriUF
+4432 2533 TriUF
+3613 2266 TriUF
+4283 2677 TriUF
+3631 2371 TriUF
+3760 3047 TriUF
+3871 2557 TriUF
+3464 3092 TriUF
+4196 2513 TriUF
+3574 2667 TriUF
+4431 2532 TriUF
+3614 2264 TriUF
+4271 2685 TriUF
+3632 2383 TriUF
+3746 3057 TriUF
+3878 2557 TriUF
+3466 3086 TriUF
+4209 2507 TriUF
+3576 2651 TriUF
+4438 2532 TriUF
+3607 2259 TriUF
+4263 2696 TriUF
+3629 2391 TriUF
+3733 3072 TriUF
+3887 2550 TriUF
+3463 3085 TriUF
+4227 2498 TriUF
+3570 2637 TriUF
+4451 2533 TriUF
+3592 2253 TriUF
+4261 2712 TriUF
+3623 2393 TriUF
+3719 3090 TriUF
+3901 2537 TriUF
+3455 3088 TriUF
+4253 2485 TriUF
+3556 2623 TriUF
+4473 2535 TriUF
+3568 2243 TriUF
+4266 2733 TriUF
+3614 2390 TriUF
+3706 3114 TriUF
+3919 2516 TriUF
+3441 3097 TriUF
+4287 2467 TriUF
+3531 2610 TriUF
+4505 2540 TriUF
+3533 2230 TriUF
+4279 2760 TriUF
+3601 2378 TriUF
+3692 3144 TriUF
+3942 2486 TriUF
+3419 3113 TriUF
+4331 2443 TriUF
+3494 2599 TriUF
+4550 2547 TriUF
+3484 2212 TriUF
+4303 2794 TriUF
+3583 2356 TriUF
+3677 3184 TriUF
+3974 2442 TriUF
+3386 3139 TriUF
+4389 2412 TriUF
+3438 2589 TriUF
+4614 2557 TriUF
+3414 2188 TriUF
+4342 2838 TriUF
+3557 2318 TriUF
+3662 3236 TriUF
+4015 2379 TriUF
+3336 3179 TriUF
+4468 2368 TriUF
+3357 2581 TriUF
+4706 2572 TriUF
+3314 2153 TriUF
+4406 2894 TriUF
+3517 2256 TriUF
+3646 3307 TriUF
+4071 2287 TriUF
+3261 3242 TriUF
+4576 2304 TriUF
+3234 2580 TriUF
+4841 2591 TriUF
+3165 2102 TriUF
+4512 2971 TriUF
+3453 2155 TriUF
+3635 3407 TriUF
+4147 2144 TriUF
+3146 3343 TriUF
+4732 2203 TriUF
+3045 2592 TriUF
+5047 2614 TriUF
+2933 2026 TriUF
+4693 3078 TriUF
+3338 1984 TriUF
+3642 3550 TriUF
+4247 1917 TriUF
+2966 3505 TriUF
+4961 2032 TriUF
+2745 2642 TriUF
+5364 2631 TriUF
+2566 1911 TriUF
+5006 3228 TriUF
+3118 1695 TriUF
+3718 3741 TriUF
+4357 1559 TriUF
+2702 3740 TriUF
+5282 1739 TriUF
+2299 2785 TriUF
+5787 2602 TriUF
+2063 1764 TriUF
+5460 3423 TriUF
+2748 1282 TriUF
+3963 3924 TriUF
+4388 1128 TriUF
+2453 3944 TriUF
+5616 1379 TriUF
+1828 3015 TriUF
+6134 2480 TriUF
+1665 1685 TriUF
+5797 3570 TriUF
+2430 955 TriUF
+4253 4026 TriUF
+4303 869 TriUF
+2389 4007 TriUF
+5769 1186 TriUF
+1607 3169 TriUF
+6244 2371 TriUF
+1562 1714 TriUF
+5893 3580 TriUF
+2323 885 TriUF
+4416 4009 TriUF
+4186 863 TriUF
+2472 4005 TriUF
+5688 1205 TriUF
+1673 3287 TriUF
+6111 2304 TriUF
+1732 1845 TriUF
+5817 3450 TriUF
+2382 1046 TriUF
+4548 3827 TriUF
+3987 1102 TriUF
+2729 3921 TriUF
+5338 1449 TriUF
+2024 3407 TriUF
+5698 2268 TriUF
+2183 2106 TriUF
+5536 3181 TriUF
+2642 1391 TriUF
+4590 3509 TriUF
+3781 1503 TriUF
+3075 3721 TriUF
+4861 1809 TriUF
+2491 3386 TriUF
+5220 2314 TriUF
+2660 2313 TriUF
+5196 2944 TriUF
+2956 1704 TriUF
+4496 3241 TriUF
+3703 1841 TriUF
+3296 3529 TriUF
+4521 2079 TriUF
+2840 3289 TriUF
+4890 2378 TriUF
+2990 2404 TriUF
+4941 2803 TriUF
+3184 1900 TriUF
+4382 3076 TriUF
+3691 2061 TriUF
+3408 3397 TriUF
+4324 2247 TriUF
+3060 3197 TriUF
+4689 2427 TriUF
+3199 2437 TriUF
+4769 2723 TriUF
+3333 2019 TriUF
+4289 2980 TriUF
+3697 2203 TriUF
+3466 3309 TriUF
+4208 2353 TriUF
+3201 3124 TriUF
+4565 2460 TriUF
+3336 2446 TriUF
+4654 2673 TriUF
+3431 2095 TriUF
+4218 2923 TriUF
+3706 2298 TriUF
+3499 3250 TriUF
+4137 2422 TriUF
+3297 3068 TriUF
+4485 2482 TriUF
+3428 2446 TriUF
+4573 2641 TriUF
+3497 2146 TriUF
+4162 2889 TriUF
+3715 2366 TriUF
+3518 3209 TriUF
+4092 2469 TriUF
+3365 3025 TriUF
+4432 2496 TriUF
+3493 2441 TriUF
+4516 2619 TriUF
+3543 2184 TriUF
+4118 2871 TriUF
+3722 2415 TriUF
+3528 3181 TriUF
+4063 2500 TriUF
+3414 2990 TriUF
+4398 2505 TriUF
+3539 2434 TriUF
+4475 2605 TriUF
+3573 2211 TriUF
+4083 2862 TriUF
+3728 2451 TriUF
+3534 3161 TriUF
+4046 2520 TriUF
+3451 2961 TriUF
+4377 2510 TriUF
+3571 2425 TriUF
+4445 2595 TriUF
+3593 2233 TriUF
+4054 2861 TriUF
+3733 2479 TriUF
+3537 3148 TriUF
+4037 2533 TriUF
+3479 2937 TriUF
+4365 2512 TriUF
+3593 2416 TriUF
+4423 2589 TriUF
+3604 2249 TriUF
+4030 2865 TriUF
+3738 2499 TriUF
+3536 3140 TriUF
+4034 2539 TriUF
+3498 2918 TriUF
+4361 2512 TriUF
+3606 2406 TriUF
+4409 2587 TriUF
+3609 2262 TriUF
+4010 2874 TriUF
+3742 2512 TriUF
+3533 3136 TriUF
+4038 2540 TriUF
+3511 2901 TriUF
+4363 2510 TriUF
+3611 2395 TriUF
+4402 2588 TriUF
+3608 2272 TriUF
+3993 2887 TriUF
+3747 2520 TriUF
+3528 3137 TriUF
+4047 2535 TriUF
+3518 2887 TriUF
+4373 2507 TriUF
+3609 2383 TriUF
+4401 2592 TriUF
+3601 2278 TriUF
+3979 2904 TriUF
+3752 2522 TriUF
+3520 3142 TriUF
+4061 2526 TriUF
+3518 2876 TriUF
+4388 2504 TriUF
+3599 2370 TriUF
+4406 2600 TriUF
+3588 2281 TriUF
+3969 2924 TriUF
+3758 2517 TriUF
+3509 3151 TriUF
+4081 2511 TriUF
+3511 2868 TriUF
+4411 2499 TriUF
+3580 2356 TriUF
+4418 2611 TriUF
+3570 2279 TriUF
+3961 2950 TriUF
+3765 2506 TriUF
+3495 3166 TriUF
+4108 2489 TriUF
+3496 2864 TriUF
+4443 2493 TriUF
+3551 2340 TriUF
+4439 2627 TriUF
+3543 2272 TriUF
+3957 2981 TriUF
+3774 2485 TriUF
+3476 3188 TriUF
+4143 2460 TriUF
+3470 2863 TriUF
+4487 2487 TriUF
+3509 2321 TriUF
+4472 2649 TriUF
+3508 2259 TriUF
+3958 3019 TriUF
+3784 2453 TriUF
+3450 3220 TriUF
+4189 2420 TriUF
+3429 2868 TriUF
+4547 2479 TriUF
+3448 2299 TriUF
+4521 2678 TriUF
+3458 2234 TriUF
+3965 3067 TriUF
+3798 2404 TriUF
+3416 3265 TriUF
+4250 2365 TriUF
+3368 2882 TriUF
+4629 2468 TriUF
+3359 2272 TriUF
+4596 2717 TriUF
+3388 2195 TriUF
+3983 3128 TriUF
+3814 2330 TriUF
+3369 3332 TriUF
+4332 2285 TriUF
+3275 2909 TriUF
+4747 2452 TriUF
+3228 2239 TriUF
+4710 2772 TriUF
+3284 2129 TriUF
+4022 3210 TriUF
+3831 2214 TriUF
+3304 3431 TriUF
+4447 2165 TriUF
+3131 2960 TriUF
+4921 2422 TriUF
+3027 2197 TriUF
+4893 2847 TriUF
+3118 2019 TriUF
+4102 3321 TriUF
+3842 2028 TriUF
+3211 3582 TriUF
+4612 1973 TriUF
+2902 3060 TriUF
+5182 2362 TriUF
+2710 2151 TriUF
+5188 2953 TriUF
+2841 1830 TriUF
+4277 3474 TriUF
+3817 1723 TriUF
+3094 3798 TriUF
+4847 1662 TriUF
+2542 3245 TriUF
+5549 2224 TriUF
+2249 2133 TriUF
+5617 3082 TriUF
+2409 1531 TriUF
+4628 3668 TriUF
+3679 1286 TriUF
+3021 4015 TriUF
+5124 1251 TriUF
+2092 3492 TriUF
+5926 1979 TriUF
+1783 2213 TriUF
+5998 3155 TriUF
+1991 1236 TriUF
+5030 3847 TriUF
+3443 911 TriUF
+3095 4104 TriUF
+5272 977 TriUF
+1818 3630 TriUF
+6119 1793 TriUF
+1564 2332 TriUF
+6139 3132 TriUF
+1829 1134 TriUF
+5225 3904 TriUF
+3295 797 TriUF
+3215 4091 TriUF
+5229 949 TriUF
+1816 3699 TriUF
+6065 1740 TriUF
+1622 2455 TriUF
+6082 3048 TriUF
+1901 1216 TriUF
+5281 3796 TriUF
+3205 937 TriUF
+3409 3961 TriUF
+4978 1167 TriUF
+2070 3753 TriUF
+5726 1806 TriUF
+1966 2659 TriUF
+5793 2878 TriUF
+2241 1483 TriUF
+5187 3508 TriUF
+3190 1298 TriUF
+3665 3696 TriUF
+4567 1574 TriUF
+2507 3682 TriUF
+5214 1993 TriUF
+2452 2812 TriUF
+5379 2720 TriUF
+2685 1787 TriUF
+4964 3200 TriUF
+3288 1661 TriUF
+3791 3454 TriUF
+4265 1925 TriUF
+2860 3530 TriUF
+4818 2174 TriUF
+2836 2834 TriUF
+5052 2642 TriUF
+3011 1981 TriUF
+4761 2996 TriUF
+3395 1903 TriUF
+3817 3299 TriUF
+4104 2150 TriUF
+3076 3400 TriUF
+4580 2297 TriUF
+3086 2808 TriUF
+4838 2605 TriUF
+3220 2089 TriUF
+4613 2876 TriUF
+3476 2056 TriUF
+3811 3206 TriUF
+4018 2292 TriUF
+3206 3305 TriUF
+4437 2377 TriUF
+3248 2775 TriUF
+4699 2584 TriUF
+3356 2152 TriUF
+4507 2803 TriUF
+3533 2158 TriUF
+3796 3148 TriUF
+3968 2384 TriUF
+3290 3236 TriUF
+4349 2429 TriUF
+3357 2743 TriUF
+4606 2571 TriUF
+3448 2190 TriUF
+4429 2758 TriUF
+3573 2229 TriUF
+3779 3112 TriUF
+3938 2447 TriUF
+3347 3186 TriUF
+4294 2464 TriUF
+3433 2715 TriUF
+4542 2562 TriUF
+3512 2214 TriUF
+4370 2730 TriUF
+3601 2282 TriUF
+3763 3090 TriUF
+3918 2490 TriUF
+3388 3147 TriUF
+4258 2487 TriUF
+3489 2690 TriUF
+4497 2555 TriUF
+3556 2230 TriUF
+4324 2713 TriUF
+3621 2323 TriUF
+3749 3076 TriUF
+3907 2521 TriUF
+3418 3118 TriUF
+4237 2502 TriUF
+3529 2668 TriUF
+4466 2549 TriUF
+3587 2241 TriUF
+4288 2704 TriUF
+3635 2355 TriUF
+3735 3069 TriUF
+3900 2543 TriUF
+3440 3095 TriUF
+4225 2511 TriUF
+3558 2648 TriUF
+4444 2545 TriUF
+3608 2248 TriUF
+4259 2701 TriUF
+3644 2381 TriUF
+3721 3067 TriUF
+3898 2557 TriUF
+3456 3076 TriUF
+4221 2515 TriUF
+3579 2630 TriUF
+4431 2542 TriUF
+3620 2253 TriUF
+4236 2703 TriUF
+3651 2402 TriUF
+3709 3069 TriUF
+3898 2565 TriUF
+3468 3062 TriUF
+4223 2516 TriUF
+3593 2612 TriUF
+4424 2540 TriUF
+3626 2255 TriUF
+4218 2709 TriUF
+6579 553 TriUF
+% End plot #5
+% Begin plot #6
+0.500 UP
+1.000 UL
+LTb
+0.00 0.45 0.70 C
+LCb setrgbcolor
+6296 413 M
+('track.obs0001.p0006' u 3:4) Rshow
+0.500 UP
+1.000 UL
+LTb
+0.00 0.45 0.70 C
+3831 2450 TriUF
+3364 3311 TriUF
+4228 2456 TriUF
+3372 2933 TriUF
+4576 2522 TriUF
+3463 2293 TriUF
+4553 2686 TriUF
+3499 2202 TriUF
+3993 3045 TriUF
+3792 2470 TriUF
+3405 3297 TriUF
+4184 2468 TriUF
+3394 2956 TriUF
+4546 2507 TriUF
+3478 2325 TriUF
+4556 2664 TriUF
+3492 2207 TriUF
+4031 3021 TriUF
+3760 2470 TriUF
+3431 3298 TriUF
+4160 2463 TriUF
+3393 2988 TriUF
+4540 2491 TriUF
+3468 2351 TriUF
+4581 2653 TriUF
+3467 2199 TriUF
+4079 3009 TriUF
+3729 2450 TriUF
+3448 3315 TriUF
+4154 2441 TriUF
+3369 3032 TriUF
+4558 2467 TriUF
+3431 2374 TriUF
+4632 2651 TriUF
+3416 2178 TriUF
+4145 3012 TriUF
+3692 2408 TriUF
+3458 3351 TriUF
+4166 2393 TriUF
+3321 3095 TriUF
+4604 2429 TriUF
+3359 2398 TriUF
+4720 2657 TriUF
+3326 2142 TriUF
+4242 3031 TriUF
+3640 2335 TriUF
+3466 3413 TriUF
+4198 2309 TriUF
+3239 3188 TriUF
+4688 2366 TriUF
+3235 2429 TriUF
+4864 2670 TriUF
+3172 2084 TriUF
+4398 3076 TriUF
+3552 2211 TriUF
+3480 3513 TriUF
+4256 2159 TriUF
+3103 3336 TriUF
+4832 2246 TriUF
+3023 2485 TriUF
+5107 2684 TriUF
+2898 1992 TriUF
+4672 3159 TriUF
+3377 1993 TriUF
+3533 3669 TriUF
+4342 1885 TriUF
+2880 3587 TriUF
+5072 2002 TriUF
+2655 2622 TriUF
+5516 2669 TriUF
+2404 1852 TriUF
+5187 3308 TriUF
+2980 1599 TriUF
+3764 3871 TriUF
+4393 1405 TriUF
+2567 3950 TriUF
+5429 1520 TriUF
+2070 2979 TriUF
+6046 2498 TriUF
+1742 1739 TriUF
+5866 3507 TriUF
+2316 1074 TriUF
+4398 4022 TriUF
+4136 892 TriUF
+2482 4160 TriUF
+5713 1026 TriUF
+1573 3399 TriUF
+6335 2140 TriUF
+1422 1891 TriUF
+6164 3499 TriUF
+1935 871 TriUF
+4905 4067 TriUF
+3754 719 TriUF
+2721 4177 TriUF
+5633 908 TriUF
+1546 3629 TriUF
+6256 1916 TriUF
+1514 2177 TriUF
+6149 3293 TriUF
+1901 1027 TriUF
+5200 3896 TriUF
+3387 909 TriUF
+3176 4025 TriUF
+5161 1194 TriUF
+1961 3812 TriUF
+5740 1870 TriUF
+2012 2636 TriUF
+5775 2928 TriUF
+2312 1468 TriUF
+5192 3474 TriUF
+3197 1390 TriUF
+3701 3663 TriUF
+4489 1715 TriUF
+2586 3729 TriUF
+5075 2055 TriUF
+2589 2914 TriUF
+5282 2674 TriUF
+2810 1877 TriUF
+4966 3105 TriUF
+3265 1772 TriUF
+3912 3385 TriUF
+4113 2064 TriUF
+2981 3564 TriUF
+4658 2229 TriUF
+2953 2975 TriUF
+4956 2578 TriUF
+3113 2096 TriUF
+4794 2899 TriUF
+3354 1976 TriUF
+3984 3221 TriUF
+3938 2253 TriUF
+3189 3449 TriUF
+4429 2336 TriUF
+3155 2987 TriUF
+4764 2538 TriUF
+3283 2213 TriUF
+4690 2786 TriUF
+3414 2082 TriUF
+4020 3122 TriUF
+3846 2354 TriUF
+3307 3379 TriUF
+4298 2399 TriUF
+3266 2996 TriUF
+4653 2516 TriUF
+3376 2284 TriUF
+4635 2720 TriUF
+3446 2136 TriUF
+4051 3059 TriUF
+3789 2405 TriUF
+3378 3341 TriUF
+4220 2431 TriUF
+3322 3012 TriUF
+4591 2499 TriUF
+3420 2333 TriUF
+4616 2682 TriUF
+3453 2161 TriUF
+4088 3020 TriUF
+3746 2422 TriUF
+3424 3328 TriUF
+4176 2438 TriUF
+3341 3040 TriUF
+4565 2479 TriUF
+3426 2370 TriUF
+4629 2660 TriUF
+3434 2165 TriUF
+4138 3000 TriUF
+3706 2411 TriUF
+3454 3337 TriUF
+4157 2421 TriUF
+3329 3083 TriUF
+4572 2451 TriUF
+3396 2402 TriUF
+4675 2651 TriUF
+3383 2151 TriUF
+4210 2999 TriUF
+3660 2372 TriUF
+3476 3369 TriUF
+4161 2373 TriUF
+3286 3150 TriUF
+4613 2407 TriUF
+3324 2435 TriUF
+4765 2651 TriUF
+3286 2118 TriUF
+4320 3018 TriUF
+3594 2295 TriUF
+3496 3431 TriUF
+4189 2280 TriUF
+3203 3252 TriUF
+4700 2328 TriUF
+3190 2480 TriUF
+4923 2657 TriUF
+3110 2061 TriUF
+4502 3067 TriUF
+3481 2159 TriUF
+3529 3535 TriUF
+4243 2109 TriUF
+3061 3421 TriUF
+4854 2180 TriUF
+2955 2560 TriUF
+5195 2658 TriUF
+2792 1968 TriUF
+4828 3162 TriUF
+3251 1913 TriUF
+3629 3697 TriUF
+4313 1792 TriUF
+2829 3704 TriUF
+5112 1875 TriUF
+2539 2755 TriUF
+5644 2602 TriUF
+2236 1839 TriUF
+5417 3329 TriUF
+2750 1477 TriUF
+3993 3887 TriUF
+4276 1267 TriUF
+2561 4053 TriUF
+5476 1336 TriUF
+1925 3183 TriUF
+6139 2333 TriUF
+1621 1818 TriUF
+6019 3485 TriUF
+2110 1005 TriUF
+4675 4028 TriUF
+3913 812 TriUF
+2617 4189 TriUF
+5670 929 TriUF
+1542 3530 TriUF
+6335 1987 TriUF
+1412 2040 TriUF
+6215 3400 TriUF
+1830 915 TriUF
+5105 4035 TriUF
+3535 723 TriUF
+2921 4168 TriUF
+5486 913 TriUF
+1634 3737 TriUF
+6154 1806 TriUF
+1597 2375 TriUF
+6114 3145 TriUF
+1913 1151 TriUF
+5328 3795 TriUF
+3197 1003 TriUF
+3446 3931 TriUF
+4905 1306 TriUF
+2155 3849 TriUF
+5545 1856 TriUF
+2154 2826 TriUF
+5649 2790 TriUF
+2431 1628 TriUF
+5187 3350 TriUF
+3143 1494 TriUF
+3872 3559 TriUF
+4302 1806 TriUF
+2739 3702 TriUF
+4928 2083 TriUF
+2686 3006 TriUF
+5179 2607 TriUF
+2894 1984 TriUF
+4947 3025 TriUF
+3256 1825 TriUF
+4009 3311 TriUF
+4009 2110 TriUF
+3073 3539 TriUF
+4567 2252 TriUF
+3004 3032 TriUF
+4887 2543 TriUF
+3160 2167 TriUF
+4786 2850 TriUF
+3352 1998 TriUF
+4054 3165 TriUF
+3872 2272 TriUF
+3250 3432 TriUF
+4368 2352 TriUF
+3179 3033 TriUF
+4718 2516 TriUF
+3308 2268 TriUF
+4691 2753 TriUF
+3412 2088 TriUF
+4080 3076 TriUF
+3798 2358 TriUF
+3352 3369 TriUF
+4252 2409 TriUF
+3274 3039 TriUF
+4619 2500 TriUF
+3388 2331 TriUF
+4643 2697 TriUF
+3442 2134 TriUF
+4108 3020 TriUF
+3749 2399 TriUF
+3415 3337 TriUF
+4184 2436 TriUF
+3320 3055 TriUF
+4566 2484 TriUF
+3421 2376 TriUF
+4630 2664 TriUF
+3444 2154 TriUF
+4146 2987 TriUF
+3708 2408 TriUF
+3458 3328 TriUF
+4147 2437 TriUF
+3331 3085 TriUF
+4548 2463 TriUF
+3418 2413 TriUF
+4650 2645 TriUF
+3417 2154 TriUF
+4201 2972 TriUF
+3666 2389 TriUF
+3489 3341 TriUF
+4133 2412 TriUF
+3312 3134 TriUF
+4563 2430 TriUF
+3377 2448 TriUF
+4707 2638 TriUF
+3354 2137 TriUF
+4284 2976 TriUF
+3613 2340 TriUF
+3514 3378 TriUF
+4142 2352 TriUF
+3261 3209 TriUF
+4613 2375 TriUF
+3290 2488 TriUF
+4813 2637 TriUF
+3236 2101 TriUF
+4415 3004 TriUF
+3530 2250 TriUF
+3544 3448 TriUF
+4172 2240 TriUF
+3167 3329 TriUF
+4714 2275 TriUF
+3132 2548 TriUF
+4999 2637 TriUF
+3023 2039 TriUF
+4636 3065 TriUF
+3380 2089 TriUF
+3604 3564 TriUF
+4224 2033 TriUF
+3010 3529 TriUF
+4891 2081 TriUF
+2851 2665 TriUF
+5320 2617 TriUF
+2636 1943 TriUF
+5040 3180 TriUF
+3068 1796 TriUF
+3782 3734 TriUF
+4262 1649 TriUF
+2767 3848 TriUF
+5181 1690 TriUF
+2364 2946 TriUF
+5810 2490 TriUF
+2014 1844 TriUF
+5694 3360 TriUF
+2450 1316 TriUF
+4328 3911 TriUF
+4077 1090 TriUF
+2607 4144 TriUF
+5528 1126 TriUF
+1760 3406 TriUF
+6226 2118 TriUF
+1513 1961 TriUF
+6150 3420 TriUF
+1911 966 TriUF
+4967 4032 TriUF
+3650 739 TriUF
+2810 4202 TriUF
+5576 861 TriUF
+1556 3655 TriUF
+6299 1832 TriUF
+1432 2226 TriUF
+6239 3266 TriUF
+1759 998 TriUF
+5299 3974 TriUF
+3300 767 TriUF
+3181 4118 TriUF
+5261 983 TriUF
+1797 3839 TriUF
+5973 1729 TriUF
+1748 2619 TriUF
+6002 2963 TriUF
+2027 1336 TriUF
+5381 3638 TriUF
+3059 1160 TriUF
+3733 3786 TriUF
+4598 1474 TriUF
+2409 3836 TriUF
+5295 1899 TriUF
+2343 2990 TriUF
+5470 2663 TriUF
+2600 1812 TriUF
+5134 3204 TriUF
+3137 1621 TriUF
+4014 3439 TriUF
+4123 1916 TriUF
+2906 3649 TriUF
+4762 2137 TriUF
+2805 3073 TriUF
+5053 2552 TriUF
+2997 2095 TriUF
+4904 2939 TriUF
+3272 1888 TriUF
+4086 3229 TriUF
+3913 2166 TriUF
+3171 3498 TriUF
+4466 2289 TriUF
+3068 3071 TriUF
+4805 2517 TriUF
+3221 2240 TriUF
+4758 2798 TriUF
+3368 2028 TriUF
+4107 3105 TriUF
+3814 2301 TriUF
+3314 3403 TriUF
+4300 2380 TriUF
+3214 3064 TriUF
+4658 2502 TriUF
+3347 2322 TriUF
+4673 2718 TriUF
+3428 2103 TriUF
+4122 3026 TriUF
+3758 2373 TriUF
+3400 3346 TriUF
+4200 2433 TriUF
+3295 3065 TriUF
+4571 2493 TriUF
+3417 2377 TriUF
+4628 2671 TriUF
+3459 2143 TriUF
+4143 2975 TriUF
+3719 2408 TriUF
+3456 3315 TriUF
+4140 2459 TriUF
+3336 3076 TriUF
+4521 2483 TriUF
+3448 2417 TriUF
+4613 2642 TriUF
+3466 2161 TriUF
+4174 2943 TriUF
+3685 2416 TriUF
+3496 3303 TriUF
+4104 2464 TriUF
+3348 3100 TriUF
+4500 2467 TriUF
+3449 2452 TriUF
+4625 2625 TriUF
+3448 2164 TriUF
+4220 2927 TriUF
+3650 2402 TriUF
+3527 3310 TriUF
+4088 2447 TriUF
+3336 3140 TriUF
+4505 2441 TriUF
+3419 2486 TriUF
+4667 2616 TriUF
+3401 2153 TriUF
+4289 2926 TriUF
+3604 2364 TriUF
+3554 3335 TriUF
+4089 2403 TriUF
+3299 3200 TriUF
+4539 2397 TriUF
+3354 2525 TriUF
+4747 2612 TriUF
+3311 2128 TriUF
+4393 2943 TriUF
+3537 2295 TriUF
+3585 3385 TriUF
+4106 2320 TriUF
+3232 3294 TriUF
+4610 2320 TriUF
+3237 2577 TriUF
+4885 2608 TriUF
+3154 2084 TriUF
+4561 2987 TriUF
+3422 2179 TriUF
+3635 3469 TriUF
+4139 2171 TriUF
+3120 3444 TriUF
+4737 2180 TriUF
+3033 2667 TriUF
+5120 2594 TriUF
+2874 2017 TriUF
+4854 3070 TriUF
+3201 1975 TriUF
+3753 3601 TriUF
+4174 1896 TriUF
+2943 3693 TriUF
+4953 1903 TriUF
+2673 2857 TriUF
+5514 2522 TriUF
+2380 1929 TriUF
+5377 3214 TriUF
+2740 1609 TriUF
+4103 3775 TriUF
+4111 1413 TriUF
+2731 4032 TriUF
+5282 1392 TriUF
+2095 3263 TriUF
+6008 2248 TriUF
+1749 1943 TriUF
+6000 3359 TriUF
+2069 1141 TriUF
+4811 3949 TriUF
+3720 883 TriUF
+2795 4204 TriUF
+5515 919 TriUF
+1636 3628 TriUF
+6276 1851 TriUF
+1436 2200 TriUF
+6260 3274 TriUF
+1720 995 TriUF
+5291 4012 TriUF
+3309 699 TriUF
+3120 4190 TriUF
+5366 842 TriUF
+1664 3806 TriUF
+6179 1656 TriUF
+1517 2514 TriUF
+6210 3048 TriUF
+1756 1172 TriUF
+5499 3836 TriUF
+3008 893 TriUF
+3600 3983 TriUF
+4860 1156 TriUF
+2109 3917 TriUF
+5654 1706 TriUF
+1994 2949 TriUF
+5773 2720 TriUF
+2265 1630 TriUF
+5348 3402 TriUF
+2983 1379 TriUF
+4038 3587 TriUF
+4240 1677 TriUF
+2723 3770 TriUF
+4992 1986 TriUF
+2564 3139 TriUF
+5244 2544 TriUF
+2796 2029 TriUF
+5058 3038 TriUF
+3155 1753 TriUF
+4161 3298 TriUF
+3934 2028 TriUF
+3096 3578 TriUF
+4576 2203 TriUF
+2929 3144 TriUF
+4906 2498 TriUF
+3106 2230 TriUF
+4857 2844 TriUF
+3293 1952 TriUF
+4181 3132 TriUF
+3805 2217 TriUF
+3289 3451 TriUF
+4350 2331 TriUF
+3131 3125 TriUF
+4709 2486 TriUF
+3279 2335 TriUF
+4737 2739 TriUF
+3381 2056 TriUF
+4187 3031 TriUF
+3739 2317 TriUF
+3399 3373 TriUF
+4220 2405 TriUF
+3242 3116 TriUF
+4594 2480 TriUF
+3374 2401 TriUF
+4670 2679 TriUF
+3429 2113 TriUF
+4200 2967 TriUF
+3697 2367 TriUF
+3468 3329 TriUF
+4143 2443 TriUF
+3300 3120 TriUF
+4527 2472 TriUF
+3421 2448 TriUF
+4641 2642 TriUF
+3447 2141 TriUF
+4226 2928 TriUF
+3663 2385 TriUF
+3516 3308 TriUF
+4097 2456 TriUF
+3324 3138 TriUF
+4495 2458 TriUF
+3431 2487 TriUF
+4645 2620 TriUF
+3436 2151 TriUF
+4269 2907 TriUF
+3625 2376 TriUF
+3554 3308 TriUF
+4073 2443 TriUF
+3320 3174 TriUF
+4492 2431 TriUF
+3408 2526 TriUF
+4680 2607 TriUF
+3392 2146 TriUF
+4336 2903 TriUF
+3577 2342 TriUF
+3589 3328 TriUF
+4067 2402 TriUF
+3290 3233 TriUF
+4520 2386 TriUF
+3346 2570 TriUF
+4756 2598 TriUF
+3304 2126 TriUF
+4442 2919 TriUF
+3504 2277 TriUF
+3629 3373 TriUF
+4077 2321 TriUF
+3229 3326 TriUF
+4586 2306 TriUF
+3231 2630 TriUF
+4891 2589 TriUF
+3146 2089 TriUF
+4614 2961 TriUF
+3380 2163 TriUF
+3694 3451 TriUF
+4099 2171 TriUF
+3127 3476 TriUF
+4708 2158 TriUF
+3029 2732 TriUF
+5126 2563 TriUF
+2863 2029 TriUF
+4913 3044 TriUF
+3143 1963 TriUF
+3836 3576 TriUF
+4114 1894 TriUF
+2965 3725 TriUF
+4917 1868 TriUF
+2669 2942 TriUF
+5516 2469 TriUF
+2369 1961 TriUF
+5439 3184 TriUF
+2657 1606 TriUF
+4230 3745 TriUF
+4005 1405 TriUF
+2792 4056 TriUF
+5237 1347 TriUF
+2093 3362 TriUF
+5995 2155 TriUF
+1748 2025 TriUF
+6043 3301 TriUF
+1987 1164 TriUF
+4955 3927 TriUF
+3569 873 TriUF
+2919 4210 TriUF
+5436 890 TriUF
+1666 3699 TriUF
+6251 1754 TriUF
+1440 2312 TriUF
+6287 3188 TriUF
+1658 1044 TriUF
+5412 3990 TriUF
+3161 695 TriUF
+3270 4186 TriUF
+5256 830 TriUF
+1723 3858 TriUF
+6142 1574 TriUF
+1523 2633 TriUF
+6219 2955 TriUF
+1727 1237 TriUF
+5581 3804 TriUF
+2890 900 TriUF
+3754 3961 TriUF
+4736 1156 TriUF
+2182 3942 TriUF
+5609 1664 TriUF
+2001 3054 TriUF
+5754 2643 TriUF
+2270 1707 TriUF
+5383 3363 TriUF
+2925 1389 TriUF
+4152 3556 TriUF
+4146 1673 TriUF
+2788 3770 TriUF
+4950 1975 TriUF
+2569 3206 TriUF
+5217 2501 TriUF
+2802 2093 TriUF
+5075 3008 TriUF
+3128 1757 TriUF
+4240 3267 TriUF
+3872 2020 TriUF
+3147 3571 TriUF
+4540 2202 TriUF
+2930 3192 TriUF
+4878 2474 TriUF
+3110 2283 TriUF
+4867 2822 TriUF
+3282 1951 TriUF
+4240 3100 TriUF
+3761 2207 TriUF
+3331 3441 TriUF
+4318 2335 TriUF
+3130 3163 TriUF
+4682 2472 TriUF
+3283 2382 TriUF
+4742 2722 TriUF
+3378 2055 TriUF
+4235 2999 TriUF
+3707 2307 TriUF
+3436 3361 TriUF
+4190 2413 TriUF
+3241 3146 TriUF
+4565 2473 TriUF
+3380 2443 TriUF
+4669 2664 TriUF
+3434 2113 TriUF
+4239 2935 TriUF
+3673 2358 TriUF
+3504 3313 TriUF
+4113 2456 TriUF
+3302 3143 TriUF
+4495 2471 TriUF
+3431 2488 TriUF
+4633 2629 TriUF
+3460 2144 TriUF
+4256 2893 TriUF
+3645 2379 TriUF
+3552 3288 TriUF
+4065 2474 TriUF
+3330 3155 TriUF
+4456 2462 TriUF
+3448 2526 TriUF
+4626 2606 TriUF
+3459 2159 TriUF
+4290 2869 TriUF
+3614 2376 TriUF
+3590 3280 TriUF
+4037 2470 TriUF
+3334 3181 TriUF
+4444 2443 TriUF
+3436 2563 TriUF
+4647 2592 TriUF
+3430 2160 TriUF
+4343 2860 TriUF
+3573 2352 TriUF
+3626 3289 TriUF
+4024 2442 TriUF
+3317 3226 TriUF
+4457 2408 TriUF
+3393 2605 TriUF
+4701 2581 TriUF
+3367 2150 TriUF
+4426 2867 TriUF
+3514 2304 TriUF
+3666 3317 TriUF
+4023 2384 TriUF
+3277 3297 TriUF
+4499 2348 TriUF
+3310 2659 TriUF
+4799 2570 TriUF
+3252 2126 TriUF
+4557 2895 TriUF
+3419 2222 TriUF
+3723 3371 TriUF
+4032 2278 TriUF
+3206 3410 TriUF
+4583 2240 TriUF
+3165 2740 TriUF
+4967 2548 TriUF
+3051 2087 TriUF
+4773 2952 TriUF
+3248 2084 TriUF
+3828 3461 TriUF
+4040 2085 TriUF
+3095 3594 TriUF
+4731 2038 TriUF
+2910 2889 TriUF
+5253 2488 TriUF
+2694 2034 TriUF
+5154 3053 TriUF
+2912 1840 TriUF
+4075 3598 TriUF
+3996 1728 TriUF
+2943 3883 TriUF
+4977 1648 TriUF
+2465 3197 TriUF
+5693 2293 TriUF
+2117 2025 TriUF
+5757 3193 TriUF
+2288 1436 TriUF
+4678 3780 TriUF
+3701 1167 TriUF
+2912 4162 TriUF
+5278 1082 TriUF
+1889 3641 TriUF
+6105 1849 TriUF
+1584 2268 TriUF
+6222 3175 TriUF
+1718 1126 TriUF
+5350 3947 TriUF
+3187 748 TriUF
+3242 4212 TriUF
+5263 802 TriUF
+1711 3840 TriUF
+6208 1542 TriUF
+1432 2580 TriUF
+6323 2986 TriUF
+1578 1167 TriUF
+5634 3914 TriUF
+2865 732 TriUF
+3641 4116 TriUF
+4934 902 TriUF
+1949 3961 TriUF
+5929 1483 TriUF
+1673 2948 TriUF
+6076 2713 TriUF
+1885 1496 TriUF
+5616 3597 TriUF
+2746 1095 TriUF
+4131 3771 TriUF
+4324 1360 TriUF
+2535 3906 TriUF
+5276 1752 TriUF
+2247 3260 TriUF
+5492 2484 TriUF
+2512 1987 TriUF
+5286 3153 TriUF
+2951 1568 TriUF
+4333 3387 TriUF
+3904 1821 TriUF
+3041 3676 TriUF
+4708 2069 TriUF
+2739 3279 TriUF
+5026 2439 TriUF
+2946 2266 TriUF
+5002 2887 TriUF
+3169 1851 TriUF
+4335 3154 TriUF
+3747 2089 TriUF
+3300 3501 TriUF
+4394 2261 TriUF
+3020 3236 TriUF
+4756 2444 TriUF
+3187 2398 TriUF
+4825 2751 TriUF
+3309 1999 TriUF
+4314 3018 TriUF
+3683 2232 TriUF
+3437 3393 TriUF
+4223 2370 TriUF
+3174 3203 TriUF
+4599 2453 TriUF
+3321 2473 TriUF
+4722 2676 TriUF
+3391 2080 TriUF
+4304 2936 TriUF
+3648 2306 TriUF
+3520 3328 TriUF
+4122 2431 TriUF
+3260 3189 TriUF
+4506 2457 TriUF
+3393 2523 TriUF
+4666 2632 TriUF
+3434 2126 TriUF
+4312 2884 TriUF
+3621 2340 TriUF
+3577 3290 TriUF
+4060 2460 TriUF
+3304 3192 TriUF
+4453 2452 TriUF
+3424 2565 TriUF
+4646 2604 TriUF
+3444 2149 TriUF
+4338 2853 TriUF
+3591 2346 TriUF
+3622 3274 TriUF
+4023 2464 TriUF
+3319 3212 TriUF
+4430 2436 TriUF
+3421 2605 TriUF
+4658 2585 TriUF
+3423 2158 TriUF
+4386 2840 TriUF
+3551 2328 TriUF
+3664 3276 TriUF
+4003 2441 TriUF
+3310 3252 TriUF
+4435 2403 TriUF
+3385 2650 TriUF
+4703 2570 TriUF
+3365 2154 TriUF
+4466 2844 TriUF
+3491 2285 TriUF
+3711 3298 TriUF
+3994 2387 TriUF
+3278 3319 TriUF
+4471 2342 TriUF
+3307 2709 TriUF
+4794 2553 TriUF
+3255 2137 TriUF
+4593 2869 TriUF
+3392 2209 TriUF
+3778 3345 TriUF
+3993 2285 TriUF
+3218 3428 TriUF
+4548 2234 TriUF
+3169 2797 TriUF
+4954 2524 TriUF
+3060 2106 TriUF
+4806 2922 TriUF
+3217 2080 TriUF
+3896 3428 TriUF
+3986 2097 TriUF
+3123 3606 TriUF
+4686 2032 TriUF
+2924 2953 TriUF
+5229 2452 TriUF
+2715 2067 TriUF
+5178 3016 TriUF
+2876 1851 TriUF
+4161 3557 TriUF
+3918 1749 TriUF
+2997 3885 TriUF
+4918 1644 TriUF
+2493 3267 TriUF
+5652 2238 TriUF
+2153 2084 TriUF
+5766 3139 TriUF
+2253 1472 TriUF
+4776 3740 TriUF
+3592 1191 TriUF
+3007 4157 TriUF
+5197 1080 TriUF
+1934 3702 TriUF
+6061 1775 TriUF
+1608 2361 TriUF
+6237 3097 TriUF
+1674 1180 TriUF
+5451 3918 TriUF
+3054 755 TriUF
+3380 4207 TriUF
+5153 793 TriUF
+1772 3888 TriUF
+6173 1461 TriUF
+1433 2685 TriUF
+6342 2895 TriUF
+1536 1229 TriUF
+5720 3889 TriUF
+2741 729 TriUF
+3786 4113 TriUF
+4819 881 TriUF
+2010 3993 TriUF
+5910 1411 TriUF
+1652 3046 TriUF
+6094 2629 TriUF
+1849 1560 TriUF
+5679 3576 TriUF
+2654 1081 TriUF
+4255 3769 TriUF
+4230 1325 TriUF
+2589 3919 TriUF
+5264 1708 TriUF
+2221 3337 TriUF
+5495 2425 TriUF
+2484 2053 TriUF
+5329 3131 TriUF
+2895 1557 TriUF
+4430 3377 TriUF
+3832 1789 TriUF
+3095 3676 TriUF
+4687 2048 TriUF
+2722 3337 TriUF
+5015 2403 TriUF
+2928 2328 TriUF
+5029 2867 TriUF
+3137 1845 TriUF
+4411 3135 TriUF
+3693 2062 TriUF
+3351 3496 TriUF
+4369 2250 TriUF
+3008 3282 TriUF
+4739 2420 TriUF
+3172 2455 TriUF
+4845 2735 TriUF
+3288 1996 TriUF
+4379 2996 TriUF
+3641 2206 TriUF
+3485 3385 TriUF
+4197 2363 TriUF
+3164 3244 TriUF
+4581 2435 TriUF
+3306 2527 TriUF
+4739 2662 TriUF
+3373 2078 TriUF
+4365 2914 TriUF
+3611 2278 TriUF
+3566 3319 TriUF
+4097 2423 TriUF
+3248 3229 TriUF
+4489 2440 TriUF
+3375 2577 TriUF
+4685 2619 TriUF
+3413 2124 TriUF
+4373 2864 TriUF
+3583 2308 TriUF
+3625 3283 TriUF
+4037 2447 TriUF
+3290 3234 TriUF
+4441 2433 TriUF
+3398 2621 TriUF
+4672 2591 TriUF
+3415 2148 TriUF
+4406 2837 TriUF
+3548 2308 TriUF
+6579 413 TriUF
+% End plot #6
+2.000 UL
+LTb
+LCb setrgbcolor
+1.000 UL
+LTB
+LCb setrgbcolor
+714 4619 N
+714 280 L
+6233 0 V
+0 4339 V
+-6233 0 V
+Z stroke
+1.000 UP
+1.000 UL
+LTb
+LCb setrgbcolor
+LCb setrgbcolor
+3830 4829 M
+[ [(Helvetica) 140.0 0.0 true true 0 (X-X')]
+[(Helvetica) 140.0 0.0 true true 0 ( - plane)]
+] -46.7 MCshow
+/Helvetica findfont 140 scalefont setfont
+LTb
+stroke
+grestore
+end
+showpage
+%%Trailer
+%%DocumentFonts: Helvetica

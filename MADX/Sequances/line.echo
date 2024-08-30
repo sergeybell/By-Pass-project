@@ -1,0 +1,33 @@
+START MATCHING
+
+number of sequences: 1
+sequence name: machine
+number of variables:    4
+user given constraints: 2
+total constraints:      2
+
+START SIMPLEX:
+
+
+MATCH SUMMARY
+
+Node_Name                  Constraint   Type  Target Value       Final Value        Penalty
+--------------------------------------------------------------------------------------------------
+
+
+Final Penalty Function =   2.75574444e-23
+
+
+
+
+
+Variable                 Final Value  Initial Value Lower Limit  Upper Limit 
+--------------------------------------------------------------------------------
+s1                       -7.67104e-01  0.00000e+00 -1.00000e+20  1.00000e+20
+s2                        3.83909e-01  0.00000e+00 -1.00000e+20  1.00000e+20
+s3                        3.39848e-01  0.00000e+00 -1.00000e+20  1.00000e+20
+s4                        1.95908e-01  0.00000e+00 -1.00000e+20  1.00000e+20
+
+END MATCH SUMMARY
+
+VARIABLE "TAR" SET TO   2.75574444e-23

@@ -1,0 +1,28 @@
+CHDIR, DIR = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances";
+!call file = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full Regular Straight 2 8 FODO 120 MeV_u SEXT and OCT.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full PyBass_multipole.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/NICA.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Wien filters_3.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass Symmetrical 5 QUAD 4.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass REAL.seq";
+CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass REAL NEW.seq";
+
+beam, MASS=1.862988122,CHARGE=1, ENERGY=2.102988122,
+      EX=3.96e-05, EY=3.1e-05, SIGE=0.00156;
+
+!beam, MASS=2.32283962,CHARGE=1, ENERGY=13.54435861,
+!      EX=3.96e-05, EY=3.1e-05, SIGE=0.00156;
+
+USE, PERIOD = MACHINE;
+call file = "/Users/Bell/GIT_REPOS/By Pass project/MADX";
+
+ptc_create_universe;
+ptc_create_layout,model=2,method=6,nst=20,
+exact=true, closed_layout=true,time=false;
+select,flag=twiss,clear;
+select,FLAG=twiss,column=name ,s,l,beta11,
+beta22,beta33,disp1,disp2,disp3,disp4,
+beta12,beta13;
+ptc_twiss,table=twiss,icase=56,no=5,
+closed_orbit, writetmap,deltap=0.0;
+ptc_end;

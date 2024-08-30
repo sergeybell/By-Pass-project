@@ -1,0 +1,22 @@
+CHDIR, DIR = "/Users/Bell 1/GIT_REPOS/By Pass project/MADX/Sequances";
+CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full PyBass_multipole.seq";
+
+beam, MASS=1.863,CHARGE=1, ENERGY=1.867,
+      EX= 3.96e-005, EY=  3.1e-005, SIGE=0.00156;
+
+USE, SEQUENCE = MACHINE;
+CHDIR, DIR = "/Users/Bell 1/GIT_REPOS/By Pass project/MADX";
+
+MATCH, SEQUENCE = MACHINE;
+CONSTRAINT,  RANGE=#e, DX:= 0.0, DY:=0.0, DPX:= 0.0, DPY:=0.0;
+
+vary,name=Q7W2->K1,  step=1.0e-5;
+vary,name=Q9W2->K1,  step=1.0e-5;
+
+!JACOBIAN,calls=1000,tolerance=1.e-21;
+SIMPLEX,calls=1000,tolerance=1.e-21;
+!MIGRAD,calls=1000,tolerance=1.e-21;
+!LMDIF,calls=1000,tolerance=1.e-24;
+endmatch,knobfile='knobs.tfs';
+
+stop;

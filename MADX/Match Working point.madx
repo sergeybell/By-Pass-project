@@ -1,0 +1,25 @@
+CHDIR, DIR = "/Users/Bell 1/GIT_REPOS/By Pass project/MADX/Sequances";
+!call file = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full Regular Straight 2 8 FODO 120 MeV_u SEXT and OCT.seq";
+!CALL FILE = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/Full PyBass_multipole.seq";
+call file = "/Users/Bell/GIT_REPOS/By Pass project/MADX/Sequances/By Pass Symmetrical.seq";
+
+beam, MASS=1.863,CHARGE=1, ENERGY=1.867,
+      EX= 3.96e-005, EY=  3.1e-005, SIGE=0.00156;
+
+USE, SEQUENCE = MACHINE;
+CHDIR, DIR = "/Users/Bell 1/GIT_REPOS/By Pass project/MADX";
+
+MATCH, SEQUENCE = MACHINE;
+!GLOBAL, Q1= 13.44, Q2=11.44;
+GLOBAL, Q1= 13.44, Q2=11.44;
+
+vary,name=QFS->K1,  step=1.0e-6;
+vary,name=QDS->K1,  step=1.0e-6;
+
+!JACOBIAN,calls=1000,tolerance=1.e-21;
+SIMPLEX,calls=1000,tolerance=1.e-21;
+!MIGRAD,calls=1000,tolerance=1.e-21;
+!LMDIF,calls=1000,tolerance=1.e-24;
+endmatch,knobfile='knobs.tfs';
+
+stop;

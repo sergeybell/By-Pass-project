@@ -1,0 +1,34 @@
+CALL FILE = "/Users/Bell 1/GIT_REPOS/By Pass project/MADX/Sequances/Arc + straight.seq";
+
+beam, MASS=2.0,CHARGE=1, ENERGY=2.5,
+      EX= 3.96e-005, EY=  3.1e-005, SIGE=0.00156;
+
+BEGIN: BETA0,
+	      BETX = 1137.25, ALFX = -1.53498,
+      	BETY = 3314.97, ALFY = 0.194734,
+	      DX = 0.0, DPX = 0.0,
+	      DY = 0.0, DPY = 0.0;
+
+USE, SEQUENCE = MACHINE;
+MATCH, SEQUENCE = MACHINE, BETA0=BEGIN;
+
+!CONSTRAINT, SEQUENCE=MACHINE, range=WP1/WP2,
+!          BETX <60.0, BETY <60.0;
+
+CONSTRAINT, SEQUENCE=MACHINE, range=#e,
+            BETX = 1137.25, ALFX = 1.53498,
+            BETY = 3314.97, ALFY = 0.194734;
+
+vary,name=Q6W2->K1, step=1.0e-6;
+vary,name=Q5W2->K1, step=1.0e-6;
+vary,name=QDS->K1, step=1.0e-6;
+vary,name=QFS->K1, step=1.0e-6;
+
+
+
+!JACOBIAN,calls=1000,tolerance=1.e-24;
+SIMPLEX,calls=1000,tolerance=1.e-21;
+!MIGRAD,calls=1000,tolerance=1.e-21;
+!LMDIF,calls=1000,tolerance=1.e-24;
+endmatch,knobfile='knobs.tfs';
+stop;
